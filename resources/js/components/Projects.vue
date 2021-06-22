@@ -26,7 +26,7 @@
             <p class="seeproject" ><router-link  to='/projectdetails'> See Project <i class="fas fa-long-arrow-alt-right"></i></router-link></p>
           </div>
         </div> -->
-<project-card :title="project.title" :subtitle="project.subtitle" :imgsrc="project.imgsrc" ></project-card>
+<project-card :title="project.title" :subtitle="project.subtitle" :imgsrc="project.imagepath" ></project-card>
       </span>
         
 
@@ -42,18 +42,22 @@ export default {
   data(){
     return{
       projects:[
-        {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
-        {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
-        {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
-        {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
-        {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
-        {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
+        // {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
+        
+       
 
       ]
     }
   },
   mounted(){
     window.scrollTo(0,0);
+   
+  },
+  created(){
+     this.axios.get('http://localhost:8000/api/projects/').then((response)=>{
+      console.log(response.data);
+      this.projects=response.data;
+    });
   }
 };
 </script>

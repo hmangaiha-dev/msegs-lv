@@ -2,7 +2,7 @@
  
         <div class="card">
           <img
-            :src="require('../../assets/'+imgsrc)"
+            :src="asset('imgsrc')"
             alt=""
             srcset=""
             class="cardimage"

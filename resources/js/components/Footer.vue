@@ -57,6 +57,8 @@
           <span><router-link to="/page404">Tender</router-link></span>
           <span><router-link to="/page404">Career</router-link></span>
           <span><router-link to="/page404">Contact us</router-link></span>
+          <span><router-link to="/projectsupload">Contact</router-link></span>
+
         </div>
         </div>
       </div>

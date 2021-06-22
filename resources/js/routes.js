@@ -12,6 +12,8 @@ import page404 from './components/page404'
 
 
 import ProjectDetails from './components/Projects/ProjectDetails'
+import ProjectsUpload from './components/Projects/ProjectsUpload'
+
 
 
 
@@ -67,6 +69,12 @@ const routes =[
             path:'/page404',
             name:'page404',
             component:page404
+
+        },
+        {
+            path:'/projectsupload',
+            name:'projectsupload',
+            component:ProjectsUpload
 
         }
     ]
