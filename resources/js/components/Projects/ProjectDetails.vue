@@ -34,7 +34,7 @@
                     {{hostedat}}
                 </div>
               </div>
-            </div>
+           
 
             <!-- \\\\\ -->
 
@@ -59,6 +59,7 @@
                 </div>
               </div>
 <!-- \\\\\\ -->
+ </div>
 
 
             <hr style="opacity:30%">
@@ -130,7 +131,7 @@ export default {
   created(){
     this.id = this.$route.params.id;
     console.log("ID",this.id);
-    axios.get('http://localhost:8000/api/projects/'+this.id).then((response) => {
+    axios.get('http://127.0.0.1:8000/api/projects/'+this.id).then((response) => {
   console.log("DATA",response.data);
   this.title = response.data.title;
   this.subtitle = response.data.subtitle;

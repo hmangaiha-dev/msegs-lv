@@ -71,11 +71,16 @@ import axios from 'axios';
                 data.append('title', this.title);
                 data.append('subtitle', this.subtitle);
                 data.append('contents', this.contents);
+                data.append('client', this.client);
+                data.append('hostedat', this.hostedat);
+                data.append('developedby', this.developedby);
+                data.append('goals', this.goals);
+
 
 
                 data.append('file', this.file);
 
-                this.axios.post('http://localhost:8000/api/projects', data, config)
+                this.axios.post('http://127.0.0.1:8000/api/projects', data, config)
                     .then(function (res) {
                         existingObj.success = res.data.success;
                     })
