@@ -10,10 +10,10 @@
       <div class="mobileicons">
          <a href="/">  <img class="mobilenavlogo" src="../assets/logo1.svg" /></a>
         <div class="impicons">
-          <i class="fas fa-wheelchair"></i>
-          <i class="fas fa-search" @click="searching"></i>
+          <!-- <i class="fas fa-wheelchair"></i> -->
+          <!-- <i class="fas fa-search" @click="searching"></i> -->
 
-          <a @click="hamburgering" style="z-index:6">
+          <a @click="hamburgering" style="z-index:10;margin-left:18vw">
             <button
               class="menu"
 @click="burgers"              

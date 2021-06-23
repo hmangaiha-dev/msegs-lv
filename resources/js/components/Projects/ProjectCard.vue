@@ -59,6 +59,8 @@ export default {
   transition: 0.3s;
   width: 16rem;
   margin:0.5rem;
+  min-height:10rem;
+
 }
 
 .card:hover {
@@ -91,7 +93,7 @@ export default {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2;
+  // line-height: 2;
   letter-spacing: normal;
   text-align: left;
   color: #2c3134;
