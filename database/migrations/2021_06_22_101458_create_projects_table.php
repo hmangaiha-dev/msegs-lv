@@ -20,6 +20,13 @@ class CreateProjectsTable extends Migration
             $table->text('contents');    
             $table->string('imagename')->nullable();
             $table->string('imagepath')->nullable(); 
+           
+        $table->text('client')->nullable();    
+        $table->text('hostedat')->nullable();    
+        $table->text('developedby')->nullable();    
+        $table->text('goals')->nullable();    
+
+
 
             $table->timestamps();
         });

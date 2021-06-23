@@ -64,7 +64,7 @@
       </div>
 
     </div>
-<hr style="opacity:10%;padding:1rem;">
+<hr style="opacity:10%;margin:1rem;">
     <div class="bottomfooter">
       <img src="../assets/logo2.png" alt="" srcset="" class="copyrightimage" />
       <p class="copyright" style="margin:-12px;">

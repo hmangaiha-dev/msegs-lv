@@ -2,7 +2,7 @@
  
         <div class="card">
           <img
-            :src="asset('imgsrc')"
+            :src="'..'+imgsrc"
             alt=""
             srcset=""
             class="cardimage"
@@ -15,7 +15,7 @@
             </p>
           </div>
           <div class="cardbutton">
-            <p class="seeproject" ><router-link  to='/projectdetails' > SEE PROJECT <i class="fas fa-long-arrow-alt-right"></i></router-link></p>
+            <p class="seeproject" ><router-link  :to="{name: 'projectdetails', params: { id:id }}" > SEE PROJECT <i class="fas fa-long-arrow-alt-right"></i></router-link></p>
           </div>
         </div>
 
@@ -24,7 +24,7 @@
 
 <script>
 export default {
- props:['title','subtitle','imgsrc'
+ props:['title','subtitle','imgsrc','id'
  ],
  data(){
      return{

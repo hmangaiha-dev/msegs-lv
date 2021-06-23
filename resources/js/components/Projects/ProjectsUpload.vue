@@ -16,7 +16,12 @@
                         <form @submit="formSubmit" enctype="multipart/form-data">
             <input type="text" name="title" class="form-control" id="title" placeholder="Enter Post Title" v-model="title"/>
 
-            <input type="text" name="subtitle" class="form-control" v-model="subtitle"/>
+            <input type="text" name="subtitle" class="form-control" placeholder="Subtitle" v-model="subtitle"/>
+            <input type="text" name="client" class="form-control"  placeholder="Client" v-model="client"/>
+            <input type="text" name="hostedat" class="form-control" placeholder="Hosted at" v-model="hostedat"/>
+            <input type="text" name="developedby" class="form-control" placeholder="Develoepd by" v-model="developedby"/>
+            <input type="text" name="goals" class="form-control" placeholder="Goals" v-model="goals"/>
+
             <textarea type="text" name="contents" class="form-control" v-model="contents"></textarea>
 
 
@@ -40,7 +45,12 @@ import axios from 'axios';
                 subtitle:'',
                 contents:'',
                 file: '',
-                success: ''
+                success: '',
+
+                client:'',
+        hostedat:'',
+        developedby:'',
+        goals:'',
             };
         },
         methods: {

@@ -2,27 +2,28 @@
   <div style="margin-top:-1rem">
     <div class="details">
       <p class="headings " style="margin:auto">Project Details</p>
-      <p style="color: #707070;font-size:12px;"><router-link to="/projects" style="text-decoration:underline;color:#707070">Projects</router-link> / e-District</p>
+      <p style="color: #707070;font-size:12px;"><router-link to="/projects" style="text-decoration:underline;color:#707070">Projects</router-link> / {{title}}</p>
     </div>
     <div class="container">
       <div class="detailsrows">
         <div class="col1">
           <div class="detailscard">
             <p class="detailstitle">
-              e-District
+              {{title}}
             </p>
             <hr style="opacity:30%">
             <div class="detailscardcontainer">
+              <!-- ///// -->
               <div class="detailscardrows">
                 <div class="detailscardcol1">
                   Client
                 </div>
-
                 <div class="detailscardcol2">
-                  Department of Information & Communication Technology,
-                  Government of Mizoram.
+                  {{client}}
                 </div>
               </div>
+<!-- \\\\\\ -->
+
 
               <div class="detailscardrows">
                 <div class="detailscardcol1">
@@ -30,10 +31,36 @@
                 </div>
 
                 <div class="detailscardcol2">
-                  Mizoram State Data Centre
+                    {{hostedat}}
                 </div>
               </div>
             </div>
+
+            <!-- \\\\\ -->
+
+   <!-- ///// -->
+              <div class="detailscardrows">
+                <div class="detailscardcol1">
+                  Developed by
+                </div>
+                <div class="detailscardcol2">
+                  {{developedby}}
+                </div>
+              </div>
+<!-- \\\\\\ -->
+
+   <!-- ///// -->
+              <div class="detailscardrows">
+                <div class="detailscardcol1">
+                  Goals
+                </div>
+                <div class="detailscardcol2">
+                  {{goals}}
+                </div>
+              </div>
+<!-- \\\\\\ -->
+
+
             <hr style="opacity:30%">
             <div class="detailscardcontainer">
               <div class="detailscardrows">
@@ -63,41 +90,18 @@
 
         <div class="col2">
           <img
-            src="../../assets/edistrict.png"
+            :src="'..'+imagepath"
             alt=""
             srcset=""
             class="col2image"
           />
           <p class="col2heading">
-            Improving district administration enabling to deliver online public
-            service to the citizen through common service centre.
+           {{subtitle}}
           </p>
           <p class="col2contents">
-            This project is funded by Government of India, Ministry of
-            electronics & IT (MeitY) under National e-Governance Plan (NeGP)
-            with the total budget out lay of Rs. 19.23 crore and implemented
-            within 4 years including 3 years operation and maintenance. This
-            project is to radically improve the way districts work and provides
-            services to citizens and automate the complete workflow and internal
-            processes of district administration with the possibility of
-            seamless integration of various departments to e-enable the delivery
-            of services. Reduction of time taken to avail the services by the
-            citizens. One-stop service delivery point in an efficient, reliable
-            and integrated manner through authorised service centre such as
-            Common Service Centres (CSCs), Rural Information Kiosks (RIKs) and
-            e-District Facilitation Centres. Increase transparency in the
-            delivery system - the applicant goes to the authorized service
-            centre does not have to deal with the officials who actually process
-            it and she/he can keep track the application online. Improve
-            processing time of applications in district administration and
-            subordinate offices for providing services to the citizens. Ensure
-            fast processing of public cases/appeals/grievances dissemination of
-            information within the defined service levels. Easy access to
-            government services to common man with minimum procedural
-            formalities through authorised service centre like CSC, RIK and
-            e-District facilitation centre.
+            {{contents}}
           </p>
-           
+          
 
         </div>
       </div>
@@ -107,18 +111,37 @@
 
 <script>
 import axios from 'axios'
+
 export default {
+  
   data(){
     return{
-      texts:null,
-      imagess:null
+      id:'',
+      title:'',
+      subtitle:'',
+      imagepath:'',
+      contents:'',
+      client:'',
+      hostedat:'',
+      developedby:'',
+      goals:'',
     }
   },
   created(){
-    axios.get('https://jsonplaceholder.typicode.com/photos/1').then((response) => {
-  console.log(response.data);
-  this.texts = response.data.title;
-  this.imagess = response.data.thumbnailUrl;
+    this.id = this.$route.params.id;
+    console.log("ID",this.id);
+    axios.get('http://localhost:8000/api/projects/'+this.id).then((response) => {
+  console.log("DATA",response.data);
+  this.title = response.data.title;
+  this.subtitle = response.data.subtitle;
+  this.imagepath = response.data.imagepath;
+  this.contents = response.data.contents;
+    this.client = response.data.client;
+  this.hostedat = response.data.hostedat;
+  this.developedby = response.data.developedby;
+  this.goals = response.data.goals;
+
+
 })
 
   },

@@ -13,6 +13,11 @@ class Projects extends Model
         'subtitle',
         'contents',
         'imagename',
-        'imagepath'
+        'imagepath',
+        
+        'client',
+        'hostedat',
+        'developedby',
+        'goals',
     ];  
 }

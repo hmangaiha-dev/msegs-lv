@@ -33,6 +33,12 @@ class ProjectsController extends Controller
         $project->subtitle = $request->input('subtitle');
         $project->contents = $request->input('contents');
 
+        $project->client = $request->input('client');
+        $project->hostedat = $request->input('hostedat');
+        $project->developedby = $request->input('developedby');
+        $project->goals = $request->input('goals');
+
+
 
         $project->imagename = time().'_'.$request->file->getClientOriginalName();
         $project->imagepath = '/storage/' . $file_path;
