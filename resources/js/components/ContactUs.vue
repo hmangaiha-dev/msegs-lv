@@ -37,25 +37,25 @@
     <div class="formgroups">
         <div class="fields">
 
-            <label for="name" id="labels" class="required">Your Name</label><br>
+            <label for="name" id="labls" class="requird">Your Name</label><br>
         <input type="text" class="formclass" id="name">
         </div>
          <div class="fields">
 
-            <label for="email" id="labels" class="required">Your email address</label><br>
+            <label for="email" id="labls" class="requird">Your email address</label><br>
         <input type="text" class="formclass" id="email">
         </div> <div class="fields">
 
-            <label for="subject" id="labels" class="required">Subject</label><br>
+            <label for="subject" id="labls" class="requird">Subject</label><br>
         <input type="text" class="formclass" id="subject">
         </div> <div class="fields">
 
-            <label for="contactnumber" id="labels" class="required">Your phone number</label><br>
+            <label for="contactnumber" id="labls" class="requird">Your phone number</label><br>
         <input type="text" class="formclass" id="contactnumber">
         </div>
 <div class="fields" style="width:84%">
 
-            <label for="messsage" id="labels" class="required">How can we help you solve your issue</label><br>
+            <label for="messsage" id="labls" class="requird">How can we help you solve your issue</label><br>
         <textarea type="text" rows="5" cols="80" class="formclass" id="message" style="height:5rem"></textarea>
         <a href="" class="submitbutton" style="margin-top:2rem;">SUBMIT</a>
         </div>
@@ -200,7 +200,7 @@ export default {
     // align-content: center;
 }
 
-#labels{
+#labls{
      font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
@@ -211,9 +211,11 @@ export default {
   text-align: left;
   color: #2c3134;
 //   margin:-1rem -8rem 0 0;
-margin:0 0 -1rem 0;
+// margin:0 0 -1rem 0;
+z-index:2;
 }
-.required::after{
+
+.requird::after{
     content: "*";
     color:#f23d46;
 }
@@ -321,7 +323,7 @@ border-color: #f23d46;
     // align-content: center;
 }
 
-#labels{
+#labls{
      font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
@@ -334,7 +336,7 @@ border-color: #f23d46;
 //   margin:-1rem -8rem 0 0;
 margin:0 0 -1rem 0;
 }
-.required::after{
+.requird::after{
     content: "*";
     color:#f23d46;
 }

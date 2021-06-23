@@ -3,9 +3,45 @@
 
     <div class="container">
         <div class="row justify-content-center">
+
+
+ <div class="col auto">
+        <h2 class="text-center">Projects List</h2>
+ 
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Detail</th>
+                <!-- <th>Actions</th> -->
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="project in projects" :key="project.id">
+                <td>{{ project.id }}</td>
+                <td>{{ project.title }}</td>
+                <td>{{ project.subtitle }}</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <!-- <router-link :to="{name: 'edit', params: { id: project.id }}" class="btn btn-success">Edit</router-link> -->
+                        <button class="btn btn-danger" @click="deleteProduct(project.id)">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Laravel Vue JS File Upload Demo</div>
+                    <div class="card-header">PROJECTS UPLOAD</div>
 
                     <div class="card-body">
 
@@ -40,6 +76,7 @@ import axios from 'axios';
     export default {
         data() {
             return {
+                projects:[],
                 name: '',
                 title:'',
                 subtitle:'',
@@ -53,7 +90,21 @@ import axios from 'axios';
         goals:'',
             };
         },
+         created(){
+     this.axios.get('/api/projects/').then((response)=>{
+      console.log(response.data);
+      this.projects=response.data;
+    });
+  },
         methods: {
+             deleteProduct(id) { 
+                this.axios
+                    .delete(`api/projects/${id}`)
+                    .then(response => {
+                        let i = this.projects.map(data => data.id).indexOf(id);
+                        this.projects.splice(i, 1)
+                    });
+            },
             onChange(e) {
                 this.file = e.target.files[0];
             },

@@ -604,7 +604,7 @@ export default {
     
     .navbar {
   margin: 0 20vw 0px 20vw;
-  padding:1rem 0;
+  // padding:1rem 0;
   // padding-bottom:2rem;
 }
     
