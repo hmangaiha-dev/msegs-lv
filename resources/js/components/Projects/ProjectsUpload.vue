@@ -80,7 +80,7 @@ import axios from 'axios';
 
                 data.append('file', this.file);
 
-                this.axios.post('http://127.0.0.1:8000/api/projects', data, config)
+                this.axios.post('/api/projects', data, config)
                     .then(function (res) {
                         existingObj.success = res.data.success;
                     })

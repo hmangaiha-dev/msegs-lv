@@ -54,7 +54,7 @@ export default {
    
   },
   created(){
-     this.axios.get('http://localhost:8000/api/projects/').then((response)=>{
+     this.axios.get('/api/projects/').then((response)=>{
       console.log(response.data);
       this.projects=response.data;
     });

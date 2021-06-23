@@ -131,7 +131,7 @@ export default {
   created(){
     this.id = this.$route.params.id;
     console.log("ID",this.id);
-    axios.get('http://127.0.0.1:8000/api/projects/'+this.id).then((response) => {
+    axios.get('/api/projects/'+this.id).then((response) => {
   console.log("DATA",response.data);
   this.title = response.data.title;
   this.subtitle = response.data.subtitle;
@@ -224,6 +224,8 @@ export default {
   letter-spacing: normal;
   text-align: left;
   color: #76838f;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 
 .col2 {
