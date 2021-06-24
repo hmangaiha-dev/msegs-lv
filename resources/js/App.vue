@@ -73,4 +73,15 @@ export default {
   animation-duration: 0.8s;
   }
 }
+
+
+@media only screen and(min-width:1367px) {
+  .spacing-top {
+    padding-top: 5rem;
+  }
+  // .customclass-enter-active{
+  //     animation: bounceInUp; /* referring directly to the animation's @keyframe declaration */
+  // animation-duration: 0.8s;
+  // }
+}
 </style>

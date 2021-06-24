@@ -603,7 +603,7 @@ export default {
 @media only screen and (min-width:1367px) {
     
     .navbar {
-  margin: 0 20vw 0px 20vw;
+  margin: 0 20vw 0px 18vw;
   // padding:1rem 0;
   // padding-bottom:2rem;
 }

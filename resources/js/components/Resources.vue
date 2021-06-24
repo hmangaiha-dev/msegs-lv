@@ -7,6 +7,7 @@
     <div class="container" style="padding:2rem 0 2rem 0 ;">
       <div class="rows1">
         <div class="resourcescol">
+            <a href="/">
 
           <div class="resourcesitems">
             <div class="resourcescontents">
@@ -21,7 +22,11 @@
              <!-- <a href="../assets/biometri.pdf" download="biometric.pdf">  -->
              <img src="../assets/pdficon.svg" alt="" srcset="" class="pdficon"/>
             </div>
+
           </div>
+            </a>
+
+
 
 
           <div class="resourcesitems">

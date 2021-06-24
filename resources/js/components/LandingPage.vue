@@ -215,8 +215,12 @@
         >
           UPDATES
         </p>
-
+        <div class="updatesrows">
         <img src="../assets/updates.png" alt="" srcset="" class="updateimage" />
+        <div class="updatescontents">
+
+        </div>
+        </div>
       </div>
     </div>
 
@@ -730,6 +734,43 @@ border-color: #f23d46;
   margin-left:10px;
   
    
+}
+@media only screen and (max-width:1366px) {
+    .container{
+        
+        margin:0 16vw 0 16vw;
+    }
+    
+}
+
+/* large screens */
+@media only screen and (min-width:1367px) {
+
+  .landing1image{
+    width:10rem;
+  }
+    .images {
+  width: 30%;
+  max-width:30%;
+  // margin-right: 20px;
+}
+.texts {
+  width:70%;
+  // width: 80rem;
+  // padding: 5rem 1rem 5rem 3rem;
+  // margin:0 4rem 0 4rem;
+  
+}
+.innertexts{
+  margin:6rem 4rem 4rem 16rem;
+  color:red;
+  // margin:auto;
+  // margin-left:38%;
+  // width:10rem;
+  // display: block;
+
+}
+    
 }
 
 }
