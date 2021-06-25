@@ -48,7 +48,7 @@
 
             <div class="directorscontents">
               <p class="designation">Finance Secretary, GoM</p>
-              <p class="directorsname">ShriLalropara, MFAS</p>
+              <p class="directorsname">Shri Lalropara, MFAS</p>
               <p class="directorsinfo">
 Overlooks Finance projects in MSeGS              </p>
               <span class="directorscontacts">
@@ -68,7 +68,7 @@ Overlooks Finance projects in MSeGS              </p>
             />
 
             <div class="directorscontents">
-              <p class="designation">ICT Specia Secretary, GoM</p>
+              <p class="designation">ICT Secretary, GoM</p>
               <p class="directorsname">Shri Lalramsanga Sailo, IRS</p>
               <p class="directorsinfo">
 Governs in-depth functions and activities of MSeGS              </p>
@@ -122,7 +122,7 @@ Governs in-depth functions and activities of MSeGS              </p>
         <div class="thinkcards">
             <p class="thinkdesignation">Board Member & CEO</p>
             <p class="thinknames">Dr. Lalthlamuna</p> 
-            <p class="thinkdept">BE,MS,PhD</p>
+            <p class="thinkdept">BE, MS, PhD</p>
 <!-- 
             <span class="thinkcontacts">
             <i class="fas fa-envelope iconshaperss"></i>
@@ -135,7 +135,7 @@ Governs in-depth functions and activities of MSeGS              </p>
          <div class="thinkcards">
             <p class="thinkdesignation">Administration & Estd.</p>
             <p class="thinknames">Shri Vanlalruata</p> 
-            <p class="thinkdept">m.Com</p>
+            <p class="thinkdept">M Com</p>
 
             <!-- <span class="thinkcontacts">
             <i class="fas fa-envelope iconshaperss"></i>
@@ -173,7 +173,7 @@ Governs in-depth functions and activities of MSeGS              </p>
            <div class="thinkcards">
             <p class="thinkdesignation">Programme Management</p>
             <p class="thinknames">Shri Isaac Zothanpuia</p> 
-            <p class="thinkdept">BE</p>
+            <p class="thinkdept">BE , M Tech I.T</p>
 
             <!-- <span class="thinkcontacts">
             <i class="fas fa-envelope iconshaperss"></i>

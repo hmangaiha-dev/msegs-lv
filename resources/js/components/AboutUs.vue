@@ -20,6 +20,11 @@
 
         <div class="abouttextcol">
           <p class="headings" style="font-size:24px;width:100%">Glimpse of MSeGS</p>
+          <img src="../assets/aboutuslogo.png"
+            alt=""
+            srcset=""
+            class="aboutimagesmobile" 
+          />
           <p class="aboutcontents">
             Mizoram State e-Governance Society (MSeGS) is an autonomous society
             under Government of Mizoram and Non-Profit Organization setup in
@@ -88,6 +93,11 @@
         </div>
         <div class="abouttextcol">
           <p class="headings" style="font-size:24px">Our Vision</p>
+          <img src="../assets/vision.png"
+            alt=""
+            srcset=""
+            class="aboutimagesmobile" 
+          />
           <p class="aboutcontents">
           To help the state government for transforming governance into citizen centric services and provide smart service delivery system.
           </p>
@@ -99,6 +109,11 @@
         
         <div class="abouttextcol">
           <p class="headings" style="font-size:24px">Our Mission</p>
+          <img src="../assets/aboutusmission.png"
+            alt=""
+            srcset=""
+            class="aboutimagesmobile" 
+          />
           <p class="aboutcontents">
               <ul class="aboutlists">
           <li> Creating enterprise architecture and provide smart solution. </li>
@@ -129,6 +144,11 @@
         </div>
         <div class="abouttextcol">
           <p class="headings" style="font-size:24px">Our Objectives</p>
+          <img src="../assets/aboutusobjectives.png"
+            alt=""
+            srcset=""
+            class="aboutimagesmobile" 
+          />
           <p class="aboutcontents">
          <ul class="aboutlists">
 <li>Implementation, monitoring and evaluation of various e-governance projects in the state.</li>
@@ -179,6 +199,9 @@ mounted(){
 </script>
 
 <style lang="scss">
+.aboutimagesmobile{
+  display:none
+}
 .aboutusback {
   background-color: #ececec;
   background-color: #ececec;
@@ -247,8 +270,18 @@ mounted(){
 }
 
 @media screen and(max-width:800px) {
+  div.aboutrows:nth-child(1) > div:nth-child(2) > img:nth-child(2){
+    width:60vw
+  }
+  .aboutimage{
+    display: none;
+  }
+  .aboutimagesmobile{
+    display: block;
+    width:80vw;
+  }
   .aboutimages {
- 
+    display: none;
   width: 100%;
   height:auto
 //   margin: auto;

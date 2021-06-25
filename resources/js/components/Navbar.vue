@@ -334,7 +334,8 @@ export default {
     // margin-left:-0.05rem;
     margin:0;
   padding-left: 1rem;
-  padding-top:4px;
+  padding-top:8px;
+  padding-bottom:8px;
 
   }
 }
