@@ -735,19 +735,21 @@ border-color: #f23d46;
   
    
 }
-@media only screen and (max-width:1366px) {
-    .container{
+// @media only screen and (max-width:1366px) {
+//     .container{
         
-        margin:0 16vw 0 16vw;
-    }
+//         // margin:0 16vw 0 16vw;
+//     }
     
-}
+// }
 
 /* large screens */
-@media only screen and (min-width:1367px) {
-
+@media only screen and (min-width:1366px) {
+.landing1{
+  width:30rem;
+}
   .landing1image{
-    width:10rem;
+    width:10vw;
   }
     .images {
   width: 30%;
