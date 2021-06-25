@@ -17,7 +17,7 @@
     </div>
     <!-- <router-view/> -->
     <!-- </router-view> -->
-    <AccessibilityToolbar></AccessibilityToolbar>
+    <!-- <AccessibilityToolbar></AccessibilityToolbar> -->
     <Footer></Footer>
   </div>
 </template>
@@ -26,7 +26,7 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import AccessibilityToolbar from 'vue-accessibility-toolbar';
+// import AccessibilityToolbar from 'vue-accessibility-toolbar';
 
 import "./assets/msegsstyles.scss";
 
@@ -35,7 +35,7 @@ export default {
   components: {
     Navbar,
     Footer,
-    AccessibilityToolbar,
+    // AccessibilityToolbar,
   },
   created() {
     console.log("router");
