@@ -747,7 +747,7 @@ border-color: #f23d46;
 
 
 }
-@media only screen and (min-width:1366px) {
+@media only screen and (min-width:1367px) {
 
 .texts {
   width:50%;

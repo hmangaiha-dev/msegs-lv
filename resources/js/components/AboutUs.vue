@@ -80,7 +80,7 @@
 <div class="aboutrows">
         <div class="aboutimagecol">
           <img
-            src="../assets/aboutusvision.png"
+            src="../assets/vision.png"
             alt=""
             srcset=""
             class="aboutimages"
@@ -211,14 +211,19 @@ mounted(){
 }
 .aboutimages {
  
-  width: 100%;
-  height:auto
+  width: 80%;
+  height:auto;
+  padding:1rem;
 //   margin: auto;
 }
 .abouttextcol {
   width: 50%;
-  align-items: center;
+  display: flex;
+  flex-direction:column;
+  // align-items: center;
+  justify-content: center;
 }
+
 
 .aboutcontents {
   display: flex;
@@ -242,6 +247,20 @@ mounted(){
 }
 
 @media screen and(max-width:800px) {
+  .aboutimages {
+ 
+  width: 100%;
+  height:auto
+//   margin: auto;
+}
+.abouttextcol {
+  display:block;
+  width: 100%;
+  align-items: center;
+}
+div.abouttextcol:nth-child(n) > p:nth-child(n){
+  min-width:90%;
+}
 
 .aboutrows {
   display: flex;
