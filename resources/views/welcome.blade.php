@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <meta name="theme-color" content="#0a2458" />
         <title>MSeGS</title>
 
         <!-- Fonts -->
@@ -28,7 +28,9 @@
     </head>
     <body class="antialiased">
     <!-- <h1>WELCOME THIS IS WELCOME</h1>      -->
+    
     <div id="app">
+        @yield('content')
     </div>   
     <script src="{{ mix('/js/app.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
