@@ -58,9 +58,7 @@
           <p class="archivetitle">Archive</p>
           <p class="archivedates">2021</p>
           <p class="archivedates">2020</p>
-          <p class="archivedates">2019</p>
-          <p class="archivedates">2018</p>
-          <p class="archivedates">2017</p>
+          
         </div>
       </div>
     </div>
@@ -187,7 +185,9 @@ export default {
 
 @media screen and(max-width:800px){
 //archivemobile selection options
-
+.archivemobile{
+  display: block;
+}
 .archivemobile > label:nth-child(1){
   font-family: PlayfairDisplay;
   font-size: 16px;
