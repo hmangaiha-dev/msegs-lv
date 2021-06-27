@@ -180,6 +180,9 @@ export default {
   color: #2c3134;
   padding-top:1rem;
 }
+.archivemobile{
+  display: none;
+}
 
 
 @media screen and(max-width:800px){
