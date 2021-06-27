@@ -55,11 +55,12 @@ export default {
   justify-content: space-evenly;
 }
 .card {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
+  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
   transition: 0.3s;
   width: 16rem;
   margin:0.5rem;
   min-height:10rem;
+  border:1px solid #E4E5E6;
 
 }
 

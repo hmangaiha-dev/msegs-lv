@@ -16,23 +16,23 @@
         <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/directorsimage.png"
+              src="../assets/dummy.jpg"
               alt=""
               class="directorsimage"
             />
 
             <div class="directorscontents">
-              <p class="designation">Chief Secretary, GoM</p>
+              <!-- <p class="designation">Chief Secretary, GoM</p> -->
               <p class="directorsname">Shri Lalnunmawia Chuaungo, IAS</p>
               <p class="directorsinfo">
-                Overlooks multiple Government projects in MSeGS
+                <!-- Overlooks multiple Government projects in MSeGS -->
+                 Chief Secretary, Government of Mizoram
               </p>
-              <span class="directorscontacts">
-                <!-- <span class="directorscontacticons"> -->
+              <!-- <span class="directorscontacts">
                 <i class="fas fa-envelope iconshapers"></i>
                 <i class="fas fa-phone iconshapers"></i>
                 <i class="fas fa-fax iconshapers"></i>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -41,68 +41,97 @@
         <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/directorsimage.png"
+              src="../assets/dummy.jpg"
               alt=""
               class="directorsimage"
             />
 
             <div class="directorscontents">
-              <p class="designation">Finance Secretary, GoM</p>
-              <p class="directorsname">Shri Lalropara, MFAS</p>
+              <!-- <p class="designation">Finance Secretary, GoM</p> -->
+              <p class="directorsname">Smt L.N Tochhawng, ICAS </p>
               <p class="directorsinfo">
-Overlooks Finance projects in MSeGS              </p>
-              <span class="directorscontacts">
-                <!-- <span class="directorscontacticons"> -->
+<!-- Overlooks Finance projects in MSeGS        
+       -->
+       Finance Commissioner, Finance Department
+</p>
+             <!-- <span class="directorscontacts">
                 <i class="fas fa-envelope iconshapers"></i>
                 <i class="fas fa-phone iconshapers"></i>
                 <i class="fas fa-fax iconshapers"></i>
-              </span>
-            </div>
-          </div>
-        </div><div class="directorscards">
-          <div class="directorsrows">
-            <img
-              src="../assets/directorsimage.png"
-              alt=""
-              class="directorsimage"
-            />
-
-            <div class="directorscontents">
-              <p class="designation">ICT Secretary, GoM</p>
-              <p class="directorsname">Shri Lalramsanga Sailo, IRS</p>
-              <p class="directorsinfo">
-Governs in-depth functions and activities of MSeGS              </p>
-              <span class="directorscontacts">
-                <!-- <span class="directorscontacticons"> -->
-                <i class="fas fa-envelope iconshapers"></i>
-                <i class="fas fa-phone iconshapers"></i>
-                <i class="fas fa-fax iconshapers"></i>
-              </span>
-            </div>
-          </div>
-        </div><div class="directorscards">
-          <div class="directorsrows">
-            <img
-              src="../assets/directorsimage.png"
-              alt=""
-              class="directorsimage"
-            />
-
-            <div class="directorscontents">
-              <p class="designation">Planning Specia Secretary, GoM</p>
-              <p class="directorsname">Shri Lalmalsawma Pachuau</p>
-              <p class="directorsinfo">
-                Overlooks multiple Government projects in MSeGS
-              </p>
-              <span class="directorscontacts">
-                <!-- <span class="directorscontacticons"> -->
-                <i class="fas fa-envelope iconshapers"></i>
-                <i class="fas fa-phone iconshapers"></i>
-                <i class="fas fa-fax iconshapers"></i>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
+        
+        <div class="directorscards">
+          <div class="directorsrows">
+            <img
+              src="../assets/lalmalsawma.jpg"
+              alt=""
+              class="directorsimage"
+            />
+
+            <div class="directorscontents">
+              <!-- <p class="designation">ICT Secretary, GoM</p> -->
+              <p class="directorsname">Shri Lalmalsawma Pachuau, IRS </p>
+              <p class="directorsinfo">
+                Secretary, Planning & Programme Implementation Department
+</p>
+           <!-- <span class="directorscontacts">
+                <i class="fas fa-envelope iconshapers"></i>
+                <i class="fas fa-phone iconshapers"></i>
+                <i class="fas fa-fax iconshapers"></i>
+              </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="directorscards">
+          <div class="directorsrows">
+            <img
+              src="../assets/dummy.jpg"
+              alt=""
+              class="directorsimage"
+            />
+
+            <div class="directorscontents">
+              <!-- <p class="designation">Planning Specia Secretary, GoM</p> -->
+              <p class="directorsname">Shri K. Lalthawmmawia, IAS</p>
+              <p class="directorsinfo">
+DP&AR Secretary
+              </p>
+             <!-- <span class="directorscontacts">
+                <i class="fas fa-envelope iconshapers"></i>
+                <i class="fas fa-phone iconshapers"></i>
+                <i class="fas fa-fax iconshapers"></i>
+              </span> -->
+            </div>
+          </div>
+        </div>
+
+
+         <div class="directorscards">
+          <div class="directorsrows">
+            <img
+              src="../assets/dummy.jpg"
+              alt=""
+              class="directorsimage"
+            />
+
+            <div class="directorscontents">
+              <!-- <p class="designation">ICT Secretary, GoM</p> -->
+              <p class="directorsname">Shri Lalramsanga Sailo, IRS</p>
+              <p class="directorsinfo">
+                Secretary, ICT Department
+</p>
+              <!-- <span class="directorscontacts">
+                <i class="fas fa-envelope iconshapers"></i>
+                <i class="fas fa-phone iconshapers"></i>
+                <i class="fas fa-fax iconshapers"></i>
+              </span> -->
+            </div>
+          </div>
+        </div>
+
        
 
 
@@ -191,11 +220,11 @@ Governs in-depth functions and activities of MSeGS              </p>
     <div class="imageheroes">
 
     <img src="../assets/imagehero.png" alt="" srcset="" style="height:auto;width:100%">
-<span class="contactusing">
+<div class="contactusing">
 <p class="headings" style="color:white;">Want to get in touch?</p>
-<span class="imageheroesbutton">Contact Us</span>
+<span class="imageheroesbutton">CONTACT US</span>
 
-</span>
+</div>
     </div>
 
   </div>
@@ -221,7 +250,7 @@ export default {
 }
 .directorscards {
   width: 24rem;
-  height: 12rem;
+  height: 10rem;
 //   margin: 28px 16.5px 20.5px 180px;
 margin:0.5rem;
 //   padding: 0 17px 0 0;
@@ -237,7 +266,7 @@ margin:0.5rem;
 }
 .directorsimage {
   width: 32%;
-  height: 12rem;
+  height: 10rem;
   //   margin: 0 12.5px 0 0;
   //   object-fit: contain;
 }
@@ -245,6 +274,9 @@ margin:0.5rem;
   width: 68%;
   margin-left: 8px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .designation {
   margin: 18.5px 36.5px 0.5px 13px;
@@ -259,9 +291,11 @@ margin:0.5rem;
   color: #7e7e7e;
 }
 .directorsname {
-  margin: 10px 0 2.5px 12.5px;
+  overflow: wrap;
+  // margin: 10px 0 2.5px 12.5px;
+  padding:0 8px;
   font-family: "Playfair Display";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -271,9 +305,13 @@ margin:0.5rem;
   color: #2c3134;
 }
 .directorsinfo {
-  margin: 2.5px 3.5px 16.5px 12.5px;
+  overflow: wrap;
+
+  // margin: 2.5px 3.5px 16.5px 12.5px;
+  padding:0 8px;
+
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -404,25 +442,49 @@ margin-top:10px;
     position: absolute;
     z-index:2;
     top: 50%;
-    right:30%;
-    // text-align: center;
+    // right:30%;
+text-align: center;
+
+    margin-left: auto;
+margin-right: auto;
+left: 50%;
+// right: 50%;
 }
 
 .imageheroesbutton{
-     width: 8rem;
-  height: 25px;
-  margin: 20px 74.5px 0 75px;
-  padding: 6.5px 4.2px 6.5px 4.2px;
-  border-radius: 2.5px;
-  background-color: #f23d46;
-  color: white;
   text-align: center;
-}
+  //    width: 8rem;
+  // height: 25px;
+  // margin: 20px 74.5px 0 75px;
+  // padding: 6.5px 4.2px 6.5px 4.2px;
+  padding: 8px 16px;
 
+border-color: #f23d46;
+  border-radius: 6px;
+  background-color: #f23d46;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+// .imageheroesbutton:hover{
+//     // box-shadow: 1px 2px 10px rgba($color: #000000, $alpha: 0.5);
+//     // opacity:95%;
+//     background-color: transparent;
+//     color:#f23d46;
+//     border:1px solid #f23d46;
+// }
 @media screen and(max-width:800px){
   .directorscards {
   width: 100%;
-  height: 12rem;
+  height: 10rem;
 //   margin: 28px 16.5px 20.5px 180px;
 margin:0.5rem;
 //   padding: 0 17px 0 0;
@@ -433,8 +495,8 @@ margin:0.5rem;
 }
 .directorsimage {
   width: 32%;
-  height: 12rem;
-  padding:0 4px;
+  height: 10rem;
+  // padding:0 4px;
   //   margin: 0 12.5px 0 0;
   //   object-fit: contain;
 }

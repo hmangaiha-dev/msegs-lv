@@ -2,4 +2,4 @@
 
 @section('content')
 
-@endsection('content')
+<h1>HELLO</h1>

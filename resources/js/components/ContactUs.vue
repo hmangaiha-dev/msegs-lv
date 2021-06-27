@@ -5,18 +5,21 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6420.56316980707!2d92.71281672098596!3d23.726354004446403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374d94c7752e1de9%3A0xfabe21a09a0936d0!2sMizoram%20State%20e-Governance%20Society!5e0!3m2!1sen!2sin!4v1623352949599!5m2!1sen!2sin" width="100%" height="350" style="border:0;margin-top:-14px;margin-bottom:1rem" allowfullscreen="" loading="lazy"></iframe>
 <div class="container" style="display:flex;flex-direction:row;justify-content:center;align-items:center;align-contents:center">
     <div class="inforows">
-        <div class="infocols">
-            <img src="../assets/address.png" alt="" srcset="" class="addressimage">
-            <p class="addresstitle">Address</p>
-            <p class="addressdesc">
-               Old Secretariat building - I, Treasury Square
-            </p>
-        </div>
+        
 
         <div class="infocols">
             <img src="../assets/mail.png" alt="" srcset="" class="addressimage">
             <p class="addresstitle">Email</p>
             <p class="addressdesc">info@msegs.in</p>
+        </div>
+        <div class="infocols">
+            <img src="../assets/address.png" alt="" srcset="" class="addressimage">
+            <p class="addresstitle">Address</p>
+            <span class="addressdesc" style="width:100%">
+               <p >Old Secretariat building - I, Treasury Square</p>
+               <br>
+               Aizawl, Mizoram -796001
+            </span>
         </div>
 
         <div class="infocols">
@@ -57,7 +60,7 @@
 
             <label for="messsage" id="labls" class="requird">How can we help you solve your issue</label><br>
         <textarea type="text" rows="5" cols="80" class="formclass" id="message" style="height:5rem"></textarea>
-        <a href="" class="submitbutton" style="margin-top:2rem;">SUBMIT</a>
+        <a href="" class="submittingbutton" style=" margin-top:2rem;" >SUBMIT</a>
         </div>
 
         
@@ -108,14 +111,14 @@ export default {
     border-right:1px solid rgba(black,0.1);
     padding-left:4.1rem;
     padding-right:4.21rem;
-    width:8rem;
+    width:auto;
 
    
 }
 
 
 .addressimage{
-    width:30%;
+    width:60px;
     margin:auto
 }
 
@@ -219,30 +222,16 @@ z-index:2;
     content: "*";
     color:#f23d46;
 }
-.submitbutton{
-      width: 16rem;
-  height: 25px;
-  
+.submittingbutton{
+      // width: 12rem;
+  // height: 25px;
+  padding: 8px 16px;
+
+ 
   margin:auto;
-  padding: 6.5px 0 5px;
-//   border-radius: 2.5px;
-//   background-color: #dc3d32;
-//   text-align: center;
-//   font-size: 16px;
-//   text-decoration: none;
-//   color:white;
-//   font-family: Poppins;
-// //   font-size: 8px;
-//   font-weight: 600;
-//   font-stretch: normal;
-//   font-style: normal;
-//   line-height: 1.56;
-//   letter-spacing: normal;
-//   text-align: center;
-//   color: #ffffff;
+  // padding: 6.5px 0 5px 0;
 
-
-border-color: #f23d46;
+border:1px solid #f23d46;
   border-radius: 6px;
   background-color: #f23d46;
   font-family: Poppins;
@@ -256,18 +245,33 @@ border-color: #f23d46;
   color: #ffffff;
   text-decoration: none;
   // transition:opacity 3s;
-  transition-delay: 0.09s;
-  transition-timing-function: ease-in;
+  // transition-delay: 0.09s;
+  // transition-timing-function: ease-in;
 }
-.submitbutton:hover{
+.submittingbutton:hover{
     // box-shadow: 1px 2px 10px rgba($color: #000000, $alpha: 0.5);
     // opacity:95%;
     background-color: white;
     color:#f23d46;
     border: 1px solid #f23d46;;
 }
+//address texts
+  span.addressdesc > p:nth-child(1){
+  display: inline;
+  white-space: nowrap;
+  }
 
 @media screen and (max-width:800px){
+  // addresstexts
+  
+  span.addressdesc > p:nth-child(1){
+    // background: gold;
+    display:initial;
+    // flex-wrap: wrap;
+    white-space:wrap;
+    width:5vw;
+      // word-wrap: break-word;
+  }
 
   .container{
     margin:auto;
@@ -294,7 +298,7 @@ border-color: #f23d46;
    
 }
 .formgroups{
-    margin:0 1rem 4rem 1rem;
+    margin:0 0.5rem 4rem 0.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -317,7 +321,7 @@ border-color: #f23d46;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin:2rem 1rem 0 1rem;
+    margin:2rem 1.5rem 0 1.5rem;
     // align-items: stretch;
     // justify-content: center;
     // align-content: center;

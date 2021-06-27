@@ -85,7 +85,9 @@ margin:1rem;
 // padding-right:10px;
 //   padding: 0 17px 0 0;
   border-radius: 2.5px;
-  box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
+  // box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
+  border:1px solid #E4E5E6;
+
   border: solid 0.5px #e4e5e6;
   background-color: #ffffff;
   display: flex;

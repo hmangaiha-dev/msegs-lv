@@ -14,6 +14,13 @@ import page404 from './components/page404'
 import ProjectDetails from './components/Projects/ProjectDetails'
 import ProjectsUpload from './components/Projects/ProjectsUpload'
 
+import Login from './components/Dashboard/Login'
+import Register from './components/Dashboard/Register'
+import Dashboard from './components/Dashboard/Dashboard'
+import axios from "axios";
+
+
+
 
 
 
@@ -76,6 +83,31 @@ const routes =[
             name:'projectsupload',
             component:ProjectsUpload
 
+        },
+        {
+            path:'/login',
+            name:'login',
+            component:Login
+
+        },
+        {
+            path:'/register',
+            name:'register',
+            component:Register
+
+        },
+        {
+            path:'/dashboard',
+            name:'dashboard',
+            component:Dashboard,
+            beforeEnter:(to,from,next)=>{
+                axios.get('/api/authenticated').then(()=>{
+                    next();
+                }).catch(()=>{
+                    return next({name:'login'})
+                })
+            }
+
         }
     ]
 
@@ -89,7 +121,7 @@ const routes =[
 //     routes // short for `routes: routes`
 //  });
 
-const router = createRouter({ history: createWebHistory(process.env.BASE_URL),
+const router = createRouter({ 'history': createWebHistory(),
     mode: 'history',
     routes,
     // scrollBehavior(to) {

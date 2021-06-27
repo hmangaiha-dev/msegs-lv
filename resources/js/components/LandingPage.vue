@@ -213,7 +213,7 @@
           class="headings"
           style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
         >
-          UPDATES
+          What's New
         </p>
         <div class="updatesrows">
         <img src="../assets/updates.png" alt="" srcset="" class="updateimage" />

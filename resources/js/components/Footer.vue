@@ -4,7 +4,7 @@
   <div>
     <div class="topfooter" >
       <div class="submenus" >
-        <p class="footerheadings">Belongs to</p>
+        <!-- <p class="footerheadings">Belongs to</p>
         <div class="belongsrows">
           <img
             src="../assets/icttext.png"
@@ -13,13 +13,13 @@
             style="width:20rem;"
           />
           <p></p>
-        </div>
+        </div> -->
 
         <p class="footerheadings">Follow us at social media</p>
         <div class="socialmediarows">
-        <a href="https://www.facebook.com/msegsdict">  <img src="../assets/fb.png" alt="" srcset="" class="socialicons" /></a>
-           <a href="https://www.instagram.com/msegs_dict/"> <img src="../assets/ig.png" alt="" srcset="" class="socialicons" /></a>
-         <a href="https://twitter.com/MsegsD"> <img src="../assets/tw.png" alt="" srcset="" class="socialicons" /></a>
+        <a href="https://www.facebook.com/msegsdict" target="_blank" >  <img src="../assets/fb.png" alt="" srcset="" class="socialicons" /></a>
+           <a href="https://www.instagram.com/msegs_dict/" target="_blank" > <img src="../assets/ig.png" alt="" srcset="" class="socialicons" /></a>
+         <a href="https://twitter.com/MsegsD" target="_blank" > <img src="../assets/tw.png" alt="" srcset="" class="socialicons" /></a>
         </div>
       </div>
 
@@ -53,11 +53,15 @@
           <p class="footerheadings ripple" style="align-items:center" v-on:click="dropdown2" >Others <span style="position:absolute;right:30px;" :class="{arrow:arrow2,right:right2,down:down2}"></span></p>
           <div :class="{active:isActive2}">
         <div class="footerlinks">
-          <span><router-link to="/page404">Employee Login</router-link></span>
+          <!-- <span><router-link to="/login">Employee Login</router-link></span> -->
           <span><router-link to="/page404">Tender</router-link></span>
           <span><router-link to="/page404">Career</router-link></span>
           <span><router-link to="/page404">Contact us</router-link></span>
-          <span><router-link to="/projectsupload">Contact</router-link></span>
+          <!-- <span><router-link to="/projectsupload">Contact</router-link></span> -->
+          <!-- <span><router-link to="/register">Reg</router-link></span> -->
+          <!-- <span><router-link to="/dashboard">Dashboard</router-link></span> -->
+
+
 
         </div>
         </div>
@@ -127,6 +131,13 @@ export default {
 #app > div > div:nth-child(3) > div.topfooter{
   margin: 0rem 12vw 0px 12vw;
   
+}
+
+// footerhovereffect
+
+div.submenus:nth-child(n) > div:nth-child(n) > div:nth-child(n) > span:nth-child(n) > a:nth-child(n):hover{
+color:#dc3d32;
+
 }
 .arrow {
  display: none;

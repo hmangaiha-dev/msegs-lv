@@ -45,7 +45,15 @@
 
 
         </div>
-
+<div class="archivemobile">
+   <label for="year">Archive</label>
+  <select name="year" id="year">
+    <option value="1">2021</option>
+    <option value="2">2020</option>
+    <option value="3">2019</option>
+    <option value="4">2018</option>
+  </select>
+</div>
         <div class="archivecol">
           <p class="archivetitle">Archive</p>
           <p class="archivedates">2021</p>
@@ -101,7 +109,9 @@ export default {
   flex-direction: row;
   padding: 6px 10.5px 8.5px 24.5px;
   border-radius: 2.5px;
-  border: solid 0.5px #e8e8e8;
+  // border: solid 0.5px #e8e8e8;
+  border:1px solid #E4E5E6;
+
   background-color: #ffffff;
   align-items: center;
   margin-bottom:10px;
@@ -173,6 +183,37 @@ export default {
 
 
 @media screen and(max-width:800px){
+//archivemobile selection options
+
+.archivemobile > label:nth-child(1){
+  font-family: PlayfairDisplay;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3134;
+}
+#year{
+  width:100%;
+  border:1px solid #E4E5E6;
+  padding:1rem 0;
+  padding-left:1rem;
+  border-radius: 6px;
+ font-family: Poppins;
+  font-size: 14px;
+  color: #2c3134;
+  
+  }
+  #year > option:nth-child(n){
+    width:100%;
+  border:1px solid #E4E5E6;
+  padding:1rem 0;
+  padding-left:1rem;
+ font-family: Poppins;
+  font-size: 14px;
+  color: #2c3134;
+  box-shadow: none;
+  
+  }
+  //container
  #app > div > div.spacing-top > div > div.container {
    margin:0 8vw;
  }
