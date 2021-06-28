@@ -16,7 +16,7 @@
         <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/dummy.jpg"
+              src="../assets/cs.jpg"
               alt=""
               class="directorsimage"
             />
@@ -41,14 +41,14 @@
         <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/dummy.jpg"
+              src="../assets/finance.jpg"
               alt=""
               class="directorsimage"
             />
 
             <div class="directorscontents">
               <!-- <p class="designation">Finance Secretary, GoM</p> -->
-              <p class="directorsname">Smt L.N Tochhawng, ICAS </p>
+              <p class="directorsname">Shri Vanlalchhuanga, IA&ASS </p>
               <p class="directorsinfo">
 <!-- Overlooks Finance projects in MSeGS        
        -->
@@ -88,7 +88,7 @@
         <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/dummy.jpg"
+              src="../assets/dpar.jpg"
               alt=""
               class="directorsimage"
             />
@@ -112,7 +112,7 @@ DP&AR Secretary
          <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/dummy.jpg"
+              src="../assets/ict.jpg"
               alt=""
               class="directorsimage"
             />
@@ -245,7 +245,9 @@ export default {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
 //   background: red;
 }
 .directorscards {
