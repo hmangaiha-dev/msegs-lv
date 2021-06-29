@@ -9,35 +9,35 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col auto">
-                <h2 class="text-center">Projects List</h2>
+                <h2 class="text-center">Resources List</h2>
 
                 <table class="table">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Title</th>
-                            <th>Detail</th>
+                            <th>Date</th>
                             <!-- <th>Actions</th> -->
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="project in projects" :key="project.id">
-                            <td>{{ project.id }}</td>
-                            <td>{{ project.title }}</td>
-                            <td>{{ project.subtitle }}</td>
+                        <tr v-for="resources in resourcess" :key="resources.id">
+                            <td>{{ resources.id }}</td>
+                            <td>{{ resources.title }}</td>
+                            <td>{{ resources.date }}</td>
                             <td>
                                 <div class="btn-group" role="group">
-                                    <router-link
+                                    <!-- <router-link
                                         :to="{
-                                            name: 'projectsupdate',
-                                            params: { id: project.id },
+                                            name: 'resourcessupdate',
+                                            params: { id: resources.id },
                                         }"
                                         class="btn btn-success"
                                         >Edit</router-link
-                                    >
+                                    > -->
                                     <button
                                         class="btn btn-danger"
-                                        @click="deleteProduct(project.id)"
+                                        @click="deleteProduct(resources.id)"
                                     >
                                         Delete
                                     </button>
@@ -73,44 +73,16 @@
                             />
 
                             <input
-                                type="text"
-                                name="subtitle"
+                                type="date"
+                                name="date"
                                 class="form-control"
                                 placeholder="Subtitle"
-                                v-model="subtitle"
+                                v-model="date"
                             />
-                            <input
-                                type="text"
-                                name="client"
-                                class="form-control"
-                                placeholder="Client"
-                                v-model="client"
-                            />
-                            <input
-                                type="text"
-                                name="hostedat"
-                                class="form-control"
-                                placeholder="Hosted at"
-                                v-model="hostedat"
-                            />
-                            <input
-                                type="text"
-                                name="developedby"
-                                class="form-control"
-                                placeholder="Develoepd by"
-                                v-model="developedby"
-                            />
-                            <input
-                                type="text"
-                                name="goals"
-                                class="form-control"
-                                placeholder="Goals"
-                                v-model="goals"
-                            />
+                          
 
                             <!-- <textarea type="text" name="contents" class="form-control" v-model="contents"></textarea>
              -->
-                            <vue-editor v-model="contents" />
 
                             <input
                                 type="file"
@@ -128,38 +100,33 @@
 </template>
 
 <script>
-import { VueEditor } from "vue3-editor";
 
 export default {
-    components: { VueEditor },
 
     data() {
         return {
-            projects: [],
-            name: "",
+            resourcess: [],
+            
             title: "",
-            subtitle: "",
-            contents: "",
+            date: "",
+       
             file: "",
             success: "",
 
-            client: "",
-            hostedat: "",
-            developedby: "",
-            goals: "",
+          
         };
     },
     created() {
-        this.axios.get("/api/projects/").then((response) => {
+        this.axios.get(`/api/resources/index`).then((response) => {
             console.log(response.data);
-            this.projects = response.data;
+            this.resourcess = response.data;
         });
     },
     methods: {
         deleteProduct(id) {
-            this.axios.delete(`api/projects/${id}`).then((response) => {
-                let i = this.projects.map((data) => data.id).indexOf(id);
-                this.projects.splice(i, 1);
+            this.axios.delete(`api/resources/${id}`).then((response) => {
+                let i = this.resourcess.map((data) => data.id).indexOf(id);
+                this.resourcess.splice(i, 1);
             });
         },
         onChange(e) {
@@ -177,17 +144,11 @@ export default {
 
             let data = new FormData();
             data.append("title", this.title);
-            data.append("subtitle", this.subtitle);
-            data.append("contents", this.contents);
-            data.append("client", this.client);
-            data.append("hostedat", this.hostedat);
-            data.append("developedby", this.developedby);
-            data.append("goals", this.goals);
-
+            data.append("date", this.date);
             data.append("file", this.file);
 
             this.axios
-                .post("/api/projects", data, config)
+                .post(`/api/resources/store`, data, config)
                 .then(function (res) {
                     existingObj.success = res.data.success;
                 })

@@ -31,7 +31,7 @@ class ProjectsController extends Controller
 
         $project->title = $request->input('title');
         $project->subtitle = $request->input('subtitle');
-        $project->contents = $request->input('contents');
+        $project->contents = $request['contents'];
 
         $project->client = $request->input('client');
         $project->hostedat = $request->input('hostedat');

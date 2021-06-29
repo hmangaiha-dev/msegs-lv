@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\ResourcesController;
+
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 
@@ -31,6 +33,17 @@ Route::middleware('api')->group(function () {
     Route::resource('projects', ProjectsController::class);
 });
 
+// Route::middleware('api')->group(function () {
+//     Route::resource('resources', ResourcesController::class);
+// });
+
 Route::post('register','App\Http\Controllers\RegisterController@register');
 Route::post('login','App\Http\Controllers\LoginController@login');
 Route::post('logout','App\Http\Controllers\LoginController@logout');
+
+Route::get('resources/index','App\Http\Controllers\ResourcesController@index');
+Route::post('resources/store','App\Http\Controllers\ResourcesController@store');
+Route::delete('resources/{id} ','App\Http\Controllers\ResourcesController@destroy');
+
+
+

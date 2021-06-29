@@ -5,16 +5,15 @@
     </div>
 
     <div class="container" style="padding:2rem 0 2rem 0 ;">
-      <div class="rows1">
+      <div class="rows1" v-for="resource in resources" :key="resource.id">
         <div class="resourcescol">
-            <a href="/">
+            <a :href="resource.path" target=_blank>
 
           <div class="resourcesitems">
             <div class="resourcescontents">
-              <p class="resourcescontentsdate">20th May 2020</p>
+              <p class="resourcescontentsdate">{{resource.date}}</p>
               <p class="resourcescontentstexts">
-                Notice for Empanelment of Service provider agencies for
-                organizing Virtual Events
+                {{resource.title}}
               </p>
             </div>
 
@@ -69,7 +68,18 @@
 export default {
   mounted(){
     window.scrollTo(0,0);
-  }
+  },
+    data() {
+        return {
+            resources: [],        
+        };
+    },
+   created() {
+        this.axios.get(`/api/resources/index`).then((response) => {
+            console.log(response.data);
+            this.resources = response.data;
+        });
+    },
 };
 </script>
 

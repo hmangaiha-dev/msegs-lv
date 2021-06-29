@@ -13,6 +13,12 @@ import page404 from './components/page404'
 
 import ProjectDetails from './components/Projects/ProjectDetails'
 import ProjectsUpload from './components/Projects/ProjectsUpload'
+import ProjectsUpdate from './components/Projects/ProjectsUpdate'
+
+
+import ResourcesUpload from './components/Resources/ResourcesUpload'
+
+
 
 import Login from './components/Dashboard/Login'
 import Register from './components/Dashboard/Register'
@@ -53,6 +59,11 @@ const routes =[
             component:Resources
         },
         {
+            path:'/resourcesupload',
+            name:'resourcesupload',
+            component:ResourcesUpload
+        },
+        {
             path:'/aboutus',
             name:'aboutus',
             component:AboutUs
@@ -82,6 +93,12 @@ const routes =[
             path:'/projectsupload',
             name:'projectsupload',
             component:ProjectsUpload
+
+        },
+        {
+            path:'/projectsupdate/:id',
+            name:'projectsupdate',
+            component:ProjectsUpdate
 
         },
         {

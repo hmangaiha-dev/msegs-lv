@@ -39,7 +39,7 @@
           />
         </div>
         <div class="glimpse2 " data-aos="fade-left" style="color:white" >
-          <p class="headings" style="color:white">Glimpse of MSeGS</p>
+          <p class="headings" style="color:white;">Glimpse of MSeGS</p>
           <p class="contents" style="color:white" id="glimpsetext">
             Mizoram State e-Governance Society (MSeGS) is an autonomous society
             under Government of Mizoram and Non-Profit Organization setup in
@@ -167,7 +167,7 @@
           class="headings"
           style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
         >
-          OUR PROFILE
+          Our Profile
         </p>
         <div class="ourprofilerows">
           <div class="ourprofileitems">
@@ -176,15 +176,16 @@
 
              </p>
            
-            <p id="ourprofilecontent">years of experience</p>
+            <p id="ourprofilecontent">Years of experience</p>
           </div>
-          <div class="ourprofileitems">
+           <div class="ourprofileitems">
             <p id="ourprofilenumber">
-                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='500' :duration='3' prefix='' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='6' :duration='3' prefix='0' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
+              
               
               </p>
            
-            <p id="ourprofilecontent">Project lauched to GoM</p>
+            <p id="ourprofilecontent">Awards</p>
           </div>
           <div class="ourprofileitems">
             <p id="ourprofilenumber">
@@ -194,14 +195,14 @@
         
             <p id="ourprofilecontent">Employees</p>
           </div>
+         
           <div class="ourprofileitems">
             <p id="ourprofilenumber">
-                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='6' :duration='3' prefix='0' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
-              
+                <vue3-autocounter ref='counter' :startAmount='0' :endAmount='500' :duration='3' prefix='' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
               
               </p>
            
-            <p id="ourprofilecontent">Awards</p>
+            <p id="ourprofilecontent">Projects launched under Govt. of Mizoram</p>
           </div>
         </div>
       </div>

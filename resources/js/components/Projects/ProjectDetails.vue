@@ -100,7 +100,7 @@
            {{subtitle}}
           </p>
           <p class="col2contents">
-            {{contents}}
+            <span v-html="contents"></span>
           </p>
           
 

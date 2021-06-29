@@ -35,32 +35,16 @@ export default {
 </script>
 
 <style lang="scss">
-.projects {
-  margin-top: -1rem;
-  z-index: 0;
-}
-.projectsback {
-  background-color: #ececec;
-  padding-top:3rem;
-  padding-bottom: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.projectsrows {
-  padding: 2rem 0 2rem 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+
 .card {
   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
   transition: 0.3s;
   width: 16rem;
-  margin:0.5rem;
+  margin:1rem;
   min-height:10rem;
+  height:26rem;
   border:1px solid #E4E5E6;
+  position: relative;
 
 }
 
@@ -101,6 +85,10 @@ export default {
 }
 
 .cardtexts {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
   font-family: Poppins;
   font-size: 14px;
   font-weight: normal;
@@ -113,9 +101,17 @@ export default {
 }
 
 .cardbutton {
+  position:absolute;
+  bottom:0;
+  width:100%;
   background-color: rgba(10, 10, 10, 0.04);
   height: 50px;
-  margin-top: 1rem;
+  // margin-top: 1rem;
+  
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  
   // margin-top:-1.8rem;
 }
 
@@ -144,7 +140,63 @@ export default {
   .card{
     width:90%;
     margin-bottom:12px;
+    transition: 0.3s;
+  width: 16rem;
+  margin:0.5rem;
+  min-height:10rem;
+  height:26rem;
+  border:1px solid #E4E5E6;
+  position: relative;
   }
   
+.cardtexts {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #76838f;
+}
+
+
+  .cardbutton {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background-color: rgba(10, 10, 10, 0.04);
+  height: 50px;
+  // margin-top: 1rem;
+  
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  
+  // margin-top:-1.8rem;
+}
+
+  @media only screen and (min-width:1367px) {
+
+    
+.card {
+  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
+  transition: 0.3s;
+  width: 380px;
+  margin:0.5rem 15px;
+  min-height:10rem;
+  height:540px;
+  border:1px solid #E4E5E6;
+  position: relative;
+
+}
+
+
+  }
 }
 </style>

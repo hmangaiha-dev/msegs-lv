@@ -37,11 +37,11 @@ export default {
     Footer,
     // AccessibilityToolbar,
   },
-  created() {
-    console.log("router");
-    this.$router.push({ path: "/" });
-    console.log("router" + this.$router);
-  },
+  // created() {
+  //   console.log("router");
+  //   this.$router.push({ path: "/" });
+  //   console.log("router" + this.$router);
+  // },
 };
 </script>
 
