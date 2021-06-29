@@ -48,7 +48,7 @@
 
             <div class="directorscontents">
               <!-- <p class="designation">Finance Secretary, GoM</p> -->
-              <p class="directorsname">Shri Vanlalchhuanga, IA&ASS </p>
+              <p class="directorsname">Shri Vanlalchhuanga, IA&IASS </p>
               <p class="directorsinfo">
 <!-- Overlooks Finance projects in MSeGS        
        -->
