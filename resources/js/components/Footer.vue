@@ -43,7 +43,7 @@
 
         <div class="footerlinks">
           <span><router-link to="/page404">Engaging with MSeGS</router-link></span>
-          <span><router-link to="/page404">Act & Rdives</router-link></span>
+          <span><router-link to="/page404">Act & Rules</router-link></span>
           <span><router-link to="/page404">RTI</router-link></span>
         </div>
         </div>

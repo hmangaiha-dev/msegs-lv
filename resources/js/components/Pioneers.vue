@@ -10,7 +10,7 @@
         class="headings"
         style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
       >
-        BOARD OF DIRECTORS
+        BOARD MEMBERS
       </p>
       <div class="boardrows">
         <div class="directorscards">
@@ -112,7 +112,7 @@ DP&AR Secretary
          <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/ict.jpg"
+              src="../assets/ictsecy.jpg"
               alt=""
               class="directorsimage"
             />
