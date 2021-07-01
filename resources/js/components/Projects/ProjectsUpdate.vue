@@ -64,6 +64,14 @@
                         placeholder="Goals"
                         v-model="project.goals"
                     />
+                     <input
+                                type="text"
+                                name="date"
+                                class="form-control"
+                                placeholder="Date"
+                                v-model="project.date"
+                            />
+
 
                     <!-- <textarea type="text" name="contents" class="form-control" v-model="contents"></textarea>
              -->
@@ -73,7 +81,10 @@
                         class="form-control"
                         v-on:change="onChange"
                     />
-
+  <input  type="file"
+                                class="form-control"
+                                v-on:change="onChange2"
+                            />
                     <button type="submit" class="btn btn-primary">
                         Update
                     </button>
@@ -105,6 +116,9 @@ export default {
         },
         onChange(e) {
             this.project.file = e.target.files[0];
+        },
+          onChange2(f) {
+            this.project.bannerfile = f.target.files[0];
         },
     },
 };

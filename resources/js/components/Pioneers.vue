@@ -29,7 +29,8 @@
               <p class="directorsname">Shri Lalnunmawia Chuaungo, IAS</p>
               <p class="directorsinfo">
                 <!-- Overlooks multiple Government projects in MSeGS -->
-                 Chief Secretary, Government of Mizoram
+                 Chief Secretary,
+                 <br> Government of Mizoram
               </p>
               <!-- <span class="directorscontacts">
                 <i class="fas fa-envelope iconshapers"></i>
@@ -56,6 +57,8 @@
 <!-- Overlooks Finance projects in MSeGS        
        -->
        Finance Commissioner, Finance Department
+                 <br> Government of Mizoram
+
 </p>
              <!-- <span class="directorscontacts">
                 <i class="fas fa-envelope iconshapers"></i>
@@ -79,6 +82,8 @@
               <p class="directorsname">Shri Lalmalsawma Pachuau, IRS </p>
               <p class="directorsinfo">
                 Secretary, Planning & Programme Implementation Department
+                 <br> Government of Mizoram
+
 </p>
            <!-- <span class="directorscontacts">
                 <i class="fas fa-envelope iconshapers"></i>
@@ -100,7 +105,9 @@
               <!-- <p class="designation">Planning Specia Secretary, GoM</p> -->
               <p class="directorsname">Shri K. Lalthawmmawia, IAS</p>
               <p class="directorsinfo">
-DP&AR Secretary
+Secretary,DP&AR 
+                 <br> Government of Mizoram
+
               </p>
              <!-- <span class="directorscontacts">
                 <i class="fas fa-envelope iconshapers"></i>
@@ -125,6 +132,8 @@ DP&AR Secretary
               <p class="directorsname">Shri Lalramsanga Sailo, IRS</p>
               <p class="directorsinfo">
                 Secretary, ICT Department
+                 <br> Government of Mizoram
+
 </p>
               <!-- <span class="directorscontacts">
                 <i class="fas fa-envelope iconshapers"></i>
@@ -263,7 +272,9 @@ export default {
 margin:0.5rem;
 //   padding: 0 17px 0 0;
   border-radius: 2.5px;
-  box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
+  // box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
+  border:1px solid #E4E5E6;
+
   border: solid 0.5px #e4e5e6;
   background-color: #ffffff;
 }

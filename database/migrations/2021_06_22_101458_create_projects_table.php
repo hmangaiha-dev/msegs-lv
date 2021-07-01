@@ -20,6 +20,10 @@ class CreateProjectsTable extends Migration
 
             $table->text('subtitle');
             $table->text('contents');    
+
+            $table->string('bannername')->nullable();
+            $table->string('bannerpath')->nullable(); 
+
             $table->string('imagename')->nullable();
             $table->string('imagepath')->nullable(); 
            

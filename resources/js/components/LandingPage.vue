@@ -787,6 +787,31 @@ border-color: #f23d46;
   height:80vh;
   width:100%;
 }
+.isocontainer{
+  // margin:0 0.1rem 0 0.1rem;
+        margin:0 20vw 0 20vw;
+
+}
+.isorows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  
+}
+
+.isoitem {
+  background-color: white;
+  // width: 25%;
+  // padding: 16px;
+  padding-left:20px;
+  margin:1rem;
+}
+
+
+
     
 }
 </style>

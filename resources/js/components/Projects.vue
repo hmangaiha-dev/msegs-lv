@@ -26,7 +26,8 @@
             <p class="seeproject" ><router-link  to='/projectdetails'> See Project <i class="fas fa-long-arrow-alt-right"></i></router-link></p>
           </div>
         </div> -->
-<project-card :title="project.title" :subtitle="project.subtitle" :imgsrc="project.imagepath" :id="project.id" ></project-card>
+        <span v-if="project.goals == '.'"></span>
+<project-card :title="project.title" :subtitle="project.subtitle" :imgsrc="project.imagepath" :id="project.id" :date="project.date" v-else ></project-card>
       </span>
         
 

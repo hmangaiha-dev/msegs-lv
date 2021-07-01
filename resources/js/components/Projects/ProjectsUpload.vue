@@ -107,6 +107,13 @@
                                 placeholder="Goals"
                                 v-model="goals"
                             />
+                             <input
+                                type="text"
+                                name="date"
+                                class="form-control"
+                                placeholder="Date"
+                                v-model="date"
+                            />
 
                             <!-- <textarea type="text" name="contents" class="form-control" v-model="contents"></textarea>
              -->
@@ -116,6 +123,11 @@
                                 type="file"
                                 class="form-control"
                                 v-on:change="onChange"
+                            />
+                            <input
+                                type="file"
+                                class="form-control"
+                                v-on:change="onChange2"
                             />
                             <button class="btn btn-primary btn-block">
                                 Upload
@@ -142,6 +154,10 @@ export default {
             contents: "",
             file: "",
             success: "",
+            date:"",
+            bannerfile:"",
+          
+
 
             client: "",
             hostedat: "",
@@ -165,6 +181,9 @@ export default {
         onChange(e) {
             this.file = e.target.files[0];
         },
+         onChange2(f) {
+            this.bannerfile = f.target.files[0];
+        },
         formSubmit(e) {
             e.preventDefault();
             let existingObj = this;
@@ -183,8 +202,12 @@ export default {
             data.append("hostedat", this.hostedat);
             data.append("developedby", this.developedby);
             data.append("goals", this.goals);
+            data.append("date", this.date);
+
 
             data.append("file", this.file);
+            data.append("bannerfile", this.bannerfile);
+
 
             this.axios
                 .post("/api/projects", data, config)

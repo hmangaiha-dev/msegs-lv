@@ -14,6 +14,11 @@ class Projects extends Model
         'contents',
         'imagename',
         'imagepath',
+
+        'date',
+        'bannername',
+        'bannerpath',
+
         
         'client',
         'hostedat',

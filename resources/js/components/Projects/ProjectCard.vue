@@ -1,6 +1,7 @@
 <template>
  
         <div class="card">
+          <router-link  :to="{name: 'projectdetails', params: { id:id }}" >
           <img
             :src="'..'+imgsrc"
             alt=""
@@ -8,15 +9,16 @@
             class="cardimage"
           />
           <div class="cardcontainer" >
-            <!-- <span class="carddate">12 Dec</span><br /> -->
+            <p class="carddate" v-if="date">{{date}}</p>
             <span class="cardtitle">{{title}}</span>
             <p class="cardtexts">
               {{subtitle}}
             </p>
           </div>
           <div class="cardbutton">
-            <p class="seeproject" ><router-link  :to="{name: 'projectdetails', params: { id:id }}" > SEE PROJECT <i class="fas fa-long-arrow-alt-right"></i></router-link></p>
+            <p class="seeproject" > SEE PROJECT <i class="fas fa-long-arrow-alt-right"></i></p>
           </div>
+          </router-link>
         </div>
 
    
@@ -24,7 +26,7 @@
 
 <script>
 export default {
- props:['title','subtitle','imgsrc','id'
+ props:['title','subtitle','imgsrc','id','date'
  ],
  data(){
      return{

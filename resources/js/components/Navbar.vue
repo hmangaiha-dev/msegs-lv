@@ -14,6 +14,7 @@
                     <img class="mobilenavlogo" src="../assets/logo1.svg"
                 /></a>
                 <div class="impicons">
+                    
                     <!-- <i class="fas fa-wheelchair"></i> -->
                     <!-- <i class="fas fa-search" @click="searching"></i> -->
 
@@ -81,7 +82,7 @@
                 <li class="items" >
                     <router-link to="/contactus" exact-active-class="activating">Contact Us</router-link>
                 </li>
-                <i class="fas fa-wheelchair" style="color: white"></i>
+                <!-- <i class="fas fa-wheelchair" style="color: white"></i> -->
             </span>
         </div>
         <transition

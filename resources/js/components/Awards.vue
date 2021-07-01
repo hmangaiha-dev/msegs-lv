@@ -78,7 +78,7 @@ export default {
     justify-content: space-evenly;
 }
 .awardscards{
-    width: 24rem;
+    width: 26rem;
   height: 9em;
 //   margin: 40px 20px 16.5px 180px;
 margin:1rem;
@@ -105,7 +105,11 @@ margin:1rem;
 .awardstitle{
 //     width: 160.5px;
 //   height: 36px;
-  margin: 16px 0 1px 12.5px;
+  margin: 16px 6px 1px 12.5px;
+  white-space:normal;
+  // word-break: inherit;
+  // word-wrap: initial;
+  
   font-family: 'Playfair Display';
   font-size: 18px;
   font-weight: bold;
@@ -120,7 +124,7 @@ margin:1rem;
 .awardstexts{
 //     width: 157px;
 //   height: 50.5px;
-  margin: 1px 3.5px 21.5px 12.5px;
+  margin: 1px 6px 21.5px 12.5px;
   font-family: Poppins;
   font-size: 14px;
   font-weight: normal;
@@ -189,4 +193,6 @@ margin:1rem;
 //   object-fit: contain;
 }
 }
+
+
 </style>

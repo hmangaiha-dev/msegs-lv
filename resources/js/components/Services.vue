@@ -1,8 +1,7 @@
 <template>
   <div style="margin-top:0">
     <div class="ourservices">
-      <p class="headings " style="margin:auto">
-        Our Services</p>
+      <p class="headings " style="margin:auto">Our Services</p>
     </div>
     <span id="sd"></span>
     <div class="services1 container" >
@@ -260,9 +259,7 @@ export default {
   flex-wrap: wrap;
 }
 .sdtext {
-  width: 50%;
-  max-width: 50%;
-
+  width: 45%;
 }
 #blues {
   color: #0a2458;
@@ -288,16 +285,13 @@ export default {
   letter-spacing: normal;
   text-align: left;
   color: #393939;
-  margin:0 8px;
 }
 .sdimage {
-  width: 50%;
-  // max-width: 50%;
-
+  width: 55%;
   text-align: center;
   margin: auto;
-  height: auto;
-  width: 28vw;
+  height: 35vh;
+  width: 30vw;
 }
 
 .mobileservices{

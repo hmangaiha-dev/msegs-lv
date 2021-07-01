@@ -11,7 +11,7 @@
             <p class="detailstitle">
               {{title}}
             </p>
-            <hr style="opacity:30%">
+            <hr style="opacity:20%">
             <div class="detailscardcontainer">
               <!-- ///// -->
               <div class="detailscardrows">
@@ -62,7 +62,7 @@
  </div>
 
 
-            <hr style="opacity:30%">
+            <hr style="opacity:20%">
             <div class="detailscardcontainer">
               <div class="detailscardrows">
                 <div class="detailscardcol1">
@@ -91,7 +91,7 @@
 
         <div class="col2">
           <img
-            :src="'..'+imagepath"
+            :src="'..'+bannerpath"
             alt=""
             srcset=""
             class="col2image"
@@ -126,6 +126,7 @@ export default {
       hostedat:'',
       developedby:'',
       goals:'',
+      bannerpath:''
     }
   },
   created(){
@@ -136,6 +137,8 @@ export default {
   this.title = response.data.title;
   this.subtitle = response.data.subtitle;
   this.imagepath = response.data.imagepath;
+  this.bannerpath = response.data.bannerpath;
+
   this.contents = response.data.contents;
     this.client = response.data.client;
   this.hostedat = response.data.hostedat;
@@ -177,7 +180,9 @@ export default {
   margin-top:1rem;
 
   width: 100%;
-  box-shadow: 1px 1px 4px grey;
+  // box-shadow: 1px 1px 4px grey;
+  border:1px solid #E4E5E6;
+
   border-radius: 5px;
 }
 .detailstitle {
@@ -234,6 +239,7 @@ export default {
 }
 .col2image {
   width: 100%;
+  border-radius: 0px;
 }
 .col2heading {
   font-family: 'Playfair Display';

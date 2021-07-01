@@ -20,14 +20,21 @@ class ProjectsController extends Controller
         //     'name' => $request->input('name'),
         //     'detail' => $request->input('detail')
         // ]);
-        $request->validate([
-            'file' => 'required|mimes:jpg,jpeg,png,csv,txt,xlx,xls,pdf|max:2048'
-         ]);
+
+        // $request->validate([
+        //     'file' => 'required|mimes:jpg,jpeg,png,csv,txt,xlx,xls,pdf|max:2048',
+        //     'bannerfile' => 'required|mimes:jpg,jpeg,png,csv,txt,xlx,xls,pdf|max:2048'
+
+        //  ]);
  
         $project = new Projects;
 
-        $file_name = time().'_'.$request->file->getClientOriginalName();
+        $file_name = time().'_'.$request->file('file')->getClientOriginalName();
+        $banner_name = time().'_'.$request->file('bannerfile')->getClientOriginalName();
+
         $file_path = $request->file('file')->storeAs('uploads', $file_name, 'public');
+        $banner_path = $request->file('bannerfile')->storeAs('uploads', $banner_name, 'public');
+
 
         $project->title = $request->input('title');
         $project->subtitle = $request->input('subtitle');
@@ -37,11 +44,16 @@ class ProjectsController extends Controller
         $project->hostedat = $request->input('hostedat');
         $project->developedby = $request->input('developedby');
         $project->goals = $request->input('goals');
+        $project->date = $request->input('date');
 
 
 
-        $project->imagename = time().'_'.$request->file->getClientOriginalName();
+
+        $project->imagename = time().'_'.$request->file('file')->getClientOriginalName();
         $project->imagepath = '/storage/' . $file_path;
+        
+        $project->bannername = time().'_'.$request->file('bannerfile')->getClientOriginalName();
+        $project->bannerpath = '/storage/' . $banner_path;
         $project->save();
 
 

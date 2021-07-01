@@ -96,9 +96,9 @@ export default {
   
     display:flex;
     flex-flow: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content:stretch;
-    align-content: center;
+    align-content: flex-start;
 
 }
 
@@ -115,7 +115,9 @@ export default {
 
    
 }
-
+div.infocols:nth-child(2){
+  border:0;
+}
 
 .addressimage{
     width:60px;
@@ -123,7 +125,7 @@ export default {
 }
 
 .addresstitle{
-    font-family: Poppins;
+    font-family: 'Poppins';
   font-size: 20px;
   font-weight: 500;
   font-stretch: normal;
@@ -136,7 +138,7 @@ export default {
 }
 
 .addressdesc{
-    font-family: Poppins;
+    font-family: 'Poppins';
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -149,7 +151,8 @@ export default {
 }
 
 .formtitle{
-   
+  padding-top:12px;
+
   font-family: 'Playfair Display';
   font-size: 24px;
   font-weight: bold;
@@ -164,7 +167,7 @@ export default {
 
 .formdesc{
     // width:70%;
-    font-family: Poppins;
+    font-family: 'Poppins';
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -173,6 +176,7 @@ export default {
   letter-spacing: normal;
   text-align: center;
   color: #76838f;
+  padding-top:6px;
 }
 
 .formgroups{
@@ -190,6 +194,7 @@ export default {
   border: solid 0.5px #bfbfbf;
   background-color: #ffffff;
   margin:0;
+  padding-left:8px;
 
     
 }
@@ -217,7 +222,9 @@ export default {
 // margin:0 0 -1rem 0;
 z-index:2;
 }
-
+#message{
+  padding-top:8px;
+}
 .requird::after{
     content: "*";
     color:#f23d46;
@@ -308,7 +315,7 @@ border:1px solid #f23d46;
 .formclass{
     // width:45%;
     // margin:1rem;
-    width: 100%;
+    width: 10;
     height: 2rem;
   border-radius: 4px;
   border: solid 0.5px #bfbfbf;
