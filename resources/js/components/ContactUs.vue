@@ -151,8 +151,8 @@ export default {
 .formtitle{
    
   font-family: 'Playfair Display';
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.33;

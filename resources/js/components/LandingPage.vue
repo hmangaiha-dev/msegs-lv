@@ -16,7 +16,7 @@
 
       <!-- <div class="images"> -->
         <img
-          src="../assets/landing1image.png"
+          src="../assets/banner.png"
           class="landing1image"
 
         />
@@ -60,9 +60,12 @@
     <div class="landing3">
       <p
         class="headings"
-        style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
+        style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
       >
+        <span style="border-bottom:2px solid #dc3d32">
         Services
+
+        </span>
       </p>
 
       <div class="container">
@@ -165,9 +168,12 @@
       <div class="container">
         <p
           class="headings"
-          style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
+          style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
         >
+        <span style="border-bottom:2px solid #dc3d32">
+
           Our Profile
+        </span>
         </p>
         <div class="ourprofilerows">
           <div class="ourprofileitems">
@@ -212,9 +218,10 @@
       <div class="container">
         <p
           class="headings"
-          style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
+          style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
         >
-          What's New
+        <span style="border-bottom:2px solid #dc3d32">
+          What's New</span>
         </p>
         <div class="updatesrows">
         <img src="../assets/updates.png" alt="" srcset="" class="updateimage" />
@@ -229,9 +236,12 @@
       <div class="isocontainer">
         <p
           class="headings"
-          style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
+          style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
         >
+        <span style="border-bottom:2px solid #dc3d32">
+
           ISO CERTIFIED
+        </span>
         </p>
         <div class="isorows">
           <div class="isoitem">

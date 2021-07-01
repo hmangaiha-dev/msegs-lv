@@ -8,9 +8,12 @@
     <div class="container">
       <p
         class="headings"
-        style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
+        style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
       >
+        <span style="border-bottom:2px solid #dc3d32">
+
         BOARD MEMBERS
+        </span>
       </p>
       <div class="boardrows">
         <div class="directorscards">
@@ -48,7 +51,7 @@
 
             <div class="directorscontents">
               <!-- <p class="designation">Finance Secretary, GoM</p> -->
-              <p class="directorsname">Shri Vanlalchhuanga, IA&IASS </p>
+              <p class="directorsname">Shri Vanlalchhuanga, IA&AS </p>
               <p class="directorsinfo">
 <!-- Overlooks Finance projects in MSeGS        
        -->
@@ -141,9 +144,12 @@ DP&AR Secretary
     <div class="container">
       <p
         class="headings"
-        style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;text-decoration:underline; text-decoration-color:#dc3d32;"
+        style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
       >
+        <span style="border-bottom:2px solid #dc3d32">
+      
       MANAGEMENT TEAM
+        </span>
       </p>
 
     <div class="thinktanksrows">
