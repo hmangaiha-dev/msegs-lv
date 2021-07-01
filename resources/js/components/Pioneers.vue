@@ -10,7 +10,7 @@
         class="headings"
         style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
       >
-        <span style="border-bottom:2px solid #dc3d32">
+        <span style="border-bottom:3px solid #dc3d32">
 
         BOARD MEMBERS
         </span>
@@ -146,7 +146,7 @@ DP&AR Secretary
         class="headings"
         style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
       >
-        <span style="border-bottom:2px solid #dc3d32">
+        <span style="border-bottom:3px solid #dc3d32">
       
       MANAGEMENT TEAM
         </span>

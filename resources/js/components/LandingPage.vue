@@ -62,7 +62,7 @@
         class="headings"
         style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
       >
-        <span style="border-bottom:2px solid #dc3d32">
+        <span style="border-bottom:3px solid #dc3d32">
         Services
 
         </span>
@@ -170,7 +170,7 @@
           class="headings"
           style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
         >
-        <span style="border-bottom:2px solid #dc3d32">
+        <span style="border-bottom:3px solid #dc3d32">
 
           Our Profile
         </span>
@@ -220,7 +220,7 @@
           class="headings"
           style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
         >
-        <span style="border-bottom:2px solid #dc3d32">
+        <span style="border-bottom:3px solid #dc3d32">
           What's New</span>
         </p>
         <div class="updatesrows">
@@ -238,7 +238,7 @@
           class="headings"
           style="text-align:center;margin:auto;padding-top:2rem;padding-bottom:2rem;"
         >
-        <span style="border-bottom:2px solid #dc3d32">
+        <span style="border-bottom:3px solid #dc3d32">
 
           ISO CERTIFIED
         </span>
@@ -347,8 +347,8 @@ border-color: #f23d46;
 
 .landing1image{
    width:100%;
-  height:80vh;
-  margin-top:-1rem;
+  height:auto;
+  // margin-top:-1rem;
   z-index:-1;
 
 }
@@ -784,7 +784,8 @@ border-color: #f23d46;
 
 }
 .landing1image{
-  height:70vh;
+  height:80vh;
+  width:100%;
 }
     
 }

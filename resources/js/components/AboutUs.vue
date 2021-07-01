@@ -47,7 +47,7 @@
           class="headings"
           style="text-align:center;margin:auto;padding-top:1rem;padding-bottom:1rem;font-size:24px"
         >
-        <span style="border-bottom:2px solid #dc3d32">
+        <span style="border-bottom:3px solid #dc3d32">
 
           OUR PROFILE
         </span>
