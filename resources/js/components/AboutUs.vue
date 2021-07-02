@@ -143,7 +143,7 @@
     <div class="aboutrows">
         <div class="aboutimagecol">
           <img
-            src="../assets/aboutusobjectives.png"
+            src="../assets/objectives.png"
             alt=""
             srcset=""
             class="aboutimages"
@@ -151,7 +151,7 @@
         </div>
         <div class="abouttextcol">
           <p class="headings" style="font-size:24px">Our Objectives</p>
-          <img src="../assets/aboutusobjectives.png"
+          <img src="../assets/objectives.png"
             alt=""
             srcset=""
             class="aboutimagesmobile" 

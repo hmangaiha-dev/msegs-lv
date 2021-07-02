@@ -152,7 +152,7 @@
                         <!-- <img src="../assets/tw.png" alt="" srcset="" class="socialicons" /> -->
                     </a>
 
-                    <a href="https://twitter.com/MsegsD" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCU136c3q033aFbl9A1Q7e6A" target="_blank">
                         <i
                             class="fab fa-youtube fa-lg socialicons"
                             style="color: #ff0000"
