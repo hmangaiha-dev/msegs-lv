@@ -96,9 +96,9 @@
             srcset=""
             class="col2image"
           />
-          <p class="col2heading">
+          <!-- <p class="col2heading">
            {{subtitle}}
-          </p>
+          </p> -->
           <p class="col2contents">
             <span v-html="contents"></span>
           </p>
@@ -266,6 +266,26 @@ export default {
   color: #393939;
 }
 
+
+// vue editor
+.col2contents > span:nth-child(1) > p:nth-child(n) > strong:nth-child(n){
+  font-size: 20px;
+  font-family: 'Playfair Display';
+  width: 7rem;
+
+}
+
+.col2contents > span:nth-child(1) > p:nth-child(n){
+font-size: 14px;
+font-family: 'Poppins';
+  color: #393939;
+  font-weight: normal;
+
+}
+.col2contents > span:nth-child(n) > p:nth-child(n){
+  word-wrap: break-word;
+
+}
 @media screen and(max-width:800px) {
 
 .detailsrows {

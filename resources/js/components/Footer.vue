@@ -103,7 +103,7 @@
                                 >Contact us</router-link
                             ></span
                         >
-                        <span><router-link to="/projectsupload">Contact</router-link></span>
+                        <!-- <span><router-link to="/projectsupload">Contact</router-link></span> -->
                         <!-- <span><router-link to="/register">Reg</router-link></span> -->
                         <!-- <span><router-link to="/dashboard">Dashboard</router-link></span> -->
                     </div>
