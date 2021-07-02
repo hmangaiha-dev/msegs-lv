@@ -161,7 +161,7 @@
                     </a>
                 </div>
 
-                <p class="footerheadings">Write us at</p>
+                <p class="footerheadings" >Write us at</p>
                 <div
                     style="
                         font-family: Poppins;
@@ -175,9 +175,8 @@
                 >
                     
                       <a href="mailto:info@msegs.in" >info@msegs.in</a>
-                      <br /><br />
-                    <span
-                        >Old Secretariat building - I, Treasury Square
+                      <br />
+                    <span>Old Secretariat building - I, Treasury Square
                         <br />
                         Aizawl, Mizoram - 796001
                     </span>
@@ -351,6 +350,9 @@ div.submenus:nth-child(n)
     text-align: left;
     color: #2c3134;
     padding: 1rem 0;
+}
+p.footerheadings:nth-child(3){
+  padding:1rem 0 4px 0;
 }
 
 .socialmediarows {

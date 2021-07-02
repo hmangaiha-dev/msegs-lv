@@ -122,9 +122,10 @@
                             </li></router-link
                         >
                         <!-- <li class="items"> <router-link to="/aboutus">About us</router-link> </li> -->
+                            <span @click="mobiledropdowning">
+                        
                         <li class="items">
-                            <a @click="mobiledropdowning"
-                                >About us
+                                About us
                                 <i
                                     class="
                                         fas
@@ -133,7 +134,7 @@
                                     "
                                     style="position: absolute; right: 80px"
                                 ></i
-                            ></a>
+                            >
                             <div
                                 :class="{
                                     mobiledropdown: mobiledropdown,
@@ -163,7 +164,7 @@
                                     </li></router-link
                                 >
                             </div>
-                        </li>
+                        </li></span>
                         <router-link to="/contactus" @click="chickenburger"
                             ><li class="items">Contact Us</li></router-link
                         >
@@ -411,6 +412,7 @@ export default {
         transition-timing-function: ease-in;
     }
 }
+
 .router-link-exact-active {
     // border-bottom: 2px solid #dc3d32;
     // width:2px;
@@ -471,6 +473,9 @@ export default {
             // background:$misccolours;
             width: 100%;
             padding-left: 2rem;
+            padding-top:12px ;
+            padding-bottom:12px ;
+
             // padding-left:-5rem;
         }
     }
@@ -539,6 +544,10 @@ export default {
     }
 
     //DROPDOWN
+
+    .mobileitemslist > div:nth-child(1) > span:nth-child(5) > li:nth-child(1):hover{
+        cursor: pointer;
+    }
     #app
         > ul
         > div
@@ -550,8 +559,13 @@ export default {
         color: white;
         text-decoration: none;
         font-family: Poppins;
+        padding-top:12px;
+            padding-bottom:12px ;
+
         
     }
+    // aboutus padding top
+   
 
     #app
         > div
