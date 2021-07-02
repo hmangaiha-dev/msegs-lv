@@ -9,7 +9,7 @@
     <div class="container">
         <h3 class="text-center">Edit Product</h3>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col">
                 <form @submit.prevent="updateProject">
                     <!-- <div class="form-group">
                         <label>Name</label>
@@ -75,7 +75,9 @@
 
                     <!-- <textarea type="text" name="contents" class="form-control" v-model="contents"></textarea>
              -->
-                    <vue-editor v-model="project.content" />
+                    <vue-editor v-model="project.contents" />
+
+<h2>Preview</h2><span v-html="project.contents"></span>
                     <input
                         type="file"
                         class="form-control"
@@ -95,7 +97,11 @@
 </template>
 
 <script>
+import { VueEditor } from "vue3-editor";
+
 export default {
+    components: { VueEditor },
+
     data() {
         return {
             project: {},

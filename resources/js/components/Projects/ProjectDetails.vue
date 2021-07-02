@@ -268,10 +268,10 @@ export default {
 
 
 // vue editor
-.col2contents > span:nth-child(1) > p:nth-child(n) > strong:nth-child(n){
+.col2contents > span:nth-child(1) > h2:nth-child(1){
   font-size: 20px;
   font-family: 'Playfair Display';
-  width: 7rem;
+  // width: 7rem;
 
 }
 
@@ -286,6 +286,11 @@ font-family: 'Poppins';
   word-wrap: break-word;
 
 }
+
+.col2contents > span:nth-child(1) > p:nth-child(n) > img:nth-child(n){
+max-width:100%;
+}
+
 @media screen and(max-width:800px) {
 
 .detailsrows {
