@@ -74,7 +74,7 @@
               <div class="detailscardrows">
                 <div class="detailscardcol1">
                   <img
-                    src="../../assets/chrome.svg"
+                    src="../../assets/webapp.png"
                     alt=""
                     srcset=""
                     class="detailscardcol1image"
@@ -231,6 +231,9 @@ export default {
   color: #76838f;
    overflow: hidden;
    text-overflow: ellipsis;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .col2 {
@@ -268,28 +271,61 @@ export default {
 
 
 // vue editor
-.col2contents > span:nth-child(1) > h2:nth-child(1){
-  font-size: 20px;
+// H2
+.col2contents > span:nth-child(n) > h2:nth-child(n){
+  font-size: 25px;
   font-family: 'Playfair Display';
+  line-height: 1.6;
   // width: 7rem;
 
 }
 
-.col2contents > span:nth-child(1) > p:nth-child(n){
-font-size: 14px;
-font-family: 'Poppins';
+// h4
+
+.col2contents > span:nth-child(n) > h4:nth-child(n) {
+  font-size: 25px;
+  font-family: 'Playfair Display';
   color: #393939;
   font-weight: normal;
 
 }
+
+// p
 .col2contents > span:nth-child(n) > p:nth-child(n){
+font-size: 16px;
+font-family: 'Poppins';
+  color: #393939;
+  font-weight: normal;
   word-wrap: break-word;
+
 
 }
 
+
+
+// image
 .col2contents > span:nth-child(1) > p:nth-child(n) > img:nth-child(n){
 max-width:100%;
 }
+
+// list
+.col2contents > span:nth-child(n) > ul:nth-child(n) > li:nth-child(n){
+  margin-left:0;
+  padding-left:0;
+  line-height: 1.88;
+  font-size: 16px;
+font-family: 'Poppins';
+  color: #393939;
+  font-weight: normal;
+}
+
+// ul
+.col2contents > span:nth-child(n) > ul:nth-child(n) {
+  margin-left:1rem;
+  padding-left:0;
+  line-height: 1.88;
+}
+
 
 @media screen and(max-width:800px) {
 
