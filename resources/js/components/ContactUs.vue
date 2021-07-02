@@ -33,6 +33,9 @@
     <hr style="opacity:20%;margin:4rem 0 2rem 0;">
 
     <div class="container">
+      <span v-if="success" class="success">{{success}}</span>
+      <!-- <span  class="success">Thank you for contacting us</span> -->
+      
 
         <p class="formtitle">Share your information to keep in contact</p>
         <p class="formdesc">We would love to contact you and ask about any issues you <br>are facing about MSeGS</p>
@@ -41,26 +44,26 @@
         <div class="fields">
 
             <label for="name" id="labls" class="requird">Your Name</label><br>
-        <input type="text" class="formclass" id="name">
+        <input type="text" class="formclass" id="name" v-model="credentials.name">
         </div>
          <div class="fields">
 
             <label for="email" id="labls" class="requird">Your email address</label><br>
-        <input type="text" class="formclass" id="email">
+        <input type="text" class="formclass" id="email" v-model="credentials.email">
         </div> <div class="fields">
 
             <label for="subject" id="labls" class="requird">Subject</label><br>
-        <input type="text" class="formclass" id="subject">
+        <input type="text" class="formclass" id="subject" v-model="credentials.subject">
         </div> <div class="fields">
 
             <label for="contactnumber" id="labls" class="requird">Your phone number</label><br>
-        <input type="text" class="formclass" id="contactnumber">
+        <input type="text" class="formclass" id="contactnumber" v-model="credentials.contactnumber">
         </div>
 <div class="fields" style="width:84%">
 
             <label for="messsage" id="labls" class="requird">How can we help you solve your issue</label><br>
-        <textarea type="text" rows="5" cols="80" class="formclass" id="message" style="height:5rem"></textarea>
-        <a href="" class="submittingbutton" style=" margin-top:2rem;" >SUBMIT</a>
+        <textarea type="text" rows="5" cols="80" class="formclass" id="message" style="height:5rem" v-model="credentials.message"></textarea>
+        <a class="submittingbutton" @click.prevent="submitcontact" style=" margin-top:2rem;" >SUBMIT</a>
         </div>
 
         
@@ -75,8 +78,26 @@
 
 <script>
 export default {
+  data(){
+    return {
+      credentials:{},
+      success:''
+    }
+  },
   mounted(){
     window.scrollTo(0,0);
+  }
+  ,methods:{
+    submitcontact(){
+      this.axios.post(`/api/contactus`,this.credentials).then((res)=>{
+        console.log('Submitted');
+        this.success = res.data;
+        // this.credentials={};
+      }).catch((err)=>{
+        console.log('error')
+      })
+
+    }
   }
 
 }
@@ -148,6 +169,20 @@ div.infocols:nth-child(2){
   text-align: center;
   color: #76838f;
   margin:0;
+}
+
+.success{
+display:flex;
+flex-direction: row;
+justify-content: center;
+// background:#b5f593;
+padding:1rem 0;
+// width:30rem;
+align-content: center;
+font-family:'Poppins';
+font-size:16px;
+text-align:center;
+color:#268511;
 }
 
 .formtitle{

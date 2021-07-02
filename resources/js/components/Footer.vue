@@ -173,9 +173,11 @@
                         color: #7e7e7e;
                     "
                 >
-                    <span>info@msegs.in</span><br /><br />
+                    
+                      <a href="mailto:info@msegs.in" >info@msegs.in</a>
+                      <br /><br />
                     <span
-                        >Old Secretariat building - I,Treasury Square
+                        >Old Secretariat building - I, Treasury Square
                         <br />
                         Aizawl, Mizoram - 796001
                     </span>
@@ -388,7 +390,10 @@ div.submenus:nth-child(n)
     text-align: center;
     color: #7e7e7e;
 }
-
+// email hover
+div.submenus:nth-child(4) > div:nth-child(4) > a:nth-child(1):hover{
+  color:#dc3d32;
+}
 @media screen and (max-width: 800px) {
     #app > div > div:nth-child(3) > div.topfooter {
         margin: 0rem 8vw 0px 8vw;

@@ -276,6 +276,7 @@ export default {
   font-size: 25px;
   font-family: 'Playfair Display';
   line-height: 1.6;
+  padding-top:20px;
   // width: 7rem;
 
 }
@@ -287,7 +288,7 @@ export default {
   font-family: 'Playfair Display';
   color: #393939;
   font-weight: normal;
-
+  padding:28px 0 16px 0;
 }
 
 // p
@@ -297,6 +298,7 @@ font-family: 'Poppins';
   color: #393939;
   font-weight: normal;
   word-wrap: break-word;
+  
 
 
 }

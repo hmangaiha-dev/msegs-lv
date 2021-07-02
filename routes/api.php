@@ -4,9 +4,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ResourcesController;
+use App\Http\Controllers\ContactUsController;
+
 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+
 
 
 /*
@@ -31,6 +34,10 @@ Route::middleware('auth:sanctum')->get('/authenticated', function () {
 
 Route::middleware('api')->group(function () {
     Route::resource('projects', ProjectsController::class);
+});
+
+Route::middleware('api')->group(function () {
+    Route::resource('contactus', ContactUsController::class);
 });
 
 // Route::middleware('api')->group(function () {

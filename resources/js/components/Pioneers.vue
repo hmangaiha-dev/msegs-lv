@@ -29,7 +29,7 @@
               <p class="directorsname">Shri Lalnunmawia Chuaungo, IAS</p>
               <p class="directorsinfo">
                 <!-- Overlooks multiple Government projects in MSeGS -->
-                 Chief Secretary,
+                 Chief Secretary
                  <br> Government of Mizoram
               </p>
               <!-- <span class="directorscontacts">
@@ -105,7 +105,7 @@
               <!-- <p class="designation">Planning Specia Secretary, GoM</p> -->
               <p class="directorsname">Shri K. Lalthawmmawia, IAS</p>
               <p class="directorsinfo">
-Secretary,DP&AR 
+Secretary, DP&AR 
                  <br> Government of Mizoram
 
               </p>
