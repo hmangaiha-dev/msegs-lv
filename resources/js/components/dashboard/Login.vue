@@ -1,8 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <h1>Loginr</h1>
-            <p>Please fill in this form to create an account.</p>
+            <h1 style="color:#0a2458">Login</h1>
             <hr />
 
             <label for="email"><b>Email</b></label>
@@ -32,9 +31,6 @@
             </button>
         </div>
 
-        <div class="container signin">
-            <p>Already have an account? <a href="#">Sign in</a>.</p>
-        </div>
     </div>
 </template>
 
@@ -103,7 +99,7 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-    background-color: #04aa6d;
+    background-color:#0a2458;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -111,6 +107,7 @@ hr {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    font-weight:700;
 }
 
 .registerbtn:hover {

@@ -63,7 +63,7 @@
 
             <label for="messsage" id="labls" class="requird">How can we help you solve your issue</label><br>
         <textarea type="text" rows="5" cols="80" class="formclass" id="message" style="height:5rem" v-model="credentials.message"></textarea>
-        <a class="submittingbutton" @click.prevent="submitcontact" style=" margin-top:2rem;" >SUBMIT</a>
+        <a class="submittingbutton " @click.prevent="submitcontact" style=" margin-top:2rem;" >SUBMIT</a>
         </div>
 
         
@@ -269,7 +269,7 @@ z-index:2;
   // height: 25px;
   padding: 8px 16px;
 
- 
+ cursor: pointer;
   margin:auto;
   // padding: 6.5px 0 5px 0;
 

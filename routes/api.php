@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ResourcesController;
+use App\Http\Controllers\FilesController;
+
 use App\Http\Controllers\ContactUsController;
 
 
@@ -51,6 +53,11 @@ Route::post('logout','App\Http\Controllers\LoginController@logout');
 Route::get('resources/index','App\Http\Controllers\ResourcesController@index');
 Route::post('resources/store','App\Http\Controllers\ResourcesController@store');
 Route::delete('resources/{id} ','App\Http\Controllers\ResourcesController@destroy');
+
+
+Route::get('files/index','App\Http\Controllers\FilesController@index');
+Route::post('files/store','App\Http\Controllers\FilesController@store');
+Route::delete('files/{id} ','App\Http\Controllers\FilesController@destroy');
 
 
 

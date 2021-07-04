@@ -1,12 +1,6 @@
 <template>
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-        crossorigin="anonymous"
-    />
-
-    <div class="container">
+ 
+    <div class=""  style="overflow:scroll;height:120vh;background:white">
         <h3 class="text-center">Edit Product</h3>
         <div class="row">
             <div class="col">
@@ -77,7 +71,7 @@
              -->
                     <vue-editor v-model="project.contents" />
 
-<h2>Preview</h2><span v-html="project.contents"></span>
+<!-- <h2>Preview</h2><span v-html="project.contents"></span> -->
                     <input
                         type="file"
                         class="form-control"
@@ -87,9 +81,13 @@
                                 class="form-control"
                                 v-on:change="onChange2"
                             />
-                    <button type="submit" class="btn btn-primary">
+                    <!-- <button type="submit" class="btn btn-primary">
                         Update
-                    </button>
+                    </button> -->
+
+                    <div style="margin:auto;text-align:center">
+                   <button type="submit" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-md bg-blue-500 hover:bg-blue-600 hover:shadow-lg"> Save Changes</button>
+                </div>
                 </form>
             </div>
         </div>
@@ -129,3 +127,22 @@ export default {
     },
 };
 </script>
+<style lang="scss" scoped>
+
+.card{
+    height:220vh;
+}
+
+.card-header{
+    font-size: 20px;
+    text-align: center;
+}
+.form-control{
+    border:1px solid rgba($color: #000000, $alpha: 0.3);
+    border-radius: 6px;
+    width:28rem;
+    padding-left:6px;
+    height:3rem;
+    margin:1rem;
+}
+</style>

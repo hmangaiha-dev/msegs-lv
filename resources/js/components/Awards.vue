@@ -78,7 +78,7 @@ export default {
     justify-content: space-evenly;
 }
 .awardscards{
-    width: 26rem;
+    width: 25rem;
   height: 9em;
 //   margin: 40px 20px 16.5px 180px;
 margin:1rem;
@@ -137,7 +137,7 @@ margin:1rem;
 
 }
 
-@media screen and(max-width:800px){
+@media only screen and(max-width:800px){
   .awardscards{
     width: 90vw;
   height: 9em;
@@ -193,6 +193,9 @@ margin:1rem;
 //   object-fit: contain;
 }
 }
-
-
+// @media only screen and(min-width:1367px){
+// .awardscards{
+//     width: 26rem;
+// }
+// }
 </style>

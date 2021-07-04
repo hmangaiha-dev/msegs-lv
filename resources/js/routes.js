@@ -12,17 +12,31 @@ import page404 from './components/page404'
 
 
 import ProjectDetails from './components/Projects/ProjectDetails'
-import ProjectsUpload from './components/Projects/ProjectsUpload'
-import ProjectsUpdate from './components/Projects/ProjectsUpdate'
+// import ProjectsUpload from './components/Projects/ProjectsUpload'
 
 
-import ResourcesUpload from './components/Resources/ResourcesUpload'
 
 
 
 import Login from './components/Dashboard/Login'
 import Register from './components/Dashboard/Register'
 import Dashboard from './components/Dashboard/Dashboard'
+import Projectlist from './components/Dashboard/Projectlist'
+import Resourceslist from './components/Dashboard/Resourceslist'
+import Fileslist from './components/Dashboard/Fileslist'
+
+import Enquirylist from './components/Dashboard/Enquirylist'
+import AddResources from './components/Dashboard/AddResources'
+import AddFiles from './components/Dashboard/AddFiles'
+
+
+
+import AddProjects from './components/Dashboard/AddProjects'
+import UpdateProjects from './components/Dashboard/UpdateProjects'
+
+
+
+
 import axios from "axios";
 
 
@@ -58,11 +72,11 @@ const routes =[
             name:'resources',
             component:Resources
         },
-        {
-            path:'/resourcesupload',
-            name:'resourcesupload',
-            component:ResourcesUpload
-        },
+        // {
+        //     path:'/resourcesupload',
+        //     name:'resourcesupload',
+        //     component:ResourcesUpload
+        // },
         {
             path:'/aboutus',
             name:'aboutus',
@@ -89,30 +103,30 @@ const routes =[
             component:page404
 
         },
-        {
-            path:'/projectsupload',
-            name:'projectsupload',
-            component:ProjectsUpload
+        // {
+        //     path:'/projectsupload',
+        //     name:'projectsupload',
+        //     component:ProjectsUpload
 
-        },
-        {
-            path:'/projectsupdate/:id',
-            name:'projectsupdate',
-            component:ProjectsUpdate
+        // },
+        // {
+        //     path:'/projectsupdate/:id',
+        //     name:'projectsupdate',
+        //     component:ProjectsUpdate
 
-        },
+        // },
         {
             path:'/login',
             name:'login',
             component:Login
 
         },
-        {
-            path:'/register',
-            name:'register',
-            component:Register
+        // {
+        //     path:'/register',
+        //     name:'register',
+        //     component:Register
 
-        },
+        // },
         {
             path:'/dashboard',
             name:'dashboard',
@@ -123,7 +137,61 @@ const routes =[
                 }).catch(()=>{
                     return next({name:'login'})
                 })
-            }
+            },
+            children: [
+                {
+                  path: '',
+                  component: Dashboard,
+                },
+                {
+                    path:'/projectlist',
+                    name:'dashboardprojectlist',
+                    component:Projectlist
+                },
+                {
+                    path:'/addproject',
+                    name:'addproject',
+                    component:AddProjects
+                },
+                {
+                    path:'/projectsupdate/:id',
+                    name:'projectsupdate',
+                    component:UpdateProjects
+        
+                },
+                {
+                    path:'/resourceslist',
+                    name:'dashboardresourceslist',
+                    component:Resourceslist
+                },
+                {
+                    path:'/addresources',
+                    name:'addresources',
+                    component:AddResources
+                },
+                {
+                    path:'/enquirylist',
+                    name:'dashboardenquirylist',
+                    component:Enquirylist
+                },
+                {
+                    path:'/fileslist',
+                    name:'fileslist',
+                    component:Fileslist
+                },
+                {
+                    path:'/addfiles',
+                    name:'addfiles',
+                    component:AddFiles
+                },
+             
+                {
+                    path:'/register',
+                    name:'register',
+                    component:Register
+        
+                },
+              ],
 
         }
     ]
