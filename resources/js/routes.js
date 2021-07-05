@@ -129,23 +129,23 @@ const routes =[
             component:Login
 
         },
-        {
-            path:'/register',
-            name:'register',
-            component:Register
+        // {
+        //     path:'/register',
+        //     name:'register',
+        //     component:Register
 
-        },
+        // },
         {
             path:'/dashboard',
             name:'dashboard',
             component:Dashboard,
-            // beforeEnter:(to,from,next)=>{
-            //     axios.get('/api/authenticated').then(()=>{
-            //         next();
-            //     }).catch(()=>{
-            //         return next({name:'login'})
-            //     })
-            // },
+            beforeEnter:(to,from,next)=>{
+                axios.get('/api/authenticated').then(()=>{
+                    next();
+                }).catch(()=>{
+                    return next({name:'login'})
+                })
+            },
             children: [
                 {
                   path: '',
@@ -193,12 +193,12 @@ const routes =[
                     component:AddFiles
                 },
              
-                // {
-                //     path:'/register',
-                //     name:'register',
-                //     component:Register
+                {
+                    path:'/register',
+                    name:'register',
+                    component:Register
         
-                // },
+                },
 
                 {
                     path:'/postslist',
