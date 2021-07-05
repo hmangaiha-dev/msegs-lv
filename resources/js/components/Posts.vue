@@ -3,7 +3,7 @@
 
 
 
-<div class="updatesrows " style="margin-bottom:-20rem">
+<div class="updatesrows " >
 	
         <img src="../assets/updates.png" alt="" srcset="" class="updateimage" />
         <!-- <div class="updatescontents">
@@ -56,7 +56,10 @@ export default {
 </script>
 
 <style scoped>
+.updatesrows{
+	margin-bottom:-20rem
 
+}
 .updateimage{
   width: 42vw;
   height: auto;
@@ -102,6 +105,10 @@ export default {
 		padding-left:1rem;
 		padding-top:1rem;
 	}
+	.updatesrows{
+	margin-bottom:1rem
+
+}
 	
 }
 </style>
