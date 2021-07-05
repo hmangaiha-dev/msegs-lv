@@ -129,12 +129,12 @@ const routes =[
             component:Login
 
         },
-        // {
-        //     path:'/register',
-        //     name:'register',
-        //     component:Register
+        {
+            path:'/register',
+            name:'register',
+            component:Register
 
-        // },
+        },
         {
             path:'/dashboard',
             name:'dashboard',
@@ -193,12 +193,12 @@ const routes =[
                     component:AddFiles
                 },
              
-                {
-                    path:'/register',
-                    name:'register',
-                    component:Register
+                // {
+                //     path:'/register',
+                //     name:'register',
+                //     component:Register
         
-                },
+                // },
 
                 {
                     path:'/postslist',
