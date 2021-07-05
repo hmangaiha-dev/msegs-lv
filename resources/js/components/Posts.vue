@@ -100,7 +100,7 @@ export default {
 		display:none;
 	}
 	.updatescontents{
-		position:inherit;
+		position:initial;
 		width:100%;
 		padding-left:1rem;
 		padding-top:1rem;
