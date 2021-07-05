@@ -100,10 +100,11 @@ export default {
 		display:none;
 	}
 	.updatescontents{
-		position:initial;
+		position:inherit;
 		width:100%;
 		padding-left:1rem;
 		padding-top:1rem;
+		
 	}
 	.updatesrows{
 	margin-bottom:1rem
