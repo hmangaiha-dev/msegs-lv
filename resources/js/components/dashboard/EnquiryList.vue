@@ -1,11 +1,11 @@
 <template>
  <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
                 <div class="container mx-auto px-6 py-8">
-                    <h3 class="text-gray-700 text-3xl font-medium">Dashboard</h3>
+                    <h3 class="text-gray-700 text-3xl font-medium"></h3>
     
                     <div class="mt-4">
                         <div class="flex flex-wrap -mx-6">
-                            <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
+                            <!-- <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
                                 <div class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
                                     <div class="p-3 rounded-full bg-indigo-600 bg-opacity-75">
                                         <svg class="h-8 w-8 text-white" viewBox="0 0 28 30" fill="none"
@@ -60,7 +60,7 @@
                                         <div class="text-gray-500">Incomplete</div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
     
                             <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
                                 <div class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
@@ -76,7 +76,7 @@
                                     </div>
     
                                     <div class="mx-5">
-                                        <h4 class="text-2xl font-semibold text-gray-700">21</h4>
+                                        <h4 class="text-2xl font-semibold text-gray-700">{{contactuss.length}}</h4>
                                         <div class="text-gray-500">Enquiries</div>
                                     </div>
                                 </div>

@@ -223,12 +223,13 @@
         <span style="border-bottom:3px solid #dc3d32">
           What's New</span>
         </p>
-        <div class="updatesrows">
+        <!-- <div class="updatesrows">
         <img src="../assets/updates.png" alt="" srcset="" class="updateimage" />
-        <div class="updatescontents">
+       
+        <posts></posts>
+        </div> -->
+        <posts></posts>
 
-        </div>
-        </div>
       </div>
     </div>
 
@@ -271,15 +272,28 @@
 
 <script>
 import Vue3autocounter from 'vue3-autocounter';
+import Posts from './Posts'
 
 export default {
    components: {
-    'vue3-autocounter': Vue3autocounter
+    'vue3-autocounter': Vue3autocounter,
+    Posts
   },
+  // data(){
+	// 	return{
+  //           posts:[]
+	// 	}
+	// },
  mounted(){
     window.scrollTo(0,0);
     
   },
+  // created(){
+  //    this.axios.get("/api/posts/").then((response) => {
+  //           console.log(response.data);
+  //           this.posts = response.data;
+  //       });
+  // }
 };
 </script>
 
@@ -538,9 +552,9 @@ border-color: #f23d46;
   padding: 2rem 0 2rem 0;
 }
 
-.updateimage {
-  width: 50vw;
-}
+
+
+
 
 .landing6 {
   padding-top: 2rem;

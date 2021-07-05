@@ -9,6 +9,8 @@ import ContactUs from './components/ContactUs'
 import Pioneers from './components/Pioneers'
 import Awards from './components/Awards'
 import page404 from './components/page404'
+// import Posts from './components/Posts'
+
 
 
 import ProjectDetails from './components/Projects/ProjectDetails'
@@ -34,6 +36,11 @@ import AddFiles from './components/Dashboard/AddFiles'
 import AddProjects from './components/Dashboard/AddProjects'
 import UpdateProjects from './components/Dashboard/UpdateProjects'
 
+import Postslist from './components/Dashboard/Postslist'
+
+import AddPosts from './components/Dashboard/AddPosts'
+import UpdatePosts from './components/Dashboard/UpdatePosts'
+
 
 
 
@@ -52,6 +59,7 @@ const routes =[
             name:'landingpage',
             component:LandingPage,
         },
+        
         {
             path:'/services',
             name:'services',
@@ -189,6 +197,23 @@ const routes =[
                     path:'/register',
                     name:'register',
                     component:Register
+        
+                },
+
+                {
+                    path:'/postslist',
+                    name:'postslist',
+                    component:Postslist
+                },
+                {
+                    path:'/addposts',
+                    name:'addposts',
+                    component:AddPosts
+                },
+                {
+                    path:'/postsupdate/:id',
+                    name:'postsupdate',
+                    component:UpdatePosts
         
                 },
               ],

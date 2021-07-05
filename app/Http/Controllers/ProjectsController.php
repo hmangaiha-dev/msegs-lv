@@ -11,7 +11,15 @@ class ProjectsController extends Controller
     public function index()
     {
         $projects = Projects::all()->toArray();
-        return array_reverse($projects);      
+        // $projects = Projects::all()->pluck('title','subtitle',
+        // 'imagename',
+        // 'imagepath',
+        // 'date');
+        
+
+        // return array_reverse($projects);  
+        return response()->json($projects);
+
     }
 
     public function store(Request $request)

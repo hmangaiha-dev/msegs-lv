@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\PostsController;
+
 use App\Http\Controllers\ResourcesController;
 use App\Http\Controllers\FilesController;
 
@@ -36,6 +38,10 @@ Route::middleware('auth:sanctum')->get('/authenticated', function () {
 
 Route::middleware('api')->group(function () {
     Route::resource('projects', ProjectsController::class);
+});
+
+Route::middleware('api')->group(function () {
+    Route::resource('posts', PostsController::class);
 });
 
 Route::middleware('api')->group(function () {

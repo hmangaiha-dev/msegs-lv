@@ -1,11 +1,11 @@
 <template>
  <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
                 <div class="container mx-auto px-6 py-8">
-                    <!-- <h3 class="text-gray-700 text-3xl font-medium">Dashboard</h3> -->
+                    <h3 class="text-gray-700 text-3xl font-medium">Dashboard</h3>
     
                     <div class="mt-4">
                         <div class="flex flex-wrap -mx-6">
-                            <!-- <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
+                            <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
                                 <div class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
                                     <div class="p-3 rounded-full bg-indigo-600 bg-opacity-75">
                                         <svg class="h-8 w-8 text-white" viewBox="0 0 28 30" fill="none"
@@ -32,12 +32,16 @@
                                     </div>
     
                                     <div class="mx-5">
-                                        <h4 class="text-2xl font-semibold text-gray-700">{{files.length}}</h4>
-                                        <div class="text-gray-500">Resources Added</div>
+                                        <h4 class="text-2xl font-semibold text-gray-700">{{posts.length}}</h4>
+                                        <div class="text-gray-500">Total Posts</div>
                                     </div>
                                 </div>
                             </div>
-    
+                             <span class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
+                        <router-link :to="{name: 'addposts'}" class="text-indigo-600 hover:text-indigo-900 font-bold">New Post</router-link>
+
+                            </span>
+<!--     
                             <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
                                 <div class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
                                     <div class="p-3 rounded-full bg-orange-600 bg-opacity-75">
@@ -60,7 +64,7 @@
                                         <div class="text-gray-500">Incomplete</div>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
     
                             <div class="w-full mt-6 px-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
                                 <div class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
@@ -76,16 +80,11 @@
                                     </div>
     
                                     <div class="mx-5">
-                                        <h4 class="text-2xl font-semibold text-gray-700">{{files.length}}</h4>
-                                        <div class="text-gray-500">Files</div>
+                                        <h4 class="text-2xl font-semibold text-gray-700">21</h4>
+                                        <div class="text-gray-500">Enquiries</div>
                                     </div>
                                 </div>
-                            </div>
-
-                             <span class="flex items-center px-5 py-6 shadow-sm rounded-md bg-white">
-                        <router-link :to="{name: 'addresources'}" class="text-indigo-600 hover:text-indigo-900 font-bold">+Add File</router-link>
-
-                            </span>
+                            </div> -->
                         </div>
                     </div>
     
@@ -105,62 +104,62 @@
                                         <tr>
                                             <th
                                                 class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                                File</th>
+                                                Title</th>
                                             <th
                                                 class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                                 Date</th>
                                             <th
                                                 class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                                                Status</th>
+                                                Published</th>
                                             <th
                                                 class="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                                 Action</th>
                                             <!-- <th class="px-6 py-3 border-b border-gray-200 bg-gray-50">
-                        <router-link :to="{name: 'addfiles'}" class="text-indigo-600 hover:text-indigo-900 font-bold">+Add Files</router-link>
+                        <router-link :to="{name: 'addpost'}" class="text-indigo-600 hover:text-indigo-900 font-bold">Add Project</router-link>
+
 
                                             </th> -->
                                         </tr>
                                     </thead>
     
-                                    <tbody class="bg-white" v-for="file in files" :key="file.id">
+                                    <tbody class="bg-white" v-for="post in posts" :key="post.id">
                                         <tr>
                                             <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                                                 <div class="flex items-center">
                                                     <div class="flex-shrink-0 h-10 w-10">
                                                         <img class="h-10 w-10 rounded-full"
-                                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                        src="../../assets/webapp.png"
                                                             alt="">
                                                     </div>
     
                                                     <div class="ml-4">
-                                                        <div class="text-sm leading-5 font-medium text-gray-900">{{file.title}}
+                                                        <div class="text-sm leading-5 font-medium text-gray-900">{{ post.title }}
                                                         </div>
-                                                        <div class="text-sm leading-5 text-gray-500">{{ file.id}}</div>
+                                                        <div class="text-sm leading-5 text-gray-500">{{ post.id}}</div>
                                                     </div>
                                                 </div>
                                             </td>
     
                                             <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                <div class="text-sm leading-5 text-gray-900">{{ file.date}}</div>
-                                                <div class="text-sm leading-5 text-gray-500"></div>
+                                                <div class="text-sm leading-5 text-gray-900">{{ post.date}}</div>
+                                                <!-- <div class="text-sm leading-5 text-gray-500">{{post.subtitle}}</div> -->
                                             </td>
     
                                             <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
                                                 <span
-                                                    class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                                                    class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">{{ post.published}}</span>
                                             </td>
     
-                                            <td
-                                                class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-                                           
-                                                </td>
-    
                                             <!-- <td
+                                                class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
+                                                </td> -->
+    
+                                            <td
                                                 class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
                                                
-                        <router-link :to="{name: 'filesupdate', params: { id: file.id },}" class="text-indigo-600 hover:text-indigo-900 font-bold">Edit</router-link>
-                                    <button class="text-red-600  " @click="deleteProduct(file.id)">Delete </button>
-                                            </td> -->
+                        <router-link :to="{name: 'postsupdate', params: { id: post.id },}" class="text-indigo-600 hover:text-indigo-900 font-bold">Edit</router-link>
+                                    <button class="text-red-600  " @click="deleteProduct(post.id)">Delete </button>
+                                            </td>
                                         </tr>
                                        
                                     </tbody>
@@ -174,17 +173,26 @@
 
 <script>
 export default {
-  data() {
-        return {
-            files: [],        
-        };
-    },
-   created() {
-        this.axios.get(`/api/files/index`).then((response) => {
+	data(){
+		return{
+			user:null,
+            posts:[]
+		}
+	},
+ created() {
+        this.axios.get("/api/posts/").then((response) => {
             console.log(response.data);
-            this.files = response.data;
+            this.posts = response.data;
         });
     },
+    methods:{
+          deleteProduct(id) {
+            this.axios.delete(`api/posts/${id}`).then((response) => {
+                let i = this.posts.map((data) => data.id).indexOf(id);
+                this.posts.splice(i, 1);
+            });
+        },
+    }
 }
 </script>
 
