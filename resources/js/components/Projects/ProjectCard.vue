@@ -1,7 +1,8 @@
 <template>
-          <router-link  :to="{name: 'projectdetails', params: { id:id }}" >
  
         <div class="card">
+          <router-link  :to="{name: 'projectdetails', params: { id:id }}" >
+
           <img
             :src="'..'+imgsrc"
             alt=""
@@ -18,8 +19,9 @@
           <div class="cardbutton">
             <p class="seeproject" > SEE PROJECT <i class="fas fa-long-arrow-alt-right"></i></p>
           </div>
-        </div>
           </router-link>
+
+        </div>
 
 
    
@@ -203,7 +205,7 @@ export default {
   // min-width:380px;
   margin:0.5rem 15px;
   min-height:10rem;
-  height:540px;
+  height:512px;
   border:1px solid #E4E5E6;
   position: relative;
 
@@ -233,7 +235,7 @@ export default {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.6;
+  line-height: 1.4;
   letter-spacing: normal;
   text-align: left;
   color: #2c3134;
