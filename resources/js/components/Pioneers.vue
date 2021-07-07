@@ -234,10 +234,10 @@ Secretary, DP&AR
 
     <div class="imageheroes">
 
-    <img src="../assets/imagehero.png" alt="" srcset="" style="height:auto;width:100%">
+    <img src="../assets/imagehero.png" alt="" srcset="" class="heroimage" >
 <div class="contactusing">
-<p class="headings" style="color:white;">Want to get in touch?</p>
-<span class="imageheroesbutton">CONTACT US</span>
+<p class="heading" >Want to get in touch?</p>
+<a href="/contactus" class="imageheroesbutton">CONTACT US</a>
 
 </div>
     </div>
@@ -458,21 +458,39 @@ margin-top:10px;
     position: relative;
     margin-top:2rem;
 }
+
+.heroimage{
+height:auto;width:100%}
 .contactusing{
     position: absolute;
-    z-index:2;
-    top: 50%;
+    // z-index:2;
+    // top: 50%;
+     top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    text-align: center;
     // right:30%;
-text-align: center;
+// text-align: center;
 
-    margin-left: auto;
-margin-right: auto;
-left: 50%;
+    // margin-left: auto;
+// margin-right: auto;
+// left: 50%;
 // right: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.heading{
+  color:white;font-size:25px;font-family:'Playfair Display';
+  font-weight: 700;
+  color:white;
+  padding-bottom: 1rem;
 }
 
 .imageheroesbutton{
-  text-align: center;
+  // text-align: center;
   //    width: 8rem;
   // height: 25px;
   // margin: 20px 74.5px 0 75px;
@@ -520,11 +538,14 @@ margin:0.5rem;
   //   margin: 0 12.5px 0 0;
   //   object-fit: contain;
 }
-
+.heroimage{
+  height:40vh
+}
 .imageheroes{
     position: relative;
     // margin-top:2rem;
     height:auto;
+    // height: 60vh;
 
 }
 .contactusing{
@@ -532,7 +553,8 @@ margin:0.5rem;
     z-index:0;
     top: 50%;
     right:50%;
-    display: none;
+    width: 80%;
+    // display: none;
     // text-align: center;
 }
 
