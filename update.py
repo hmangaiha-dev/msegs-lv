@@ -7,3 +7,6 @@ commitcommand = f'git commit -m "{commit}"'
 
 os.system(commitcommand)
 os.system('git push')
+
+
+print("GIT UPDATED!!!!")
