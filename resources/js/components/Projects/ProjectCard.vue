@@ -53,7 +53,6 @@ export default {
   border-radius:5px;
 
 
-
 }
 
 .card:hover {
@@ -208,6 +207,7 @@ export default {
   height:512px;
   border:1px solid #E4E5E6;
   position: relative;
+  margin-bottom:30px;
 
 }
 
