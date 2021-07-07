@@ -10,7 +10,7 @@ class ProjectsController extends Controller
     //
     public function index()
     {
-        $projects = Projects::all(['id','title','subtitle','imagename','imagepath','date','goals'])->toArray();
+        $projects = Projects::all(['id','title','subtitle','imagename','imagepath','date','goals'])->where('goals','!=','.')->toArray();
         // $projects = Projects::all()->pluck('title','subtitle',
         // 'imagename',
         // 'imagepath',
