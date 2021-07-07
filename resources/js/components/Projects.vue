@@ -3,7 +3,8 @@
     <span class="projectsback">
       <p class="headings" style="margin:auto">Projects</p>
     </span>
-    <div class="container">
+    <div class="container centercontainer">
+      
       <div class="projectsrows" >
       <span v-for="project in projects" :key="project.id">
 
@@ -75,6 +76,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.centercontainer{
+  display: flex;
+  justify-content: center;
 }
 .projectsrows {
   padding: 2rem 0 2rem 0;
