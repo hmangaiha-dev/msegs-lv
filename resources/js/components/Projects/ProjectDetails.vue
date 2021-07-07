@@ -275,8 +275,9 @@ export default {
 .col2contents > span:nth-child(n) > h2:nth-child(n){
   font-size: 25px;
   font-family: 'Playfair Display';
-  line-height: 1.6;
+  line-height: 1.2;
   padding-top:20px;
+  padding-bottom:16px;
   // width: 7rem;
 
 }

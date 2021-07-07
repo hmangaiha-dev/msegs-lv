@@ -79,7 +79,7 @@ export default {
 }
 .awardscards{
     width: 25rem;
-  height: 9em;
+  height: 9.5em;
 //   margin: 40px 20px 16.5px 180px;
 margin:1rem;
 // padding-right:10px;
@@ -124,7 +124,7 @@ margin:1rem;
 .awardstexts{
 //     width: 157px;
 //   height: 50.5px;
-  margin: 1px 6px 21.5px 12.5px;
+  margin: 8px 6px 21.5px 12.5px;
   font-family: Poppins;
   font-size: 14px;
   font-weight: normal;

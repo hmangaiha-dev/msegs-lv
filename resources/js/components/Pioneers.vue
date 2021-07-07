@@ -328,6 +328,7 @@ margin:0.5rem;
 
   // margin: 2.5px 3.5px 16.5px 12.5px;
   padding:0 8px;
+  padding-top:8px;
 
   font-family: Poppins;
   font-size: 14px;

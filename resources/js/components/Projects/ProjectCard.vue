@@ -75,8 +75,8 @@ export default {
 
 .cardtitle {
   margin: -2rem 0 -2rem 0;
-  font-family: Poppins;
-  font-size: 20px;
+  font-family: 'Playfair Display';
+  font-size: 25px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -100,6 +100,7 @@ export default {
   letter-spacing: normal;
   text-align: left;
   color: #76838f;
+  padding-top:8px;
 }
 
 .cardbutton {
@@ -183,6 +184,8 @@ export default {
   // margin-top:-1.8rem;
 }
 
+}
+
   @media only screen and (min-width:1367px) {
 
     
@@ -190,6 +193,7 @@ export default {
   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
   transition: 0.3s;
   width: 380px;
+  min-width:380px;
   margin:0.5rem 15px;
   min-height:10rem;
   height:540px;
@@ -200,5 +204,4 @@ export default {
 
 
   }
-}
 </style>
