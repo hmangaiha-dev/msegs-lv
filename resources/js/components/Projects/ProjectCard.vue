@@ -192,8 +192,8 @@ export default {
 .card {
   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
   transition: 0.3s;
-  width: 380px;
-  min-width:380px;
+  width: 340px;
+  // min-width:380px;
   margin:0.5rem 15px;
   min-height:10rem;
   height:540px;
