@@ -1,7 +1,7 @@
 <template>
+          <router-link  :to="{name: 'projectdetails', params: { id:id }}" >
  
         <div class="card">
-          <router-link  :to="{name: 'projectdetails', params: { id:id }}" >
           <img
             :src="'..'+imgsrc"
             alt=""
@@ -18,8 +18,9 @@
           <div class="cardbutton">
             <p class="seeproject" > SEE PROJECT <i class="fas fa-long-arrow-alt-right"></i></p>
           </div>
-          </router-link>
         </div>
+          </router-link>
+
 
    
 </template>
@@ -47,6 +48,9 @@ export default {
   height:26rem;
   border:1px solid #E4E5E6;
   position: relative;
+  border-radius:5px;
+
+
 
 }
 
@@ -76,7 +80,7 @@ export default {
 .cardtitle {
   margin: -2rem 0 -2rem 0;
   font-family: 'Playfair Display';
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -130,6 +134,9 @@ export default {
   letter-spacing: normal;
   text-align: left;
   color: #f23d46;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
 }
 
 
@@ -192,7 +199,7 @@ export default {
 .card {
   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
   transition: 0.3s;
-  width: 340px;
+  width: 300px;
   // min-width:380px;
   margin:0.5rem 15px;
   min-height:10rem;
@@ -202,6 +209,81 @@ export default {
 
 }
 
+
+
+
+.carddate {
+  font-family: 'Poppins';
+  font-size: 12px;
+  
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a1a1a1;
+  padding-top:16px;
+}
+
+.cardtitle {
+  margin: -2rem 0 -2rem 0;
+  font-family: 'Playfair Display';
+  font-size: 25px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2c3134;
+}
+
+.cardtexts {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #76838f;
+  padding-top:8px;
+}
+
+.cardbutton {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background-color: rgba(10, 10, 10, 0.04);
+  height: 50px;
+  // margin-top: 1rem;
+  
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  
+  // margin-top:-1.8rem;
+}
+
+.seeproject {
+  padding: 10px 16px;
+
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f23d46;
+}
 
   }
 </style>
