@@ -256,6 +256,22 @@ export default {
 <style lang="scss" >
 @import "../assets/msegsstyles.scss";
 
+.aboutusback {
+  background-color: #ececec;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 3rem 0;
+}
+
+.aboutrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom:3rem;
+}
 .boardrows {
   display: flex;
   flex-wrap: wrap;

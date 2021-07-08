@@ -37,22 +37,17 @@ export default {
     Footer,
     // AccessibilityToolbar,
   },
-  data(){
-    return{
-      spacingtop:true
-    }
-  },
+  // data(){
+  //   return{
+  //     spacingtop:true
+  //   }
+  // },
   // created() {
   //   console.log("router");
   //   this.$router.push({ path: "/" });
   //   console.log("router" + this.$router);
   // },
-  mounted(){
-    if(!$route.meta.hideNav){
-      this.spacingtop = false
-    }
-
-  }
+ 
 };
 </script>
 
