@@ -5,20 +5,20 @@
     
      enter-active-class="animated bounceInUp"
     leave-active-class="animated bounceInDown"> -->
+    <template v-if="!$route.meta.hideNav">
+      <Navbar></Navbar>
+          <div class="spacing-top">
+            <transition name="customclass">
+              <router-view></router-view>
+            </transition>
+          </div>
+      <Footer></Footer>
+    </template>
 
-    <Navbar></Navbar>
-    <div class="spacing-top">
-       <transition
-    name="customclass"
-   
-  >
-        <router-view></router-view>
-      </transition>
-    </div>
-    <!-- <router-view/> -->
-    <!-- </router-view> -->
-    <!-- <AccessibilityToolbar></AccessibilityToolbar> -->
-    <Footer></Footer>
+    <template v-else> 
+               <router-view></router-view>
+        
+    </template>
   </div>
 </template>
 
@@ -37,11 +37,22 @@ export default {
     Footer,
     // AccessibilityToolbar,
   },
+  data(){
+    return{
+      spacingtop:true
+    }
+  },
   // created() {
   //   console.log("router");
   //   this.$router.push({ path: "/" });
   //   console.log("router" + this.$router);
   // },
+  mounted(){
+    if(!$route.meta.hideNav){
+      this.spacingtop = false
+    }
+
+  }
 };
 </script>
 

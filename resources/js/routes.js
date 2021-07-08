@@ -1,45 +1,48 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import LandingPage from './components/LandingPage'
-import Services from './components/Services'
-import Projects from './components/Projects'
-import Resources from './components/Resources'
-import AboutUs from './components/AboutUs'
-import ContactUs from './components/ContactUs'
-import Pioneers from './components/Pioneers'
-import Awards from './components/Awards'
-import page404 from './components/page404'
-// import Posts from './components/Posts'
+// import Navbar from './components/Navbar'
+
+// import Services from './components/Services'
+// import Projects from './components/Projects'
+// import Resources from './components/Resources'
+// import AboutUs from './components/AboutUs'
+// import ContactUs from './components/ContactUs'
+// import Pioneers from './components/Pioneers'
+// import Awards from './components/Awards'
+// import page404 from './components/page404'
+//  import Posts from './components/Posts'
 
 
 
-import ProjectDetails from './components/Projects/ProjectDetails'
+// import ProjectDetails from './components/Projects/ProjectDetails'
 // import ProjectsUpload from './components/Projects/ProjectsUpload'
 
 
 
 
 
-import Login from './components/Dashboard/Login'
-import Register from './components/Dashboard/Register'
-import Dashboard from './components/Dashboard/Dashboard'
-import Projectlist from './components/Dashboard/Projectlist'
-import Resourceslist from './components/Dashboard/Resourceslist'
-import Fileslist from './components/Dashboard/Fileslist'
+// import Login from './components/Dashboard/Login'
+// import Register from './components/Dashboard/Register'
+// import Dashboard from './components/Dashboard/Dashboard'
+// import Projectlist from './components/Dashboard/Projectlist'
+// import Resourceslist from './components/Dashboard/Resourceslist'
+// import Fileslist from './components/Dashboard/Fileslist'
 
-import Enquirylist from './components/Dashboard/Enquirylist'
-import AddResources from './components/Dashboard/AddResources'
-import AddFiles from './components/Dashboard/AddFiles'
+// import Enquirylist from './components/Dashboard/Enquirylist'
+// import AddResources from './components/Dashboard/AddResources'
+// import AddFiles from './components/Dashboard/AddFiles'
 
 
 
-import AddProjects from './components/Dashboard/AddProjects'
-import UpdateProjects from './components/Dashboard/UpdateProjects'
+// import AddProjects from './components/Dashboard/AddProjects'
+// import UpdateProjects from './components/Dashboard/UpdateProjects'
 
-import Postslist from './components/Dashboard/Postslist'
+// import Postslist from './components/Dashboard/Postslist'
 
-import AddPosts from './components/Dashboard/AddPosts'
-import UpdatePosts from './components/Dashboard/UpdatePosts'
+// import AddPosts from './components/Dashboard/AddPosts'
+// import UpdatePosts from './components/Dashboard/UpdatePosts'
+
 
 
 
@@ -54,6 +57,7 @@ import axios from "axios";
 
 // Vue.use(VueRouter);
 const routes =[
+
         {
             path:'/',
             name:'landingpage',
@@ -63,70 +67,65 @@ const routes =[
         {
             path:'/services',
             name:'services',
-            component:Services
+            component:()=> import(/* webpackChunkName:"services"*/"./components/Services")
         },
         {
             path:'/projects',
             name:'projects',
-            component:Projects
+            component:()=> import(/* webpackChunkName:"projects"*/"./components/Projects")
+
         },
         {
             path:'/projectdetails/:id',
             name:'projectdetails',
-            component:ProjectDetails
+            component:()=> import(/* webpackChunkName:"projectdetails"*/"./components/Projects/ProjectDetails")
+
         },
         {
             path:'/resources',
             name:'resources',
-            component:Resources
+            component:()=> import(/* webpackChunkName:"Resources"*/"./components/Resources")
+            
         },
-        // {
-        //     path:'/resourcesupload',
-        //     name:'resourcesupload',
-        //     component:ResourcesUpload
-        // },
+
         {
             path:'/aboutus',
             name:'aboutus',
-            component:AboutUs
+            component:()=> import(/* webpackChunkName:"About us"*/"./components/AboutUs")
+
         },
         {
             path:'/contactus',
             name:'contactus',
-            component:ContactUs
+            component:()=> import(/* webpackChunkName:"Contact us"*/"./components/ContactUs")
+
+            
         },
         {
             path:'/pioneers',
             name:'pioneers',
-            component:Pioneers
+            component:()=> import(/* webpackChunkName:"Pioneers us"*/"./components/Pioneers")
+
         },
         {
             path:'/awards',
             name:'awards',
-            component:Awards
+            component:()=> import(/* webpackChunkName:"Awards"*/"./components/ContactUs")
+
         },
         {
             path:'/page404',
             name:'page404',
-            component:page404
+            component:()=> import(/* webpackChunkName:"Page404"*/"./components/ContactUs")
+
 
         },
-        // {
-        //     path:'/projectsupload',
-        //     name:'projectsupload',
-        //     component:ProjectsUpload
-
-        // },
-        // {
-        //     path:'/projectsupdate/:id',
-        //     name:'projectsupdate',
-        //     component:ProjectsUpdate
-
-        // },
+      
         {
             path:'/login',
             name:'login',
-            component:Login
+            component:()=> import(/* webpackChunkName:"Login"*/"./components/Dashboard/Login")
+            
 
         },
         // {
@@ -138,7 +137,12 @@ const routes =[
         {
             path:'/dashboard',
             name:'dashboard',
-            component:Dashboard,
+            // component:Dashboard,
+            component:()=> import(/* webpackChunkName:"Dashboard"*/"./components/Dashboard/Dashboard"),
+
+            meta: {
+                hideNav: true
+            },
             beforeEnter:(to,from,next)=>{
                 axios.get('/api/authenticated').then(()=>{
                     next();
@@ -149,71 +153,85 @@ const routes =[
             children: [
                 {
                   path: '',
-                  component: Dashboard,
+            component:()=> import(/* webpackChunkName:"Dashboard"*/"./components/Dashboard/Login")
+
                 },
                 {
                     path:'/projectlist',
                     name:'dashboardprojectlist',
-                    component:Projectlist
+            component:()=> import(/* webpackChunkName:"Projectlist"*/"./components/Dashboard/Projectlist")
+
                 },
                 {
                     path:'/addproject',
                     name:'addproject',
-                    component:AddProjects
+            component:()=> import(/* webpackChunkName:"AddProjects"*/"./components/Dashboard/AddProjects")
+
                 },
                 {
                     path:'/projectsupdate/:id',
                     name:'projectsupdate',
-                    component:UpdateProjects
+            component:()=> import(/* webpackChunkName:"UpdateProjects"*/"./components/Dashboard/UpdateProjects")
+
         
                 },
                 {
                     path:'/resourceslist',
                     name:'dashboardresourceslist',
-                    component:Resourceslist
+            component:()=> import(/* webpackChunkName:"Resourceslist"*/"./components/Dashboard/Resourceslist")
+
                 },
                 {
                     path:'/addresources',
                     name:'addresources',
-                    component:AddResources
+            component:()=> import(/* webpackChunkName:"AddResources"*/"./components/Dashboard/AddResources")
+
                 },
                 {
                     path:'/enquirylist',
                     name:'dashboardenquirylist',
-                    component:Enquirylist
+            component:()=> import(/* webpackChunkName:"Enquirylist"*/"./components/Dashboard/Enquirylist")
+
                 },
                 {
                     path:'/fileslist',
                     name:'fileslist',
-                    component:Fileslist
+            component:()=> import(/* webpackChunkName:"Fileslist"*/"./components/Dashboard/Fileslist")
+
                 },
                 {
                     path:'/addfiles',
                     name:'addfiles',
-                    component:AddFiles
+            component:()=> import(/* webpackChunkName:"AddFiles"*/"./components/Dashboard/AddFiles")
+
                 },
              
                 {
                     path:'/register',
                     name:'register',
-                    component:Register
+                    
+            component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
+
         
                 },
 
                 {
                     path:'/postslist',
                     name:'postslist',
-                    component:Postslist
+            component:()=> import(/* webpackChunkName:"Postslist"*/"./components/Dashboard/Postslist")
+
                 },
                 {
                     path:'/addposts',
                     name:'addposts',
-                    component:AddPosts
+            component:()=> import(/* webpackChunkName:"AddPosts"*/"./components/Dashboard/AddPosts")
+
                 },
                 {
                     path:'/postsupdate/:id',
                     name:'postsupdate',
-                    component:UpdatePosts
+            component:()=> import(/* webpackChunkName:"UpdatePosts"*/"./components/Dashboard/UpdatePosts")
+
         
                 },
               ],
