@@ -110,7 +110,7 @@ const routes =[
         {
             path:'/awards',
             name:'awards',
-            component:()=> import(/* webpackChunkName:"Awards"*/"./components/ContactUs")
+            component:()=> import(/* webpackChunkName:"Awards"*/"./components/Awards")
 
         },
         {

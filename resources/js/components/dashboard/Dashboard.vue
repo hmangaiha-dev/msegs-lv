@@ -14,9 +14,7 @@
                 <div class="flex items-center">
                    
                     <span class="text-white text-2xl mx-2 font-semibold">
-                        <i class="fas fa-cat fx-6"></i>
-                        <br>
-                Mini CMS</span>
+MSeGS</span>
                 </div>
             </div>
     
