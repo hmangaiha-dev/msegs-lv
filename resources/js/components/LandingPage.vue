@@ -16,7 +16,7 @@
 
       <!-- <div class="images"> -->
         <img
-          src="../assets/banner.png"
+          src="../assets/banner.jpg"
           class="landing1image"
 
         />

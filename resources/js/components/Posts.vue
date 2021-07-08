@@ -47,7 +47,7 @@ export default {
 
   created(){
      this.axios.get("/api/posts/").then((response) => {
-            console.log(response.data);
+            // console.log(response.data);
             this.posts = response.data;
         });
   }
