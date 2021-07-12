@@ -208,7 +208,7 @@
               
               </p>
            
-            <p id="ourprofilecontent">Projects launched under Govt. of Mizoram</p>
+            <p id="ourprofilecontent">Projects launched</p>
           </div>
         </div>
       </div>

@@ -83,7 +83,7 @@
                 <vue3-autocounter ref='counter' :startAmount='0' :endAmount='500' :duration='3' prefix='' suffix='+' separator='' decimalSeparator=' ' :decimals='0' :autoinit='true' />
 
             </p>
-            <p id="ourprofilecontent">Projects launched under Govt. of Mizoram</p>
+            <p id="ourprofilecontent">Projects launched</p>
           </div>
         </div>
      
