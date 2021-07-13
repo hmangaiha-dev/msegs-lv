@@ -188,7 +188,7 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  // justify-content: center;
+  justify-content: center;
   align-content: flex-start;
   
 }
