@@ -235,7 +235,7 @@ export default {
   width: 340px;
   // min-width:380px;
   margin:0.5rem 15px;
-  min-height:10rem;
+  min-height:8rem;
   height:400px;
   border:1px solid #E4E5E6;
   position: relative;
