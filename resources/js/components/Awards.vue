@@ -11,7 +11,7 @@
 
 
 <div class="cards">
-          <img   src="../assets/awards/skotch2.png"  alt=""
+          <img   src="../assets/awards/scho.png"  alt=""
             srcset="" class="cardimage"
           />          
           <div class="cardcontainer" >
@@ -46,7 +46,7 @@
 
 
             <div class="cards">
-          <img   src="../assets/awards/skotch.png"  alt=""
+          <img   src="../assets/awards/inventory.png"  alt=""
             srcset="" class="cardimage"
           />          
           <div class="cardcontainer" >
@@ -169,8 +169,6 @@ export default {
   border:1px solid #E4E5E6;
   position: relative;
   border-radius:5px;
-
-
 }
 .projectsback {
   background-color: #ececec;
@@ -215,9 +213,34 @@ export default {
   // margin:auto;
 }
   .card{
-    width:95%;
+    width:90%;
     margin-bottom:12px;
+    transition: 0.3s;
+  width: 16rem;
+  margin:0.5rem;
+  min-height:10rem;
+  height:26rem;
+  border:1px solid #E4E5E6;
+  position: relative;
   }
   
+  
 }
+  @media only screen and (min-width:1367px) {
+
+    
+.card {
+  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
+  transition: 0.3s;
+  width: 340px;
+  // min-width:380px;
+  margin:0.5rem 15px;
+  min-height:10rem;
+  height:512px;
+  border:1px solid #E4E5E6;
+  position: relative;
+  margin-bottom:30px;
+
+}
+  }
 </style>
