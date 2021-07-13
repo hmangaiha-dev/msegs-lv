@@ -212,7 +212,7 @@ export default {
   align-items: center;
   // margin:auto;
 }
-  .card{
+  .cards{
     width:90%;
     margin-bottom:12px;
     transition: 0.3s;
@@ -229,14 +229,14 @@ export default {
   @media only screen and (min-width:1367px) {
 
     
-.card {
+.cards {
   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0);
   transition: 0.3s;
   width: 340px;
   // min-width:380px;
   margin:0.5rem 15px;
-  min-height:13rem;
-  height:550px;
+  min-height:10rem;
+  height:512px;
   border:1px solid #E4E5E6;
   position: relative;
   margin-bottom:30px;
