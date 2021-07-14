@@ -62,8 +62,6 @@
                             style="padding-left: 2px"
                         ></i
                     ></span>
-                </li>
-
                     <div class="dropdown-content">
                         <router-link to="/aboutus"
                             ><li class="items">Who we are</li></router-link
@@ -80,6 +78,7 @@
                             </li></router-link
                         >
                     </div>
+                </li>
                 <li class="items" >
                     <router-link to="/contactus" exact-active-class="activating">Contact Us</router-link>
                 </li>
