@@ -260,7 +260,6 @@ export default {
 }
 .sdtext {
   width: 45%;
-  max-width:45%;
 }
 #blues {
   color: #0a2458;
@@ -288,14 +287,11 @@ export default {
   color: #393939;
 }
 .sdimage {
-  // width: 55%;
+  width: 55%;
   text-align: center;
   margin: auto;
-  // height: 50vh;
-  height:auto;
-  // height:35vh;
+  height: 35vh;
   width: 30vw;
-  max-width:30vw;
 }
 
 .mobileservices{

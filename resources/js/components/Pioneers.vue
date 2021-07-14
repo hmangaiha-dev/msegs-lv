@@ -556,7 +556,7 @@ margin:0.5rem;
 }
 .directorsimage {
   width: 32%;
-  height: 10rem;
+  height: auto;
   // padding:0 4px;
   //   margin: 0 12.5px 0 0;
   //   object-fit: contain;

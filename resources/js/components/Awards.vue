@@ -27,7 +27,7 @@
             srcset="" class="cardimage"
           />          
           <div class="cardcontainer" >
-            <p class="carddate" >2015</p>
+            <p class="carddate" >2017</p>
             <span class="cardtitle">National e-Governance Award</span>
             <p class="cardtexts">Aizawl DDMA apps</p>
           </div>
@@ -50,7 +50,7 @@
             srcset="" class="cardimage"
           />          
           <div class="cardcontainer" >
-            <p class="carddate" >2014</p>
+            <p class="carddate" >2016</p>
             <span class="cardtitle">Skoch Order of Merit Award</span>
             <p class="cardtexts">Inventory Management System </p>
           </div>
@@ -62,7 +62,7 @@
             srcset="" class="cardimage"
           />          
           <div class="cardcontainer" >
-            <p class="carddate" >2017</p>
+            <p class="carddate" >2016</p>
             <span class="cardtitle">National Platinum Award</span>
             <p class="cardtexts">e-District Project </p>
           </div>
@@ -76,7 +76,7 @@
             srcset="" class="cardimage"
           />          
           <div class="cardcontainer" >
-            <p class="carddate" >2017</p>
+            <p class="carddate" >2014</p>
             <span class="cardtitle">5th e-North East Summit Award</span>
             <p class="cardtexts">Most Emerging I.T State of the year </p>
           </div>
