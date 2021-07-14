@@ -5,8 +5,22 @@
     </span>
     <div class="container centercontainer">
       
+
+
+      
       <div class="projectsrows" >
-      <span v-for="project in projects" :key="project.id">
+        <span v-if="loading" class="loading" style="display:flex;flex-direction:row;flex-wrap:wrap"  >
+<ProjectCardSkeleton/>
+<ProjectCardSkeleton/>
+
+
+
+
+        </span>
+
+
+
+      <span v-else v-for="project in projects" :key="project.id">
 
         <!-- <div class="card">
           <img
@@ -39,10 +53,13 @@
 
 <script>
 import ProjectCard from './Projects/ProjectCard.vue'
+import ProjectCardSkeleton from './Projects/ProjectCardSkeleton.vue'
+
 export default {
-  components:{ProjectCard},
+  components:{ProjectCard,ProjectCardSkeleton},
   data(){
     return{
+      loading:true,
       projects:[
         // {title:'m-covid',subtitle:' A single platform to get updates on covid cases, issue permit for travels donations for pandemic, monitoring quarantine zones and more.',imgsrc:"sdcproject.png"},
         
@@ -59,6 +76,7 @@ export default {
      this.axios.get('/api/projects/').then((response)=>{
       console.log(response.data);
       this.projects=response.data;
+      this.loading = false;
     });
   }
 };
@@ -96,6 +114,10 @@ export default {
     text-decoration: none;
     color: #f23d46;
 }
+
+// .loading{
+//   display:flex;flex-direction:row;flex-wrap:wrap;
+// }
 
 @media screen and (max-width:800px){
   #app > div > div.spacing-top > div > div:nth-child(2){
