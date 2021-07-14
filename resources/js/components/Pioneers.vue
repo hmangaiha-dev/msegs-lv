@@ -558,6 +558,10 @@ border-color: #f23d46;
   box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
   border: solid 0.5px #e4e5e6;
   background-color: #ffffff;
+
+  //changes
+margin:0.5rem 0.2rem;
+
 }
 .directorsimage {
   width: 32%;
@@ -598,7 +602,7 @@ border-color: #f23d46;
 
 
 .container{
-        margin:0 6vw 0 6vw;
+        margin:0 4vw 0 6vw;
     }
 
     .thinkcards{
