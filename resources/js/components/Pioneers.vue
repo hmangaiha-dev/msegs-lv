@@ -596,5 +596,18 @@ border-color: #f23d46;
     align-items: center;
   }       
 
+
+.container{
+        margin:0 6vw 0 6vw;
+    }
+
+    .thinkcards{
+     width: 16rem;
+  height: 5rem;
+margin: 6px;
+
 }
+}
+
+
 </style>
