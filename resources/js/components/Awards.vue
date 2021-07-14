@@ -219,7 +219,7 @@ export default {
   width: 16rem;
   margin:0.5rem;
   min-height:10rem;
-  height:26rem;
+  height:20rem;
   border:1px solid #E4E5E6;
   position: relative;
   }
