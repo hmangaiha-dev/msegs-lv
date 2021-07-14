@@ -283,9 +283,7 @@ export default {
 }
 .directorscards {
   width: 24rem;
-  // height: 10rem;
-  height: 9rem;
-
+  height: 10rem;
 //   margin: 28px 16.5px 20.5px 180px;
 margin:0.5rem;
 //   padding: 0 17px 0 0;
@@ -303,12 +301,7 @@ margin:0.5rem;
 }
 .directorsimage {
   width: 32%;
-  margin:1rem;
-  // height: 10rem;
-  height:auto;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  height: 10rem;
   //   margin: 0 12.5px 0 0;
   //   object-fit: contain;
 }
