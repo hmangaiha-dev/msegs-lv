@@ -9,7 +9,7 @@
         <p class="headings sdheadings">Software Development</p>
         <div class="mobileservices">
 <div class="sdimage">
-        <img src="../assets/sdbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/sdbig.png" alt="" srcset="" class="sdimage" />
       </div>
         </div>
         <p id="sdcontents">
@@ -29,14 +29,14 @@
         </ul>
       </div>
       <div class="sdimage desktopservices">
-        <img src="../assets/sdbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/sdbig.png" alt="" srcset="" class="sdimage" />
       </div>
     </div>
 
     <div class="services1 container">
 
       <div class="sdimage desktopservices">
-        <img src="../assets/consultbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/consultbig.png" alt="" srcset="" class="sdimage" />
       </div>
 
       <div class="sdtext" >
@@ -44,7 +44,7 @@
     <span  id="cs"></span>
     <div class="mobileservices">
 <div class="sdimage">
-        <img src="../assets/consultbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/consultbig.png" alt="" srcset="" class="sdimage" />
       </div>
         </div>
         <p id="sdcontents">
@@ -82,7 +82,7 @@
         <p class="headings sdheadings">Manpower Outsourcing</p>
         <div class="mobileservices">
 <div class="sdimage ">
-        <img src="../assets/manpowerbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/manpowerbig.png" alt="" srcset="" class="sdimage" />
       </div>
         </div>
         <p id="sdcontents">
@@ -107,14 +107,14 @@
         </ul> -->
       </div>
       <div class="sdimage desktopservices">
-        <img src="../assets/manpowerbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/manpowerbig.png" alt="" srcset="" class="sdimage" />
       </div>
     </div>
 
     <div class="services1 container">
       <div class="sdimage" >
         <img
-          src="../assets/datacentrebig.jpg"
+          src="../assets/datacentrebig.png"
           alt=""
           srcset=""
           class="sdimage desktopservices"
@@ -124,7 +124,7 @@
         <p class="headings sdheadings" id="blues">Data Center</p>
         <div class="mobileservices">
 <div class="sdimage">
-        <img src="../assets/datacentrebig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/datacentrebig.png" alt="" srcset="" class="sdimage" />
       </div>
         </div>
       <span id="dc"></span>
@@ -148,7 +148,7 @@
         <p class="headings sdheadings">Internetworking Service</p>
         <div class="mobileservices">
 <div class="sdimage">
-        <img src="../assets/internetworkingbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/internetworkingbig.png" alt="" srcset="" class="sdimage" />
       </div>
         </div>
         <p id="sdcontents">
@@ -165,7 +165,7 @@
       </div>
       <div class="sdimage desktopservices">
         <img
-          src="../assets/internetworkingbig.jpg"
+          src="../assets/internetworkingbig.png"
           alt=""
           srcset=""
           class="sdimage"
@@ -176,7 +176,7 @@
     <div class="services1 container">
       <div class="sdimage desktopservices">
         <img
-          src="../assets/capacitybuildingbig.jpg"
+          src="../assets/capacitybuildingbig.png"
           alt=""
           srcset=""
           class="sdimage"
@@ -188,7 +188,7 @@
         </p>
         <div class="mobileservices">
 <div class="sdimage">
-        <img src="../assets/capacitybuildingbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/capacitybuildingbig.png" alt="" srcset="" class="sdimage" />
       </div>
         </div>
         <p id="sdcontents">

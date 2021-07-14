@@ -253,7 +253,7 @@ export default {
 };
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped>
 @import "../assets/msegsstyles.scss";
 
 .aboutusback {
@@ -543,11 +543,16 @@ border-color: #f23d46;
 //     border:1px solid #f23d46;
 // }
 @media screen and(max-width:800px){
+
+.directorsrows{
+  padding:8px 1rem;
+}
+
   .directorscards {
   width: 100%;
-  height: 10rem;
+  height: auto;
 //   margin: 28px 16.5px 20.5px 180px;
-margin:0.5rem;
+// margin:0.5rem;
 //   padding: 0 17px 0 0;
   border-radius: 2.5px;
   box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
@@ -556,7 +561,9 @@ margin:0.5rem;
 }
 .directorsimage {
   width: 32%;
-  height: auto;
+  // height: auto;
+  height:32%;
+  margin:auto auto;
   // padding:0 4px;
   //   margin: 0 12.5px 0 0;
   //   object-fit: contain;
