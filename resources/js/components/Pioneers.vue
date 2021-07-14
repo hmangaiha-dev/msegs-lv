@@ -284,7 +284,7 @@ export default {
 .directorscards {
   width: 24rem;
   // height: 10rem;
-  height: 9rem;
+  height: 9.5rem;
 
 //   margin: 28px 16.5px 20.5px 180px;
 margin:0.5rem;
