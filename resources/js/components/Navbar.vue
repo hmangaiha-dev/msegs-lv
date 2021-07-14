@@ -122,9 +122,10 @@
                             </li></router-link
                         >
                         <!-- <li class="items"> <router-link to="/aboutus">About us</router-link> </li> -->
-                            <span @click="mobiledropdowning">
                         
                         <li class="items">
+                            <span @click="mobiledropdowning">
+
                                 About us
                                 <i
                                     class="
@@ -134,7 +135,7 @@
                                     "
                                     style="position: absolute; right: 80px"
                                 ></i
-                            >
+                            ></span>
                             <div
                                 :class="{
                                     mobiledropdown: mobiledropdown,
@@ -164,7 +165,7 @@
                                     </li></router-link
                                 >
                             </div>
-                        </li></span>
+                        </li>
                         <router-link to="/contactus" @click="chickenburger"
                             ><li class="items">Contact Us</li></router-link
                         >
