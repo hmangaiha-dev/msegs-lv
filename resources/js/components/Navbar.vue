@@ -444,7 +444,9 @@ export default {
         flex-direction: column;
         // margin: 4px 3rem 0 20px;
         // width: 100%;
-        margin: 1rem 4vw 0 8vw;
+// ori        margin: 1rem 4vw 0 8vw;
+        margin: 1rem -4vw 0 8vw;
+
         // background-color: cyan;
         width: device-width;
         // margin: 0;

@@ -602,7 +602,7 @@ border-color: #f23d46;
     }
 
     .thinkcards{
-     width: 16rem;
+     width: 15rem;
   height: 5rem;
 margin: 6px;
 
