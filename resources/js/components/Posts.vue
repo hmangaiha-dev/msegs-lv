@@ -103,7 +103,7 @@ export default {
 
 /* richtext */
 
-.updatescontents > div:nth-child(n) > div:nth-child(n) > h5:nth-child(n){
+.updatescontents > div:nth-child(1) > div:nth-child(n) > h5:nth-child(n){
     font-family: 'Poppins';
 
   font-size: 20px;
