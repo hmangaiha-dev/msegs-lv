@@ -112,7 +112,8 @@ export default {
 		
 	}
 	.updatesrows{
-	margin-bottom:1rem
+	/* margin-bottom:1rem; */
+  height:auto;
 
 }
 	
