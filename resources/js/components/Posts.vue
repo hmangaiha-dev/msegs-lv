@@ -93,8 +93,8 @@ export default {
   color:white;
   font-size:16px;
   font-family:Poppins;
-  padding-left:1rem;
-  padding-top:1rem;
+  padding-left:2rem;
+  padding-top:2rem;
 
   background-color: #0a2458;
 }
