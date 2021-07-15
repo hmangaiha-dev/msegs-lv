@@ -169,6 +169,10 @@ export default {
   height:auto;
 
 }
+
+.container{
+  margin:0 4vw;
+}
 	
 }
 </style>
