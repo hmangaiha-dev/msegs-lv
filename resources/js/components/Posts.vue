@@ -75,6 +75,7 @@ export default {
 	font-size:25x;
 	font-family: 'Playfair Display';
 	font-weight: bold;
+  
 }
 
 
@@ -98,6 +99,20 @@ export default {
   padding:2rem;
 
   background-color: #0a2458;
+}
+
+/* richtext */
+
+.updatescontents > div:nth-child(n) > div:nth-child(n) > h5:nth-child(n){
+    font-family: 'Poppins';
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  font-stretch: normal;
+
+  font-style: normal;
 }
 
 @media only screen and (max-width:800px){
