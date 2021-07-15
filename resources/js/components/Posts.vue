@@ -23,7 +23,7 @@
 	   
           <div v-for="post in posts" :key="post.id">
             <p class="posttitle">{{post.title}}</p>
-            <p style="font-size:14px;">{{post.date}}</p>
+            <!-- <p style="font-size:14px;">{{post.date}}</p> -->
 			<p style="padding:1rem 0"></p>
             <!-- <p>{{post.published}}</p> -->
 
@@ -92,9 +92,10 @@ export default {
   border-radius: 8px;
   color:white;
   font-size:16px;
-  font-family:Poppins;
-  padding-left:2rem;
-  padding-top:2rem;
+  font-family:'Poppins';
+  /* padding-left:2rem;
+  padding-top:2rem; */
+  padding:2rem;
 
   background-color: #0a2458;
 }
