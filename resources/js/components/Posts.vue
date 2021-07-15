@@ -72,7 +72,7 @@ export default {
 	
 }
 .posttitle{
-	font-size:24px;
+	font-size:25x;
 	font-family: 'Playfair Display';
 	font-weight: bold;
 }

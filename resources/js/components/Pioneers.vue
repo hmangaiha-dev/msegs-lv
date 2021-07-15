@@ -291,9 +291,9 @@ margin:0.5rem;
 //   padding: 0 17px 0 0;
   border-radius: 2.5px;
   // box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
-  border:1px solid #E4E5E6;
+  // border:1px solid #E4E5E6;
 
-  border: solid 0.5px #e4e5e6;
+  // border: solid 0.5px #e4e5e6;
   background-color: #ffffff;
 }
 .directorsrows {
@@ -396,8 +396,10 @@ margin:0.5rem;
 //   margin: 40px 13.5px 27.5px 180px;
 margin: 6px;
 //   padding: 13px 8px 9px 8.5px;
+
   border-radius:4px;
   border: solid 0.5px #e4e5e6;
+  
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -554,9 +556,13 @@ border-color: #f23d46;
 //   margin: 28px 16.5px 20.5px 180px;
 // margin:0.5rem;
 //   padding: 0 17px 0 0;
-  border-radius: 2.5px;
-  box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
-  border: solid 0.5px #e4e5e6;
+
+
+
+  // border-radius: 2.5px;
+  // box-shadow: 0 0 7.5px 0 rgba(0, 0, 0, 0.16);
+  // border: solid 0.5px #e4e5e6;
+  
   background-color: #ffffff;
 
   //changes
