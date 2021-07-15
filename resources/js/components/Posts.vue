@@ -5,7 +5,7 @@
 
 <div class="updatesrows " >
 	
-        <img src="../assets/updates.png" alt="" srcset="" class="updateimage" />
+        <img src="../assets/post.png" alt="" srcset="" class="updateimage" />
         <!-- <div class="updatescontents">
           <div v-for="post in posts" :key="post.id">
             <h3>{{post.title}}</h3>
@@ -57,15 +57,18 @@ export default {
 
 <style scoped>
 .updatesrows{
-	margin-bottom:-20rem
+	/* margin-bottom:-20rem; */
+  position:relative;
+  height:780px;
 
 }
 .updateimage{
-  width: 42vw;
-  height: auto;
-
+  /* width: 42vw; */
+  /* height: auto; */
+  width:840px;
+  height:560px;
 	position: relative;
-	left:30%;
+	left:0;
 	
 }
 .posttitle{
@@ -77,14 +80,16 @@ export default {
 
 
 .updatescontents{
-	position: relative;
-	left:10%;
-	/* top:2%; */
-	top:-400px;
+	position: absolute;
+	/* left:80%; */
+  right:0%;
+	top:10%;
+	/* top:-400px; */
 	/* bottom:1rem; */
 	/* bottom:30rem; */
-	  width:40%;
-  height:20rem;
+	  width:30%;
+  height:24rem;
+  border-radius: 8px;
   color:white;
   font-size:16px;
   font-family:Poppins;
