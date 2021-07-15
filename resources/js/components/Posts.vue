@@ -2,6 +2,9 @@
 
 
 
+       <agile :dots="true" :autoplay="true" :navButtons="false" :mobileFirst="true">
+        <div class="slide">
+            
 
 <div class="updatesrows " >
 	
@@ -34,11 +37,23 @@
 
         </div>
         </div>
+
+
+
+        </div>
+        
+        ...
+       
+    </agile>
  
 </template>
 
 <script>
+import { VueAgile } from 'vue-agile'
 export default {
+  components: {
+        agile: VueAgile 
+    },
 	data(){
 		return{
             posts:[]
@@ -55,11 +70,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .updatesrows{
 	/* margin-bottom:-20rem; */
   position:relative;
-  height:780px;
+  height:600px;
 
 }
 .updateimage{
@@ -103,8 +118,8 @@ export default {
 
 /* richtext */
 
-.updatescontents > div:nth-child(1) > div:nth-child(n) > h5:nth-child(n){
-    font-family: 'Poppins';
+.updatescontents > div:nth-child(n) > div:nth-child(n) > h3:nth-child(n){
+  font-family: 'Poppins';
 
   font-size: 20px;
 
@@ -116,8 +131,8 @@ export default {
 }
 
 
-.updatescontents > div:nth-child(n) > div:nth-child(n) > p:nth-child(n){
-    font-family: 'Poppins';
+.updatescontents > div:nth-child(1) > div:nth-child(3) > p:nth-child(n){
+   font-family: 'Poppins';
 
   font-size: 16px;
 
@@ -126,7 +141,13 @@ export default {
   font-stretch: normal;
 
   font-style: normal;
+  background: red;
+  border:3px solid red;
 }
+
+
+
+
 
 @media only screen and (max-width:800px){
 	.updateimage{
