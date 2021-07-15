@@ -115,6 +115,19 @@ export default {
   font-style: normal;
 }
 
+
+.updatescontents > div:nth-child(n) > div:nth-child(n) > p:nth-child(n){
+    font-family: 'Poppins';
+
+  font-size: 16px;
+
+  font-weight: normal;
+
+  font-stretch: normal;
+
+  font-style: normal;
+}
+
 @media only screen and (max-width:800px){
 	.updateimage{
 		/* position: inherit; */
