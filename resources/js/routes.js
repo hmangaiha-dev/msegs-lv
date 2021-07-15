@@ -255,9 +255,7 @@ const routes =[
 const router = createRouter({ 'history': createWebHistory(),
     mode: 'history',
     routes,
-    scrollBehavior() {
-        return { x: 0, y: 0 };
-      },
+    
     // scrollBehavior(to) {
     //     const position={};
     //     if (to.hash) {
