@@ -114,6 +114,10 @@ export default {
 	}
 	.updatesrows{
 	/* margin-bottom:1rem; */
+  position: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   height:auto;
 
 }
