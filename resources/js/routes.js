@@ -137,109 +137,109 @@ const routes =[
         //     component:Register
 
         // },
-        {
-            path:'/dashboard',
-            name:'dashboard',
-            // component:Dashboard,
-            component:()=> import(/* webpackChunkName:"Dashboard"*/"./components/Dashboard/Dashboard"),
+        // {
+        //     path:'/dashboard',
+        //     name:'dashboard',
+        //     // component:Dashboard,
+        //     component:()=> import(/* webpackChunkName:"Dashboard"*/"./components/Dashboard/Dashboard"),
 
-            meta: {
-                hideNav: true
-            },
-            beforeEnter:(to,from,next)=>{
-                axios.get('/api/authenticated').then(()=>{
-                    next();
-                }).catch(()=>{
-                    return next({name:'login'})
-                })
-            },
-            children: [
-                {
-                  path: '',
-            component:()=> import(/* webpackChunkName:"Dashboard"*/"./components/Dashboard/Login")
+        //     meta: {
+        //         hideNav: true
+        //     },
+        //     beforeEnter:(to,from,next)=>{
+        //         axios.get('/api/authenticated').then(()=>{
+        //             next();
+        //         }).catch(()=>{
+        //             return next({name:'login'})
+        //         })
+        //     },
+        //     children: [
+        //         {
+        //           path: '',
+        //     component:()=> import(/* webpackChunkName:"Dashboard"*/"./components/Dashboard/Login")
 
-                },
-                {
-                    path:'/projectlist',
-                    name:'dashboardprojectlist',
-            component:()=> import(/* webpackChunkName:"Projectlist"*/"./components/Dashboard/Projectlist")
+        //         },
+        //         {
+        //             path:'/projectlist',
+        //             name:'dashboardprojectlist',
+        //     component:()=> import(/* webpackChunkName:"Projectlist"*/"./components/Dashboard/Projectlist")
 
-                },
-                {
-                    path:'/addproject',
-                    name:'addproject',
-            component:()=> import(/* webpackChunkName:"AddProjects"*/"./components/Dashboard/AddProjects")
+        //         },
+        //         {
+        //             path:'/addproject',
+        //             name:'addproject',
+        //     component:()=> import(/* webpackChunkName:"AddProjects"*/"./components/Dashboard/AddProjects")
 
-                },
-                {
-                    path:'/projectsupdate/:id',
-                    name:'projectsupdate',
-            component:()=> import(/* webpackChunkName:"UpdateProjects"*/"./components/Dashboard/UpdateProjects")
+        //         },
+        //         {
+        //             path:'/projectsupdate/:id',
+        //             name:'projectsupdate',
+        //     component:()=> import(/* webpackChunkName:"UpdateProjects"*/"./components/Dashboard/UpdateProjects")
 
         
-                },
-                {
-                    path:'/resourceslist',
-                    name:'dashboardresourceslist',
-            component:()=> import(/* webpackChunkName:"Resourceslist"*/"./components/Dashboard/Resourceslist")
+        //         },
+        //         {
+        //             path:'/resourceslist',
+        //             name:'dashboardresourceslist',
+        //     component:()=> import(/* webpackChunkName:"Resourceslist"*/"./components/Dashboard/Resourceslist")
 
-                },
-                {
-                    path:'/addresources',
-                    name:'addresources',
-            component:()=> import(/* webpackChunkName:"AddResources"*/"./components/Dashboard/AddResources")
+        //         },
+        //         {
+        //             path:'/addresources',
+        //             name:'addresources',
+        //     component:()=> import(/* webpackChunkName:"AddResources"*/"./components/Dashboard/AddResources")
 
-                },
-                {
-                    path:'/enquirylist',
-                    name:'dashboardenquirylist',
-            component:()=> import(/* webpackChunkName:"Enquirylist"*/"./components/Dashboard/Enquirylist")
+        //         },
+        //         {
+        //             path:'/enquirylist',
+        //             name:'dashboardenquirylist',
+        //     component:()=> import(/* webpackChunkName:"Enquirylist"*/"./components/Dashboard/Enquirylist")
 
-                },
-                {
-                    path:'/fileslist',
-                    name:'fileslist',
-            component:()=> import(/* webpackChunkName:"Fileslist"*/"./components/Dashboard/Fileslist")
+        //         },
+        //         {
+        //             path:'/fileslist',
+        //             name:'fileslist',
+        //     component:()=> import(/* webpackChunkName:"Fileslist"*/"./components/Dashboard/Fileslist")
 
-                },
-                {
-                    path:'/addfiles',
-                    name:'addfiles',
-            component:()=> import(/* webpackChunkName:"AddFiles"*/"./components/Dashboard/AddFiles")
+        //         },
+        //         {
+        //             path:'/addfiles',
+        //             name:'addfiles',
+        //     component:()=> import(/* webpackChunkName:"AddFiles"*/"./components/Dashboard/AddFiles")
 
-                },
+        //         },
              
-                {
-                    path:'/register',
-                    name:'register',
+        //         {
+        //             path:'/register',
+        //             name:'register',
                     
-            component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
+        //     component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
 
         
-                },
+        //         },
 
-                {
-                    path:'/postslist',
-                    name:'postslist',
-            component:()=> import(/* webpackChunkName:"Postslist"*/"./components/Dashboard/Postslist")
+        //         {
+        //             path:'/postslist',
+        //             name:'postslist',
+        //     component:()=> import(/* webpackChunkName:"Postslist"*/"./components/Dashboard/Postslist")
 
-                },
-                {
-                    path:'/addposts',
-                    name:'addposts',
-            component:()=> import(/* webpackChunkName:"AddPosts"*/"./components/Dashboard/AddPosts")
+        //         },
+        //         {
+        //             path:'/addposts',
+        //             name:'addposts',
+        //     component:()=> import(/* webpackChunkName:"AddPosts"*/"./components/Dashboard/AddPosts")
 
-                },
-                {
-                    path:'/postsupdate/:id',
-                    name:'postsupdate',
-            component:()=> import(/* webpackChunkName:"UpdatePosts"*/"./components/Dashboard/UpdatePosts")
+        //         },
+        //         {
+        //             path:'/postsupdate/:id',
+        //             name:'postsupdate',
+        //     component:()=> import(/* webpackChunkName:"UpdatePosts"*/"./components/Dashboard/UpdatePosts")
 
         
-                },
-              ],
+        //         },
+        //       ],
 
-        }
+        // }
     ]
 
 // const router = createRouter({
