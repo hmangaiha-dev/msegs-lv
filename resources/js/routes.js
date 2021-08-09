@@ -23,7 +23,7 @@ import Awards from './components/Awards'
 
 
 // import Login from './components/Dashboard/Login'
-// import Register from './components/Dashboard/Register'
+import Register from './components/Dashboard/Register'
 // import Dashboard from './components/Dashboard/Dashboard'
 // import Projectlist from './components/Dashboard/Projectlist'
 // import Resourceslist from './components/Dashboard/Resourceslist'
@@ -131,12 +131,12 @@ const routes =[
             
 
         },
-        // {
-        //     path:'/register',
-        //     name:'register',
-        //     component:Register
+        {
+            path:'/register',
+            name:'register',
+            component:Register
 
-        // },
+        },
         {
             path:'/dashboard',
             name:'dashboard',
@@ -209,14 +209,14 @@ const routes =[
 
                 },
              
-                {
-                    path:'/register',
-                    name:'register',
+            //     {
+            //         path:'/register',
+            //         name:'register',
                     
-            component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
+            // component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
 
         
-                },
+            //     },
 
                 {
                     path:'/postslist',
