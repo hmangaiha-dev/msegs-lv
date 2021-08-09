@@ -10,8 +10,10 @@
       
       <div class="projectsrows" >
         <span v-if="loading" class="loading" style="display:flex;flex-direction:row;flex-wrap:wrap"  >
+          <span v-for="index in 3" :key="index">
 <ProjectCardSkeleton/>
-<ProjectCardSkeleton/>
+
+          </span>
 
 
 

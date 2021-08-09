@@ -9,9 +9,21 @@ use App\Models\Resources;
 class ResourcesController extends Controller
 {
     //
-    public function index(){
-        $resources = Resources::all()->toArray();
-        return array_reverse($resources);      
+    public function index(Request $request){
+        // $resources = Resources::all()->toArray();
+        // return array_reverse($resources);      
+        // $resources = Resources::all()->toArray();
+        // return array_reverse($resources);      
+
+        // $resources = Resources::query();
+        // if (request('date')) {
+        //     $resources->where('date', 'Like', '%' . request('date') . '%');
+        // }
+
+        // return $resources->orderBy('id', 'DESC')->paginate(10);
+        $year = request('date');
+        $resources = Resources::whereYear('date', '=', $year)->get();
+        return response()->json($resources);
     
       }
     

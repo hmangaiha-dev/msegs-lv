@@ -32,6 +32,8 @@ use App\Http\Controllers\LoginController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
 Route::middleware('auth:sanctum')->get('/authenticated', function () {
     return true;
 });
@@ -45,7 +47,7 @@ Route::middleware('api')->group(function () {
 });
 
 Route::middleware('api')->group(function () {
-    Route::resource('contactus', ContactUsController::class);
+    Route::resource('contactus', ContactUsController::class); 
 });
 
 // Route::middleware('api')->group(function () {

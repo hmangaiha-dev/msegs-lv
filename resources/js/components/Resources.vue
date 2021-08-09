@@ -5,8 +5,13 @@
     </div>
 
     <div class="container" style="padding:2rem 0 2rem 0 ;">
-      <div class="rows1" v-for="resource in resources" :key="resource.id">
-        <div class="resourcescol">
+     
+       
+<div class="mainrow">
+
+     <div class="rows1" v-if="resources.length">
+      <div   v-for="resource in resources" :key="resource.id">
+        <!-- <div class="resourcescol"> -->
             <a :href="resource.path" target=_blank>
 
           <div class="resourcesitems">
@@ -24,44 +29,41 @@
 
           </div>
             </a>
-
-
-
-
-          <div class="resourcesitems">
-            <div class="resourcescontents">
-              <p class="resourcescontentsdate">20th May 2020</p>
-              <p class="resourcescontentstexts">
-                Notice for Empanelment of Service provider agencies for
-                organizing Virtual Events
-              </p>
-            </div>
-
-            <div class="resourcesprinter">
-              <img src="../assets/pdficon.svg" alt="" srcset="" class="pdficon"/>
-            </div>
-          </div>
-
-
-        </div>
-<div class="archivemobile">
-   <label for="year">Archive</label>
-  <select name="year" id="year">
-    <option value="1">2021</option>
-    <option value="2">2020</option>
-    <option value="3">2019</option>
-    <option value="4">2018</option>
-  </select>
-</div>
-        <div class="archivecol">
-          <p class="archivetitle">Archive</p>
-          <p class="archivedates">2021</p>
-          <p class="archivedates">2020</p>
-          
-        </div>
+        <!-- </div>       -->
       </div>
+    
+      </div>
+ 
+
+    <div v-else class="noresources">
+      <h4>No resources found for the selected date</h4>
+    </div>
+
+    
+     <div class="archivecol">
+          <p class="archivetitle">Archive</p>
+              <span v-for="year in years" :key="year">
+          <p class="archivedates"  @click="yearfilter(year)">{{year}}</p>
+
+              </span>
+      </div>
+
+     <div class="archivemobile">
+    <label for="year">Archive</label>
+    <select name="year" id="year">
+    <option v-for="year in years" :key="year" :value="year"  @click="yearfilter(year)" >{{year}}</option>
+    </select>
+      </div>
+     
+
+</div>
+
     </div>
   </div>
+
+
+
+
 </template>
 
 <script>
@@ -72,15 +74,33 @@ export default {
   },
     data() {
         return {
-            resources: [],        
+            years :['2018','2019','2020','2021'],
+            resources: [],  
+            errors:''      
         };
     },
    created() {
-        this.axios.get(`/api/resources/index`).then((response) => {
+        this.axios.get(`/api/resources/index/?date=2021`).then((response) => {
             console.log(response.data);
             this.resources = response.data;
+        }).
+        catch((error)=>{
+          this.errors = error
         });
     },
+    methods:{
+      yearfilter(date){
+           this.axios.get(`/api/resources/index/?date=`+date)
+           .then((response) => {
+            console.log(response.data);
+            this.resources = response.data;
+        }).
+        catch((error)=>{
+          this.errors = error;
+          console.log(this.errors)
+        });
+      }
+    }
 };
 </script>
 
@@ -92,16 +112,25 @@ export default {
   align-items: center;
   padding: 3rem 0 3rem 0;
 }
-
-.rows1 {
+.mainrow{
   display: flex;
   flex-direction: row;
 }
-
-.resourcescol {
-  width:80%;
+.rows1 {
   display: flex;
   flex-direction: column;
+  width:80%;
+}
+
+.resourcescol {
+  // width:80%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.noresources{
+  width:80%;
 }
 
 .archivecol {
@@ -188,6 +217,7 @@ export default {
   text-align: left;
   color: #2c3134;
   padding-top:1rem;
+  cursor: pointer;
 }
 .archivemobile{
   display: none;
@@ -196,11 +226,20 @@ export default {
 
 @media screen and(max-width:800px){
 //archivemobile selection options
+
+
+.mainrow{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .archivemobile{
   display: block;
+  width:100%;
+  
 }
 .archivemobile > label:nth-child(1){
-  font-family: PlayfairDisplay;
+  font-family: 'Playfair Display';
   font-size: 16px;
   font-weight: bold;
   color: #2c3134;
@@ -211,7 +250,7 @@ export default {
   padding:1rem 0;
   padding-left:1rem;
   border-radius: 6px;
- font-family: Poppins;
+ font-family: 'Poppins';
   font-size: 14px;
   color: #2c3134;
   

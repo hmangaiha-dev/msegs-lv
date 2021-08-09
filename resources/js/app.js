@@ -19,10 +19,14 @@ AOS.init();
 import router from './routes'
 import Vue3Autocounter from 'vue3-autocounter';
 
+
+import store from "./components/store/index";
+
 const app = createApp(App)
 app.use(router);
 app.use(VueAxios, axios)
 app.use(AOS);
+app.use(store);
 // { disable: "phone" }
 app.AOS = new AOS.init();
 app.component('vue3-autocounter', Vue3Autocounter)

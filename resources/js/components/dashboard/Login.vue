@@ -36,6 +36,7 @@
 
 <script>
 import axios from "axios";
+import {mapActions} from 'vuex'
 export default {
     data() {
         return {
@@ -46,20 +47,40 @@ export default {
               
             },
             errors: [],
+            processing:false,
         };
     },
     methods: {
-        loginUser() {
-            this.axios
-                .post("/api/login", this.form)
-                .then((response) => {
-					console.log(response);
-                    this.$router.push({name:'dashboard'})
-                })
-                .catch((error) => {
-                    this.errors = error.response.data.errors;
-                });
-        },
+        // loginUser() {
+        //     this.axios
+        //         .post("/api/login", this.form)
+        //         .then((response) => {
+		// 			console.log(response);
+        //             this.$router.push({name:'dashboard'})
+        //         })
+        //         .catch((error) => {
+        //             this.errors = error.response.data.errors;
+        //         });
+        // },
+    ...mapActions({signIn:'auth/login'}),
+        async loginUser(){
+            this.processing = true;
+            await axios.get('/sanctum/csrf-cookie')
+            await axios.post('/api/login',this.form)
+            .then((response)=>{
+                // console.log(response)
+                this.signIn()
+            })
+            .catch((error)=>{
+                // alert(error)
+                console.log(error)
+            })
+            .finally(()=>{
+                this.processing=false
+            })
+
+            
+        }
     },
 };
 </script>

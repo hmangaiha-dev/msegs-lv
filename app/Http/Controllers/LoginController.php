@@ -19,10 +19,13 @@ class LoginController extends Controller
             return response()->json(Auth::user(),200);
             print("AUTHENTICATED");
         }
+        else{
         print("NOT AUTHENTICATED");
         throw ValidationException::withmessages([
             'email'=>['Credentials does not match']
         ]);
+        return response()->json("Credentials does not match");
+    }
 
     }
 
