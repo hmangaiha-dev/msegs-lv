@@ -19,6 +19,7 @@ AOS.init();
 import router from './routes'
 import Vue3Autocounter from 'vue3-autocounter';
 
+axios.defaults.withCredentials = true;
 
 import store from "./components/store/index";
 
