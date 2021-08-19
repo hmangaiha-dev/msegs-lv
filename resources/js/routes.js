@@ -146,13 +146,13 @@ const routes =[
             meta: {
                 hideNav: true
             },
-            // beforeEnter:(to,from,next)=>{
-            //     axios.get('/api/authenticated').then(()=>{
-            //         next();
-            //     }).catch(()=>{
-            //         return next({name:'login'})
-            //     })
-            // },
+            beforeEnter:(to,from,next)=>{
+                axios.get('/api/authenticated').then(()=>{
+                    next();
+                }).catch(()=>{
+                    return next({name:'login'})
+                })
+            },
             children: [
                 {
                   path: '',

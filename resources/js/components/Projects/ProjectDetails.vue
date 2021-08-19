@@ -4,7 +4,7 @@
       <p class="headings " style="margin:auto">Project Details</p>
       <p style="color: #707070;font-size:12px;"><router-link to="/projects" style="text-decoration:underline;color:#707070">Projects</router-link> / {{title}}</p>
     </div>
-    <div class="container">
+    <div class="projectcontainer">
       <div class="detailsrows">
         <div class="col1">
           <div class="detailscard">
@@ -155,7 +155,10 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.projectcontainer{
+    margin:0 16vw 0px 16vw;
+}
 .details {
   background-color: #ececec;
   display: flex;
@@ -332,6 +335,14 @@ font-family: 'Poppins';
 
 @media screen and(max-width:800px) {
 
+    .projectcontainer{
+        margin:0 4vw 0 4vw;
+        
+        background: #0a2458;
+        // width:100vw;
+    }
+ 
+
 .detailsrows {
   display: flex;
   flex-direction: column;
@@ -401,8 +412,27 @@ font-family: 'Poppins';
 .col2image {
   width: 100%;
 }
-
-
-  
 }
+
+
+
+/* laptops */
+@media only screen and (max-width:1366px) {
+    .projectcontainer{
+        
+        margin:0 16vw 0 16vw;
+    }
+    
+}
+
+/* large screens */
+@media only screen and (min-width:1367px) {
+    .projectcontainer{
+        
+        margin:0 20vw 0 20vw;
+    }
+    
+}
+  
+
 </style>
