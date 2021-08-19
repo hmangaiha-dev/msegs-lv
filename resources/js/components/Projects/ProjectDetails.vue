@@ -338,8 +338,8 @@ font-family: 'Poppins';
     .projectcontainer{
         margin:0 4vw 0 4vw;
         
-        background: #0a2458;
-        // width:100vw;
+        // background: #0a2458;
+        //  width:100vw;
     }
  
 
