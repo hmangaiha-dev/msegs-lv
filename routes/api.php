@@ -39,6 +39,7 @@ Route::middleware('auth:sanctum')->get('/authenticated', function () {
 });
 
 Route::middleware('api')->group(function () {
+    Route::post('update-project/{project}', [ProjectsController::class,'update']);
     Route::resource('projects', ProjectsController::class);
 });
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Projects;
+use Illuminate\Support\Facades\Storage;
 
 class ProjectsController extends Controller
 {
@@ -17,9 +18,9 @@ class ProjectsController extends Controller
         // 'imagename',
         // 'imagepath',
         // 'date');
-        
 
-        // return array_reverse($projects);  
+
+        // return array_reverse($projects);
         return response()->json($projects);
 
     }
@@ -36,7 +37,7 @@ class ProjectsController extends Controller
         //     'bannerfile' => 'required|mimes:jpg,jpeg,png,csv,txt,xlx,xls,pdf|max:2048'
 
         //  ]);
- 
+
         $project = new Projects;
 
         $file_name = time().'_'.$request->file('file')->getClientOriginalName();
@@ -61,7 +62,7 @@ class ProjectsController extends Controller
 
         $project->imagename = time().'_'.$request->file('file')->getClientOriginalName();
         $project->imagepath = '/storage/' . $file_path;
-        
+
         $project->bannername = time().'_'.$request->file('bannerfile')->getClientOriginalName();
         $project->bannerpath = '/storage/' . $banner_path;
         $project->save();
@@ -76,10 +77,23 @@ class ProjectsController extends Controller
         return response()->json($project);
     }
 
-    public function update($id, Request $request)
+    public function update(Request $request,Projects $project)
     {
-        $project = Projects::find($id);
-        $project->update($request->all());
+
+        $file_name = time().'_'.$request->file('file')->getClientOriginalName();
+        $banner_name = time().'_'.$request->file('bannerfile')->getClientOriginalName();
+
+        $file_path = $request->file('file')->storeAs('uploads', $file_name, 'public');
+        $banner_path = $request->file('bannerfile')->storeAs('uploads', $banner_name, 'public');
+
+        $project->update($request->only((new Projects())->getFillable()));
+        $project->imagename = $file_name;
+        $project->imagepath = '/storage/' . $file_path;
+
+        $project->bannername = $banner_name;
+        $project->bannerpath = '/storage/' . $banner_path;
+        $project->save();
+
 
         return response()->json('Projects updated!');
     }

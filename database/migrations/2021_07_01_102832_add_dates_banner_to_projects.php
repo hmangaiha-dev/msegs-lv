@@ -15,9 +15,9 @@ class AddDatesBannerToProjects extends Migration
     {
         Schema::table('projects', function (Blueprint $table) {
             //
-            $table->string('date')->nullable();
-            $table->string('bannername')->nullable();
-            $table->string('bannerpath')->nullable(); 
+            // $table->string('date')->nullable();
+            // $table->string('bannername')->nullable();
+            // $table->string('bannerpath')->nullable(); 
 
         });
     }

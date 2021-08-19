@@ -1,5 +1,5 @@
 <template>
- 
+
     <div class=""  style="overflow:scroll;height:120vh;background:white">
         <h3 class="text-center">Edit Product</h3>
         <div class="row">
@@ -96,6 +96,7 @@
 
 <script>
 import { VueEditor } from "vue3-editor";
+import axios from "axios";
 
 export default {
     components: { VueEditor },
@@ -112,8 +113,21 @@ export default {
     },
     methods: {
         updateProject() {
-            this.axios
-                .patch(`/api/projects/${this.$route.params.id}`, this.project)
+            let data = new FormData();
+            data.append("title", this.project.title);
+            data.append("subtitle", this.project.subtitle);
+            data.append("contents", this.project.contents);
+            data.append("client", this.project.client);
+            data.append("hostedat", this.project.hostedat);
+            data.append("developedby", this.project.developedby);
+            data.append("goals", this.project.goals);
+            data.append("date", this.project.date);
+
+
+            data.append("file", this.project.file);
+            data.append("bannerfile", this.project.bannerfile);
+            axios
+                .post(`/api/update-project/${this.$route.params.id}`,data )
                 .then((res) => {
                     // this.$router.push({ name: "home" });
                 });
