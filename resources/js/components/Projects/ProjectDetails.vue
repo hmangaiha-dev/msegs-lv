@@ -155,7 +155,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .projectcontainer{
     margin:0 16vw 0px 16vw;
 }
@@ -190,7 +190,7 @@ export default {
 }
 .detailstitle {
   // margin:auto;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   text-align: center;
   font-family: Poppins;
   color: #0a2458;
@@ -337,7 +337,7 @@ font-family: 'Poppins';
 
     .projectcontainer{
         margin:0 4vw 0 4vw;
-        
+        // width: auto;
         // background: #0a2458;
         //  width:100vw;
     }
@@ -412,18 +412,19 @@ font-family: 'Poppins';
 .col2image {
   width: 100%;
 }
+
 }
 
 
 
 /* laptops */
-@media only screen and (max-width:1366px) {
-    .projectcontainer{
+// @media only screen and (max-width:1366px) {
+//     .projectcontainer{
         
-        margin:0 16vw 0 16vw;
-    }
+//         margin:0 16vw 0 16vw;
+//     }
     
-}
+// }
 
 /* large screens */
 @media only screen and (min-width:1367px) {
