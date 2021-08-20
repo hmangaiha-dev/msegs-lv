@@ -11,7 +11,7 @@
      <div class="rows1" v-if="resources.length">
       <div   v-for="resource in resources" :key="resource.id" >
         <!-- <div class="resourcescol"> -->
-            <span :href="resource.path" @click.prevent="gotonew(resource.path)" >
+            <a :href="resource.path">
 
           <div class="resourcesitems">
             <div class="resourcescontents">
@@ -27,7 +27,7 @@
             </div>
 
           </div>
-            </span>
+            </a>
         <!-- </div>       -->
       </div>
     
