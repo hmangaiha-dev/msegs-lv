@@ -12,7 +12,7 @@
      <div class="rows1" v-if="resources.length">
       <div   v-for="resource in resources" :key="resource.id">
         <!-- <div class="resourcescol"> -->
-            <a :href="resource.path" >
+            <a :href="resource.path" target="_blank" >
 
           <div class="resourcesitems">
             <div class="resourcescontents">
@@ -56,7 +56,7 @@ export default {
     data() {
         return {
             resources: [
-              {title:'RTI MSeGS ',path:'/storage/RTI/MSEGS_RTI_Information.pdf'},
+              {title:'RTI MSeGS ',path:'https://drive.google.com/file/d/1iEX_GwuBIKfz8KFrYgyCxP6LqlIGM59F/view?usp=sharing'},
            
 
 
