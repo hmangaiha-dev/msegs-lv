@@ -50,9 +50,9 @@
                 <li class="items">
                     <router-link to="/projects" exact-active-class="activating">Projects</router-link>
                 </li>
-                <li class="items">
+                <!-- <li class="items">
                     <router-link to="/resources" exact-active-class="activating">Resources</router-link>
-                </li>
+                </li> -->
                 <!-- <li class="items"> <router-link to="/aboutus">About us</router-link> </li> -->
                 <li class="dropdown items">
                     <span
@@ -67,12 +67,12 @@
                             ><li class="items">Who we are</li></router-link
                         >
                         <router-link to="/pioneers"
-                            ><li class="items">Pioneers</li></router-link
+                            ><li class="items">BoG & Management Team</li></router-link
                         >
                         <router-link to="/awards"
                             ><li class="items">Awards</li></router-link
                         >
-                        <router-link to="/page404"
+                        <router-link to="/engagewithmsegs"
                             ><li class="items">
                                 Engaging with Msegs
                             </li></router-link
@@ -116,11 +116,11 @@
                                 Projects
                             </li></router-link
                         >
-                        <router-link to="/resources">
+                        <!-- <router-link to="/resources">
                             <li class="items" @click="chickenburger">
                                 Resources
                             </li></router-link
-                        >
+                        > -->
                         <!-- <li class="items"> <router-link to="/aboutus">About us</router-link> </li> -->
                         
                         <li class="items">
@@ -151,7 +151,7 @@
                                 >
                                 <router-link to="/pioneers"
                                     ><li class="itemsdrop">
-                                        Pioneers
+                                        BoG & <br> Management Team
                                     </li></router-link
                                 >
                                 <router-link to="/awards"
@@ -159,7 +159,7 @@
                                         Awards
                                     </li></router-link
                                 >
-                                <router-link to="/page404"
+                                <router-link to="/engagewithmsegs"
                                     ><li class="itemsdrop">
                                         Engaging with Msegs
                                     </li></router-link

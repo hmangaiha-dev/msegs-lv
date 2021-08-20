@@ -1,8 +1,8 @@
 <template>
   <div class="pioneers" style="margin-top:auto;margin-bottom:2rem">
     <span class="aboutusback">
-      <p class="headings" style="margin:auto">Pioneers</p>
-      <p style="color: #707070;font-size:12px;">About Us / Pioneers</p>
+      <!-- <p class="headings" style="margin:auto">Board of Governors & Management Team</p> -->
+      <p style="color: #707070;font-size:12px;">About Us / BoG & Management Team</p>
     </span>
 
     <div class="container">
@@ -12,7 +12,7 @@
       >
         <span style="border-bottom:3px solid #dc3d32">
 
-        BOARD MEMBERS
+        Board of Governors
         </span>
       </p>
       <div class="boardrows">
@@ -157,7 +157,7 @@ Secretary, DP&AR
       >
         <span style="border-bottom:3px solid #dc3d32">
       
-      MANAGEMENT TEAM
+      Management Team
         </span>
       </p>
 
@@ -337,7 +337,7 @@ margin:0.5rem;
   // margin: 10px 0 2.5px 12.5px;
   padding:0 8px;
   font-family: "Playfair Display";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -434,7 +434,9 @@ margin: 6px;
 margin-top:10px;
 
   font-family: 'Playfair Display';
-  font-size: 14px;
+  // font-size: 14px;
+
+  font-size: 16px;
   font-weight: bold;
 //   font-stretch: normal;
 //   font-style: normal;

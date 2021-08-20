@@ -81,10 +81,28 @@ const routes =[
             component:()=> import(/* webpackChunkName:"projectdetails"*/"./components/Projects/ProjectDetails")
 
         },
+        // {
+        //     path:'/resources',
+        //     name:'resources',
+        //     component:()=> import(/* webpackChunkName:"Resources"*/"./components/Resources")
+            
+        // },
         {
-            path:'/resources',
-            name:'resources',
-            component:()=> import(/* webpackChunkName:"Resources"*/"./components/Resources")
+            path:'/acts',
+            name:'acts',
+            component:()=> import(/* webpackChunkName:"ACTS"*/"./components/ACTS")
+            
+        },
+        {
+            path:'/rti',
+            name:'rti',
+            component:()=> import(/* webpackChunkName:"RTI"*/"./components/RTI")
+            
+        },
+        {
+            path:'/engagewithmsegs',
+            name:'engagewithmsegs',
+            component:()=> import(/* webpackChunkName:"Engage"*/"./components/Engage")
             
         },
 
@@ -146,13 +164,13 @@ const routes =[
             meta: {
                 hideNav: true
             },
-            beforeEnter:(to,from,next)=>{
-                axios.get('/api/authenticated').then(()=>{
-                    next();
-                }).catch(()=>{
-                    return next({name:'login'})
-                })
-            },
+            // beforeEnter:(to,from,next)=>{
+            //     axios.get('/api/authenticated').then(()=>{
+            //         next();
+            //     }).catch(()=>{
+            //         return next({name:'login'})
+            //     })
+            // },
             children: [
                 {
                   path: '',

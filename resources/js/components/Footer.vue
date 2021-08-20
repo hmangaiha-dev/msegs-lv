@@ -33,11 +33,11 @@
                                 >Projects</router-link
                             ></span
                         >
-                        <span>
+                        <!-- <span>
                             <router-link to="/resources"
                                 >Resources</router-link
                             ></span
-                        >
+                        > -->
                     </div>
                 </div>
             </div>
@@ -57,17 +57,17 @@
                 <div :class="{ active: isActive1 }">
                     <div class="footerlinks">
                         <span
-                            ><router-link to="/page404"
+                            ><router-link to="/engagewithmsegs"
                                 >Engaging with MSeGS</router-link
                             ></span
                         >
                         <span
-                            ><router-link to="/page404"
+                            ><router-link to="/acts"
                                 >Act & Rules</router-link
                             ></span
                         >
                         <span
-                            ><router-link to="/page404">RTI</router-link></span
+                            ><router-link to="/rti">RTI</router-link></span
                         >
                     </div>
                 </div>
@@ -89,17 +89,17 @@
                     <div class="footerlinks">
                         <!-- <span><router-link to="/login">Employee Login</router-link></span> -->
                         <span
-                            ><router-link to="/page404"
-                                >Tender</router-link
+                            ><a href="https://tender.mizoram.gov.in/" target=_blank
+                                >Tender</a
                             ></span
                         >
-                        <span
+                        <!-- <span
                             ><router-link to="/page404"
                                 >Career</router-link
                             ></span
-                        >
+                        > -->
                         <span
-                            ><router-link to="/page404"
+                            ><router-link to="/contactus"
                                 >Contact us</router-link
                             ></span
                         >
