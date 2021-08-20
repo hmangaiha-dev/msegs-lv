@@ -1,7 +1,7 @@
 <template>
   <div style="margin-top:auto">
     <div class="ourservices">
-      <p class="headings " style="margin:auto">Engage with Msegs</p>
+      <p class="headings " style="margin:auto">Engaging with Msegs</p>
     </div>
 
     <div class="container" style="padding:2rem 0 2rem 0 ;">
@@ -56,8 +56,15 @@ export default {
     data() {
         return {
             resources: [
-              {title:'Mizoram e-Governance RoadMap',path:'../assets/ACTS/mizoram_egovernanceroadmap.pdf'},
-              {title:'IT Amendment Act, 2008',path:'<%= BASE_URL %>/ACTS/it-act-amendment-2008.pdf'},
+                    {title:'Activities of MSeGS',path:'/storage/ENGAGE/ActivitiesofMSeGS.pdf'},
+                    {title:'Annexure I MOA and Rules & Regulations',path:'/storage/ENGAGE/AnnexureI.pdf'},
+                    {title:'Annexure II Certificate of Registration',path:'/storage/ENGAGE/AnnexureII.pdf'},
+                    {title:'Annexure III Board of Governors constitution',path:'/storage/ENGAGE/AnnexureIII.pdf'},
+                    {title:'Annexure IV Executive committee',path:'/storage/ENGAGE/AnnexureIV.pdf'},
+
+
+
+
 
 
             ],  

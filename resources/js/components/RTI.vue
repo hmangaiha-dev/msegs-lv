@@ -56,8 +56,8 @@ export default {
     data() {
         return {
             resources: [
-              {title:'Mizoram e-Governance RoadMap',path:'../assets/ACTS/mizoram_egovernanceroadmap.pdf'},
-              {title:'IT Amendment Act, 2008',path:'<%= BASE_URL %>/ACTS/it-act-amendment-2008.pdf'},
+              {title:'RTI MSeGS ',path:'/storage/RTI/MSEGS_RTI_Information.pdf'},
+           
 
 
             ],  
