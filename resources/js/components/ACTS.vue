@@ -55,8 +55,8 @@ export default {
     data() {
         return {
             resources: [
-              {title:'Mizoram e-Governance RoadMap',path:'/storage/ACTS/mizoram_egovernanceroadmap.pdf'},
-              {title:'IT Amendment Act, 2008',path:'/storage/ACTS/it-act-amendment-2008.pdf'},
+              {title:'Mizoram e-Governance RoadMap',path:'https://drive.google.com/file/d/1ZuZUBLVdZE2c-uc1azboFzkv7RsAbC79/view?usp=sharing'},
+              {title:'IT Amendment Act, 2008',path:'https://drive.google.com/file/d/1ITypbL6B4XOtUspJ82hhQaDPPSp8Hjg9/view?usp=sharing'},
 
 
             ],  

@@ -12,7 +12,7 @@
      <div class="rows1" v-if="resources.length">
       <div   v-for="resource in resources" :key="resource.id">
         <!-- <div class="resourcescol"> -->
-            <a :href="resource.path" >
+            <a :href="resource.path" target="_blank">
 
           <div class="resourcesitems">
             <div class="resourcescontents">
@@ -56,11 +56,11 @@ export default {
     data() {
         return {
             resources: [
-                    {title:'Activities of MSeGS',path:'/storage/ENGAGE/ActivitiesofMSeGS.pdf'},
-                    {title:'Annexure I MOA and Rules & Regulations',path:'/storage/ENGAGE/AnnexureI.pdf'},
-                    {title:'Annexure II Certificate of Registration',path:'/storage/ENGAGE/AnnexureII.pdf'},
-                    {title:'Annexure III Board of Governors constitution',path:'/storage/ENGAGE/AnnexureIII.pdf'},
-                    {title:'Annexure IV Executive committee',path:'/storage/ENGAGE/AnnexureIV.pdf'},
+                    {title:'Activities of MSeGS',path:'https://drive.google.com/file/d/1m_O-l5u9otk3o80oDDRvpo0arZoFAdQ4/view?usp=sharing'},
+                    {title:'Annexure I MOA and Rules & Regulations',path:'https://drive.google.com/file/d/108OHk3qxADuNj0JYYwhkOZJHsawrSwqN/view?usp=sharing'},
+                    {title:'Annexure II Certificate of Registration',path:'https://drive.google.com/file/d/1ZC6x_KqKvzuVha6eSRFFO9zvnX_FOI3a/view?usp=sharing'},
+                    {title:'Annexure III Board of Governors constitution',path:'https://drive.google.com/file/d/1NgfFmGwD55YnYCfiI90J4jG37TWVgtFu/view?usp=sharing'},
+                    {title:'Annexure IV Executive committee',path:'https://drive.google.com/file/d/1isJdrFwSe9N4C1GRUCx2lmWYxEGJc57u/view?usp=sharing'},
 
 
 
