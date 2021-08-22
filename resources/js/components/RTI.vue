@@ -22,7 +22,7 @@ Government of India and Government of Mizoram are the main promoters of this soc
 <b>Mandatory provisions of Right to Information Act 2005 Ref. Clause b (i) to (xvii) 
 under Section 4, Sub-section 1</b>
 
-<p>
+<p class="regulartexts">
 Mizoram State e-Governance Society is construed a public authority under Section 2 (h) of 
 RTI Act 2005. Accordingly under Section 4 (1) (b) of the act it is required to publish the 
 particulars of its organization, functions and duties etc and update these on a regular basis. 
@@ -30,22 +30,23 @@ Mizoram State e-Governance Society furnishes the following details in compliance
 provisions of Section 4(1)(b) of RTI Act 2005:</p>
 
 <b>I. The particulars of its organization, functions and duties. </b>
-<p>
+<p class="regulartexts">
 Mizoram State e-Governance Society is a society registered under the Societies Registration 
 Act 1860 (Act No XXI of 1860) and as modified by the societies Registration (extension to 
 Mizoram) Act, 1976 (Mizoram Act No. III of 1977). The following information is provided 
 on the Organization and functions of Mizoram State e-Governance Society:</p>
 
 <b>1. About MSeGS: </b>
+<p class="regulartexts">
 Mizoram State e-Governance Society (MSEGS) was established in 2005 and is 
 registered under the Societies Registration Act 1860 (Act No XXI of 1860) and as 
 modified by the societies Registration (extension to Mizoram) Act, 1976 (Mizoram 
 Act No. III of 1977). The society facilitated establishment and setting up of major e-Governance projects like the State Data Center (SDC), State Wide Area Network 
 (SWAN) and Common Service Centre (CSC) and various other e-Government 
-projects in the state.
+projects in the state.</p>
 
 <b>2. Vision:</b>
-<p>
+<p class="regulartexts">
 The vision of the Society is to administer the implementation of e-Governance 
 projects for the overall benefit of the citizens and public by setting up the necessary 
 administrative, financial, legal and technical framework, implementation 
@@ -89,6 +90,41 @@ ANNEXURE I</b>
         <p style="margin-top:1rem ">  </p>
 
 <b>5. Certificate of incorporation: can be seen at ANNEXURE II</b>
+        <p style="margin-top:1rem ">  </p>
+<b>II. The powers and duties of its officers and employees</b>
+<p class="regulartexts">
+  As per organization structure of MSeGS, there are the Board of Governors, the Executive 
+Committee, Chief Executive Officer (CEO), Administrative Officer, Executive Officer, 
+Accounts Officer, Technical Officer and other Technical and non technical staff to manage 
+the organization. The roles and responsibilities of the Board of Governors, the Executive 
+Committee and the Chief Executive Officer (CEO) are specified in the MoA/Rules and 
+Regulations of the society. The hierarchical set up of the society can be seen in the 
+organization chart as below:
+</p>
+
+<b>III. The procedure followed in the decision making process, including channels of 
+supervision and accountability: </b>
+<p class="regulartexts">
+  The policy level decisions are made by the Board of Directors/Executive Committee. The 
+operational decisions are made by the officials of MSeGS in terms of the delegation of 
+powers approved by the Board/EC. The channels of supervision and performance 
+monitoring are reflected in the organization structure.
+</p>
+
+<b>IV. The norms set by it for the discharge of its functions:</b>
+<p class="regulartexts">
+  MSeGS follows the rules of performance management system to monitor the discharge of 
+functions by the employees.
+</p>
+<b>V. The rules, regulations, instructions, manuals and records, held by it or under 
+its control or used by its employees for discharging its functions:</b>
+<p class="regulartexts">
+  MSeGS has exercised its own MoA/Rules and Regulations for statutory functions. Besides, 
+relevant rules were adapted from state Govt/ Central Govt to regulate and control of its 
+employees.
+</p>
+
+
 
 
        </div>
