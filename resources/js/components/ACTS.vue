@@ -11,7 +11,7 @@
      <div class="rows1" v-if="resources.length">
       <div   v-for="resource in resources" :key="resource.id" >
         <!-- <div class="resourcescol"> -->
-            <a :href="resource.path">
+            <a :href="resource.path" target="_blank">
 
           <div class="resourcesitems">
             <div class="resourcescontents">
