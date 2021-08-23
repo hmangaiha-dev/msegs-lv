@@ -6,7 +6,7 @@
 
     <div class="container" style="padding:2rem 0 2rem 0 ;">
      
-       <div  class="contents">
+       <div  class="contents readingcontainer">
          <!-- <h1>MIZORAM STATE e-GOVERNANCE SOCIETY (MSeGS)
 </h1> -->
 
@@ -193,7 +193,7 @@ employees.
 control:</b>
 <p class="regulartexts">
   MSeGS holds documents which are of two types as given below:
-  <ol>
+  <ol style="padding-top:-8px">
     <li>Documents relating to MSeGS's own projects </li>
     <ol type="a">
       <li>Empanelment of consultants by MSeGS - Public Document</li>
@@ -526,6 +526,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+.readingcontainer{
+  margin:0 4rem;
+}
 .tabling{
   border:1px solid #E4E5E6;
    border-collapse: collapse;
@@ -694,7 +698,9 @@ export default {
 
 @media screen and(max-width:800px){
 //archivemobile selection options
-
+.readingcontainer{
+  margin:0 ;
+}
 
 .mainrow{
   display: flex;
