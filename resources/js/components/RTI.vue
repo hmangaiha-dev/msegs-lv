@@ -6,7 +6,7 @@
 
     <div class="container" style="padding:2rem 0 2rem 0 ;">
      
-       <div style="padding:0 1rem" class="contents">
+       <div  class="contents">
          <!-- <h1>MIZORAM STATE e-GOVERNANCE SOCIETY (MSeGS)
 </h1> -->
 
