@@ -51,7 +51,7 @@ E-mail: ceomsegs@mizoram.gov.in</td>
 
 <td>
 
-  Pu H. Lalruatliana<br>
+<strong>Pu H. Lalruatliana</strong><br>
 Administrative Officer
 Mizoram State e-Governance <br>
 Society Secretariat Old 
@@ -65,7 +65,7 @@ ruatliana15@gmail.com
 
 <td>
 
-Pu Lalhmingmawia <br>
+<strong>Pu Lalhmingmawia </strong><br>
 Executive Officer 
 Mizoram State e-Governance  Society Secretariat Old  <br>
 Building-I, Treasury Square, Aizawl - 796001, Mizoram <br>
