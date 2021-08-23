@@ -557,7 +557,7 @@ export default {
 .regulartexts{
   font-size: 16px;
   font-family: 'Roboto';
-  padding:1rem 0 ;
+  padding-bottom:1rem ;
 }
 
 .ourservices {
