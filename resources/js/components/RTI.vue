@@ -482,7 +482,7 @@ export default {
     data() {
         return {
             resources: [
-              {title:'RTI MSeGS ',path:'https://drive.google.com/file/d/1iEX_GwuBIKfz8KFrYgyCxP6LqlIGM59F/view?usp=sharing'},
+              {title:'Download as PDF ',path:'https://drive.google.com/file/d/1iEX_GwuBIKfz8KFrYgyCxP6LqlIGM59F/view?usp=sharing'},
            
 
 
@@ -573,7 +573,6 @@ export default {
 
 .regulartexts{
   font-size: 16px;
-  font-family: 'Roboto';
   padding-bottom:1rem ;
 }
 
