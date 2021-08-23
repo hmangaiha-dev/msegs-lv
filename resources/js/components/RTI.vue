@@ -43,37 +43,36 @@ Officer (RTI)
       <td>
         <strong>Dr. Lalthlamuana,</strong><br>
 Chief Executive Officer<br>
-Mizoram State e-Governance <br>
-Society Secretariat Old 
+Mizoram State e-Governance Society<br>
+<i class="fas fa-map-marker-alt" style="padding-right:8px;"></i> Secretariat Old 
 Building-I, Treasury Square,
 Aizawl - 796001, Mizoram<br>
-Phone: 91-389-2319637/9436140113
-Fax: 91-389-2319632<br>
-E-mail: ceomsegs@mizoram.gov.in</td>
+<i class="fas fa-phone-alt" style="padding-right:8px"></i>91-389-2319637/9436140113<br>
+<i class="fas fa-fax" style="padding-right:8px"></i>Fax: 91-389-2319632<br>
+<i class="fas fa-envelope" style="padding-right:8px"></i>ceomsegs@mizoram.gov.in</td>
 
 <td>
-
 <strong>Pu H. Lalruatliana</strong><br>
-Administrative Officer
-Mizoram State e-Governance <br>
-Society Secretariat Old 
+Administrative Officer<br>
+Mizoram State e-Governance Society <br>
+<i class="fas fa-map-marker-alt" style="padding-right:8px;"></i> Secretariat Old 
 Building-I, Treasury Square,
 Aizawl - 796001, Mizoram<br>
-Phone: 9436196820
-Fax: 91-389-2319632<br>
-E-mail: 
+<i class="fas fa-phone-alt" style="padding-right:8px"></i> 9436196820 <br>
+<i class="fas fa-fax" style="padding-right:8px"></i>Fax: 91-389-2319632<br>
+<i class="fas fa-envelope" style="padding-right:8px"></i>
 ruatliana15@gmail.com
 </td>
 
 <td>
 
 <strong>Pu Lalhmingmawia </strong><br>
-Executive Officer 
-Mizoram State e-Governance  Society Secretariat Old  <br>
-Building-I, Treasury Square, Aizawl - 796001, Mizoram <br>
-Phone: 9436352317 
-Fax: 91-389-2319632 <br>
-E-mail:  
+Executive Officer <br>
+Mizoram State e-Governance  Society <br>
+<i class="fas fa-map-marker-alt" style="padding-right:8px;"></i> Secretariat Old Building-I, Treasury Square, Aizawl - 796001, Mizoram <br>
+<i class="fas fa-phone-alt" style="padding-right:8px"></i> 9436352317 <br>
+<i class="fas fa-fax" style="padding-right:8px"></i>Fax: 91-389-2319632 <br>
+<i class="fas fa-envelope" style="padding-right:8px"></i>
 icthminga@gmail.com
 
 </td>
@@ -166,6 +165,8 @@ Regulations of the society. The hierarchical set up of the society can be seen i
 organization chart as below:
 </p>
 
+<img src="../assets/fromrti.png" alt="" srcset="" style="margin-left:auto;margin-right:auto;display:block">
+<br>
 <b>III. The procedure followed in the decision making process, including channels of 
 supervision and accountability: </b>
 <p class="regulartexts">
@@ -228,7 +229,7 @@ constituted as its part or for the purpose of its advice, and as to whether
 meetings of those boards/committees are open to the public, or the minutes of 
 such meetings are accessible for public:
 </b>
-
+<br>
 <span class="regulartexts">
   1. The following are the details of the Board of Governors and Executive Committee 
 constituted by MSeGS:<br>
@@ -357,6 +358,7 @@ as per relevant provisions of the RTI Act 2005
 Officer:</b>
 <p style="padding-top:8px"></p>
 
+
 <table class="tabling">
   <tr style="text-align:left">
     <th>Appellate Authority (RTI)
@@ -370,47 +372,45 @@ Officer (RTI)
 
   <tbody>
     <tr>
-      <td>Dr. Lalthlamuana,
-Chief Executive Officer
-Mizoram State e-Governance 
-Society Secretariat Old 
+      <td>
+        <strong>Dr. Lalthlamuana,</strong><br>
+Chief Executive Officer<br>
+Mizoram State e-Governance Society<br>
+<i class="fas fa-map-marker-alt" style="padding-right:8px;"></i> Secretariat Old 
 Building-I, Treasury Square,
-Aizawl - 796001, Mizoram
-Phone: 91-389-
-2319637/9436140113
-Fax: 91-389-2319632
-E-mail: 
-ceomsegs@mizoram.gov.in</td>
+Aizawl - 796001, Mizoram<br>
+<i class="fas fa-phone-alt" style="padding-right:8px"></i>91-389-2319637/9436140113<br>
+<i class="fas fa-fax" style="padding-right:8px"></i>Fax: 91-389-2319632<br>
+<i class="fas fa-envelope" style="padding-right:8px"></i>ceomsegs@mizoram.gov.in</td>
 
 <td>
-
-  Pu H. Lalruatliana
-Administrative Officer
-Mizoram State e-Governance 
-Society Secretariat Old 
+<strong>Pu H. Lalruatliana</strong><br>
+Administrative Officer<br>
+Mizoram State e-Governance Society <br>
+<i class="fas fa-map-marker-alt" style="padding-right:8px;"></i> Secretariat Old 
 Building-I, Treasury Square,
-Aizawl - 796001, Mizoram
-Phone: 9436196820
-Fax: 91-389-2319632
-E-mail: 
+Aizawl - 796001, Mizoram<br>
+<i class="fas fa-phone-alt" style="padding-right:8px"></i> 9436196820 <br>
+<i class="fas fa-fax" style="padding-right:8px"></i>Fax: 91-389-2319632<br>
+<i class="fas fa-envelope" style="padding-right:8px"></i>
 ruatliana15@gmail.com
 </td>
 
 <td>
 
-Pu Lalhmingmawia 
-Executive Officer 
-Mizoram State e-Governance  Society Secretariat Old  
-Building-I, Treasury Square, Aizawl - 796001, Mizoram Phone: 9436352317 
-Fax: 91-389-2319632 
-E-mail:  
+<strong>Pu Lalhmingmawia </strong><br>
+Executive Officer <br>
+Mizoram State e-Governance  Society <br>
+<i class="fas fa-map-marker-alt" style="padding-right:8px;"></i> Secretariat Old Building-I, Treasury Square, Aizawl - 796001, Mizoram <br>
+<i class="fas fa-phone-alt" style="padding-right:8px"></i> 9436352317 <br>
+<i class="fas fa-fax" style="padding-right:8px"></i>Fax: 91-389-2319632 <br>
+<i class="fas fa-envelope" style="padding-right:8px"></i>
 icthminga@gmail.com
 
 </td>
     </tr>
   </tbody>
 </table>
-
 <p style="padding-top:16px"></p>
 
 <b>XV. Such other information as may be prescribed; and thereafter update these 
