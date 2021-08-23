@@ -572,7 +572,7 @@ export default {
 }}
 
 .regulartexts{
-  font-size: 16px;
+  font-size: 14px;
   padding-bottom:1rem ;
 }
 
