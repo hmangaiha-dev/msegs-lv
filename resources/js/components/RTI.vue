@@ -6,7 +6,7 @@
 
     <div class="container" style="padding:2rem 0 2rem 0 ;">
      
-       <div>
+       <div style="padding:0 1rem" class="contents">
          <!-- <h1>MIZORAM STATE e-GOVERNANCE SOCIETY (MSeGS)
 </h1> -->
 
@@ -15,7 +15,7 @@
 
 
         <h2> RTI Information:</h2>
-        <p class="regulartexts">
+        <p class="contents">
 Mizoram State e-Governance Society (MSeGS) is a non profit society under Govt of Mizoram 
 setup on 31st January, 2006, under the Societies Registration Act 1860 (Act No XXI of 
 1860) and as modified by the societies Registration (extension to Mizoram) Act, 1976 
@@ -38,8 +38,9 @@ Officer (RTI)
 
   <tbody>
     <tr>
-      <td>Dr. Lalthlamuana,<br>
-Chief Executive Officer
+      <td>
+        <strong>Dr. Lalthlamuana,</strong><br>
+Chief Executive Officer<br>
 Mizoram State e-Governance <br>
 Society Secretariat Old 
 Building-I, Treasury Square,
@@ -513,15 +514,45 @@ export default {
 
 <style lang="scss">
 .tabling{
-  border:1px solid black;
+  border:1px solid #E4E5E6;
    border-collapse: collapse;
 }
 
 
 .tabling td,.tabling th,.tabling tr {
-  border:1px solid black;
+  border:1px solid #E4E5E6;
   padding:8px;
+  font-family: 'Poppins';
+  color:#2c3134;
+  font-size: 14px;
+
+.subheading {
+
+  padding-top:1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  // min-width:8rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  //   line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2c3134;
 }
+
+.contents {
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  //   line-height: 1.56;
+  padding-top: 1rem 0;
+  letter-spacing: normal;
+  color: #7e7e7e;
+}}
 
 .regulartexts{
   font-size: 16px;
