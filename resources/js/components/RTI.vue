@@ -7,8 +7,12 @@
     <div class="container" style="padding:2rem 0 2rem 0 ;">
      
        <div>
-         <h1>MIZORAM STATE e-GOVERNANCE SOCIETY (MSeGS)
-</h1>
+         <!-- <h1>MIZORAM STATE e-GOVERNANCE SOCIETY (MSeGS)
+</h1> -->
+
+
+
+
 
         <h2> RTI Information:</h2>
         <p class="regulartexts">
@@ -18,6 +22,61 @@ setup on 31st January, 2006, under the Societies Registration Act 1860 (Act No X
 (Mizoram Act No. III of 1977) and bearing registration No. SR/MZ-89 of 2005-06. 
 Government of India and Government of Mizoram are the main promoters of this society. 
         </p>
+
+<b>Contact Information for RTI:
+</b>
+<table class="tabling">
+  <tr style="text-align:left">
+    <th>Appellate Authority (RTI)
+</th>
+ <th>Public Information Officer
+(RTI)</th>
+  <th>Asst. Public Information 
+Officer (RTI)
+</th>
+  </tr>
+
+  <tbody>
+    <tr>
+      <td>Dr. Lalthlamuana,<br>
+Chief Executive Officer
+Mizoram State e-Governance <br>
+Society Secretariat Old 
+Building-I, Treasury Square,
+Aizawl - 796001, Mizoram<br>
+Phone: 91-389-2319637/9436140113
+Fax: 91-389-2319632<br>
+E-mail: ceomsegs@mizoram.gov.in</td>
+
+<td>
+
+  Pu H. Lalruatliana<br>
+Administrative Officer
+Mizoram State e-Governance <br>
+Society Secretariat Old 
+Building-I, Treasury Square,
+Aizawl - 796001, Mizoram<br>
+Phone: 9436196820
+Fax: 91-389-2319632<br>
+E-mail: 
+ruatliana15@gmail.com
+</td>
+
+<td>
+
+Pu Lalhmingmawia <br>
+Executive Officer 
+Mizoram State e-Governance  Society Secretariat Old  <br>
+Building-I, Treasury Square, Aizawl - 796001, Mizoram <br>
+Phone: 9436352317 
+Fax: 91-389-2319632 <br>
+E-mail:  
+icthminga@gmail.com
+
+</td>
+    </tr>
+  </tbody>
+</table>
 
 <b>Mandatory provisions of Right to Information Act 2005 Ref. Clause b (i) to (xvii) 
 under Section 4, Sub-section 1</b>
@@ -53,35 +112,35 @@ administrative, financial, legal and technical framework, implementation
 mechanism and resources in the State of Mizoram. </p>
 <b>3. Functions: The function of the society are:</b>
 <p>
-  <ol>
-<li>a. Take decision on matters of policy relating to the administration, working and 
+  <ol type="a">
+<li>Take decision on matters of policy relating to the administration, working and 
 control of the Society.</li>
-<li>b. Frame Rules, Regulations and Bye-laws for the conduct of the affairs of the 
+<li>Frame Rules, Regulations and Bye-laws for the conduct of the affairs of the 
 Mizoram E-Governance Society to add, amend, or repeal the rules and 
 regulation from time to time.</li>
-<li>c. Consider, approve and authorize operation of the funds of the Society. Collect 
+<li>Consider, approve and authorize operation of the funds of the Society. Collect 
 payments and user charges on behalf of other departments and agencies and 
 transfer/ utilize it in the manner prescribed in the agreements.</li>
-<li>d. Delegate, to such extent as it may deem necessary, any of its powers to any 
+<li>Delegate, to such extent as it may deem necessary, any of its powers to any 
 Officer or the Committees constituted by the Board.</li>
-<li>e. Create project based contract positions and handle the work on job-work 
+<li>Create project based contract positions and handle the work on job-work 
 and/or outsourcing basis for the Society, lay down terms and conditions and 
 method of hiring such human resources.</li>
-<li>f. Negotiate, enter into and make contracts and deeds on behalf of the Society 
+<li>Negotiate, enter into and make contracts and deeds on behalf of the Society 
 without any Government support. To enter into legal and corporate 
 agreements for and on behalf of the society and to sue and defend all legal 
 proceedings on behalf of the society;</li>
-<li>g. To prepare and execute the detailed plans and programmes for working of the 
+<li>To prepare and execute the detailed plans and programmes for working of the 
 Society and to carry on its administration and management.</li>
-<li>h. To have custody and ensure proper utilization of the funds of the Society and 
+<li>To have custody and ensure proper utilization of the funds of the Society and 
 to manage all the resources of the Society.</li>
-<li>i. To provide the required operating, administrative, technical, ministerial and 
+<li>To provide the required operating, administrative, technical, ministerial and 
 other manpower under MSEGS on job work, contract or outsourcing basis for 
 ensuring the efficient operation and management of the projects and the 
 affairs of the society and to prescribe the conditions for hiring and firing of 
 such manpower by the other departments and organizations as and when 
 required.</li>
-<li>j. To consider and pass such Resolutions on the annual report, the annual 
+<li>To consider and pass such Resolutions on the annual report, the annual 
 accounts and the financial estimates of the society as it thinks fit.</li>
 </ol>
 </p>
@@ -125,10 +184,242 @@ employees.
 </p>
 
 
+<b>VI. A statement of the categories of documents that are held by it or under its 
+control:</b>
+<p class="regulartexts">
+  MSeGS holds documents which are of two types as given below:
+  <ol>
+    <li>Documents relating to MSeGS's own projects </li>
+    <ol type="a">
+      <li>Empanelment of consultants by MSeGS - Public Document</li>
+      <li>Projects/Initiatives of MSeGS</li>
+      <li>RFP – Public</li>
+    </ol>
+    <li>Documents relating to Administration and Finance Department</li>
+ <ol type="a">
+      <li>Balance Sheet-Public</li>
+      <li>Annual Reports-Private</li>
+      <li>Statutory returns/Audited Statement -Private</li>
+    </ol>
+  </ol>
+
+</p>
+<b>
+  VII. The particulars of any arrangement that exists for consultation with, or 
+representation by the members of the public in relation to the formulation of 
+its policy or implementation thereof:
+
+</b>
+<p class="regulartexts">
+  Policies/objectives of the organization are decided by the Board of Directors/Executive 
+Committee. There is no provision for consultation with or representation by members of 
+the public in this regard.
+</p>
+
+<b>VIII. A statement of the boards and committees consisting of two or more persons 
+constituted as its part or for the purpose of its advice, and as to whether 
+meetings of those boards/committees are open to the public, or the minutes of 
+such meetings are accessible for public:
+</b>
+
+<span class="regulartexts">
+  1. The following are the details of the Board of Governors and Executive Committee 
+constituted by MSeGS:
+<b>A. Board of Directors:
+</b>
+<table class="tabling">
+
+  <tr>
+    <th>Sl No</th>
+    <th>Name</th>
+    <th>Designation</th>
+
+  </tr>
+
+  
+
+<tbody v-for="l in dirs" :key="l.id">
+
+  <tr >
+    <td>{{l.slno}}</td>
+    <td>{{l.name}}</td>
+    <td>{{l.designation}}</td>
+
+  </tr>
+
+</tbody>
+</table>
+<p style="padding:1rem 0"></p>
+
+<b>B. Executive Committee: 
+
+</b>
+<table class="tabling">
+
+  <tr>
+    <th>Sl No</th>
+    <th>Name</th>
+    <th>Designation</th>
+
+  </tr>
+
+  
+
+<tbody v-for="l in dirs" :key="l.id">
+
+  <tr >
+    <td>{{l.slno}}</td>
+    <td>{{l.name}}</td>
+    <td>{{l.designation}}</td>
+
+  </tr>
+
+</tbody>
+</table>
+
+</span>
 
 
+<p class="regulartexts">
+  2. The meetings of the above are not open to the public.
+<br>3. The minutes of the meetings are not accessible for public.
+
+</p>
+
+
+<b>IX. A directory of its officers and employees:</b>
+<p class="regulartexts">
+  Directory of employees enclosed as ANNEXURE V
+</p>
+
+<b>X. The monthly remuneration received by each of its employees including the 
+system of compensation as provided in its regulations:
+</b>
+<p class="regulartexts">
+  The monthly basic salary of the employees is provided as per recommendation or fixed by 
+Govt of Mizoram from time to time.
+
+</p>
+
+
+<b>XI. The budget allocated to each of its agency, indicating the particulars of all 
+plans, proposed expenditures and reports on disbursements made:
+</b>
+
+<p class="regulartexts">
+  MSeGS has received budgetary support from Government of Mizoram as GIA since 2019-
+20. MSeGS also earns revenue basically by providing its services from other Departments 
+on a project-to-project basis.
+The Audited Accounts of the society and annual report was submitted every year to 
+Registrar, Firms and Societies, Govt of Mizoram as prescribed under section 18 of the 
+Mizoram Societies Registration Act 2005 and the submitted copies can be seen in the 
+record of the society.
+</p>
+
+<b>XII. Details in respect of the information, available to or held by it, reduced in an 
+electronic form:</b>
+<p class="regulartexts">
+  Information about MSeGS, its services, the projects / programs for which it is offering its 
+consultancy services is available at MSeGS website https://msegs.mizoram.gov.in
+</p>
+
+
+<b>XIII. The particulars of facilities available to citizens for obtaining information, 
+including the working hours of a library or reading room, if maintained for 
+public use:</b>
+
+<p class="regulartexts">
+  For information (under the RTI Act, 2005) the citizens may approach the Public 
+Information Officer (PIO-RTI) of MSeGS (Regd. Office) available from 10:00 hrs to 13:00 hrs 
+on every working day (except Saturday, Sunday and public holidays). The office of PIO-RTI 
+is located on the third floor of Secretariat Old Building-I, Treasury Square, Aizawl - 796001, 
+Mizoram.
+The information pertaining to MSeGS is also available in detail on MSeGS website 
+(https://msegs.mizoram.gov.in). Further, the citizens may also approach the PIO-RTI using 
+e-mail address, as per the provisions of RTI Act 2005.
+MSeGS has required resources for facilitating quick information to the citizens on request, 
+as per relevant provisions of the RTI Act 2005
+</p>
+
+<b>XIV. The names, designations and other particulars of the Public Information 
+Officer:</b>
+
+<table class="tabling">
+  <tr style="text-align:left">
+    <th>Appellate Authority (RTI)
+</th>
+ <th>Public Information Officer
+(RTI)</th>
+  <th>Asst. Public Information 
+Officer (RTI)
+</th>
+  </tr>
+
+  <tbody>
+    <tr>
+      <td>Dr. Lalthlamuana,
+Chief Executive Officer
+Mizoram State e-Governance 
+Society Secretariat Old 
+Building-I, Treasury Square,
+Aizawl - 796001, Mizoram
+Phone: 91-389-
+2319637/9436140113
+Fax: 91-389-2319632
+E-mail: 
+ceomsegs@mizoram.gov.in</td>
+
+<td>
+
+  Pu H. Lalruatliana
+Administrative Officer
+Mizoram State e-Governance 
+Society Secretariat Old 
+Building-I, Treasury Square,
+Aizawl - 796001, Mizoram
+Phone: 9436196820
+Fax: 91-389-2319632
+E-mail: 
+ruatliana15@gmail.com
+</td>
+
+<td>
+
+Pu Lalhmingmawia 
+Executive Officer 
+Mizoram State e-Governance  Society Secretariat Old  
+Building-I, Treasury Square, Aizawl - 796001, Mizoram Phone: 9436352317 
+Fax: 91-389-2319632 
+E-mail:  
+icthminga@gmail.com
+
+</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<b>XV. Such other information as may be prescribed; and thereafter update these 
+publications within such intervals in each year as may be prescribed:</b>
+       
+       <p style="padding-top:1rem"></p>
+
+       <ol type="a">
+         <li><b>Procedure relating to seeking information from MSeGS under the RTI Act 2005: </b>
+Any member of the public seeking information from MSeGS should submit the 
+application in the format of application. The applicants may send their application 
+form to the PIO mentioned above. The fee charged for supplying of information by 
+MSeGS will be in accordance with the provisions laid down in the said Act.</li>
+         <li>
+           <b>Right of the citizen in case of denial of information:</b>
+            In case of denial of the 
+information, a citizen may appeal to the Appellate authority mentioned above as per 
+the procedure set-out in RTI Act 2005
+         </li>
+       </ol>
+       
        </div>
-<div class="mainrow">
+<div class="mainrow" style="margin-top:1rem">
 
      <div class="rows1" v-if="resources.length">
       <div   v-for="resource in resources" :key="resource.id">
@@ -182,7 +473,17 @@ export default {
 
 
             ],  
-            errors:''      
+            errors:''  ,
+            dirs:[
+              {slno:'1',name:'Secretary to the Government of Mizoram, Department of ICT ',designation:'Chairman'},
+              {slno:'2',name:'Representative of Finance Department not below the rank of  Joint Secretary, Government of Mizoram ',designation:'Member'},
+              {slno:'3',name:'Representative of Planning Department not below the rank  of Joint Secretary, Government of Mizoram',designation:'Member'},
+              {slno:'4',name:'Chief Informatics Officer, Information & Communication  Technology ',designation:'Member Secretary'},
+            
+            ],
+            execs:[
+
+            ]   
         };
     },
   //  created() {
@@ -211,6 +512,17 @@ export default {
 </script>
 
 <style lang="scss">
+.tabling{
+  border:1px solid black;
+   border-collapse: collapse;
+}
+
+
+.tabling td,.tabling th,.tabling tr {
+  border:1px solid black;
+  padding:8px;
+}
+
 .regulartexts{
   font-size: 16px;
   font-family: 'Roboto';
