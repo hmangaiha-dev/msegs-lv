@@ -24,6 +24,8 @@ Government of India and Government of Mizoram are the main promoters of this soc
         </p>
 
 <b>Contact Information for RTI:
+<p style="padding-top:8px"></p>
+
 </b>
 <table class="tabling">
   <tr style="text-align:left">
@@ -78,7 +80,7 @@ icthminga@gmail.com
     </tr>
   </tbody>
 </table>
-
+<p style="padding-top:8px"></p>
 <b>Mandatory provisions of Right to Information Act 2005 Ref. Clause b (i) to (xvii) 
 under Section 4, Sub-section 1</b>
 
@@ -145,6 +147,8 @@ required.</li>
 accounts and the financial estimates of the society as it thinks fit.</li>
 </ol>
 </p>
+<p style="padding-top:16px"></p>
+
 <b>4. Memorandum of Association (MoA) & Rules & Regulations: Can be seen at
 ANNEXURE I</b>
         <p style="margin-top:1rem ">  </p>
@@ -205,6 +209,8 @@ control:</b>
   </ol>
 
 </p>
+<p style="padding-top:8px"></p>
+
 <b>
   VII. The particulars of any arrangement that exists for consultation with, or 
 representation by the members of the public in relation to the formulation of 
@@ -225,8 +231,12 @@ such meetings are accessible for public:
 
 <span class="regulartexts">
   1. The following are the details of the Board of Governors and Executive Committee 
-constituted by MSeGS:
+constituted by MSeGS:<br>
+<p style="padding-top:8px"></p>
+
 <b>A. Board of Directors:
+<p style="padding-top:8px"></p>
+
 </b>
 <table class="tabling">
 
@@ -280,6 +290,7 @@ constituted by MSeGS:
 
 </span>
 
+<p style="padding-top:8px"></p>
 
 <p class="regulartexts">
   2. The meetings of the above are not open to the public.
@@ -344,6 +355,7 @@ as per relevant provisions of the RTI Act 2005
 
 <b>XIV. The names, designations and other particulars of the Public Information 
 Officer:</b>
+<p style="padding-top:8px"></p>
 
 <table class="tabling">
   <tr style="text-align:left">
@@ -399,6 +411,7 @@ icthminga@gmail.com
   </tbody>
 </table>
 
+<p style="padding-top:16px"></p>
 
 <b>XV. Such other information as may be prescribed; and thereafter update these 
 publications within such intervals in each year as may be prescribed:</b>
