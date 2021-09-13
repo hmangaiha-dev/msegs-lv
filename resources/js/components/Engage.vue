@@ -38,7 +38,7 @@
 
 <div class="readingcontainer">
 
-  <p class="regularheading">Engaging with MSeGS</p>
+  <!-- <p class="regularheading">Engaging with MSeGS</p> -->
   <p class="regulartexts">
 Mizoram State e-Governance Society (MSeGS) is a nodal implementing agency for various e governance projects within the state of Mizoram and has been implemented various state  mission mode projects and integrated projects under national e-governance plan. All the  engagements of MSeGS for implementation of various e-governance projects are so far have  been awarded on a nomination basis only. As long as MSeGS is 100% owned by the state  government, the state government departments can directly place work order to MSeGS  relating to computer hardware, software and consultancy services. Hence, MSeGS does not  participate in any tender bidding process. The general practice of government of Mizoram is  to get specific internal approvals of the competent authorities within their department.  
 
