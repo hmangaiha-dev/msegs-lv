@@ -8,7 +8,7 @@
 
 <div class="updatesrows " >
 	
-        <img src="../assets/thenzawl.png" alt="" srcset="" class="updateimage" />
+        <img src="../assets/thenzawlbanner.jpg" alt="" srcset="" class="updateimage" />
         <!-- <div class="updatescontents">
           <div v-for="post in posts" :key="post.id">
             <h3>{{post.title}}</h3>
@@ -55,8 +55,8 @@ export default {
     },
 	data(){
 		return{
-            title:'Launching soon!',
-            contents:'<h4>Thenzawl Golf Course</h4><br><p>The first and only golf course funded by the Ministry of Tourism, Government of India. </p><br><p>Bookings can be easily done using the Thenzawl Golf Course online booking application or official website.</p>', 
+            title:'Thenzawl Golf Resort',
+            contents:'<p>The first and only golf course funded by the Ministry of Tourism, Government of India. </p><br><p>Bookings can be easily done using the Thenzawl Golf Course online booking application or official website.</p> <a href="https://thenzawlgolfresort.com/" style="color: #f23d46">Visit website</a>', 
 
 		}
 	},
@@ -86,7 +86,7 @@ export default {
   // height:560px;
   height: auto;
 	position: relative;
-	left:20%;
+	left:18%;
 	
 }
 .posttitle{
@@ -104,7 +104,7 @@ export default {
   // old right:0%;
   left:0%;
 	//  old top:10%;
-	top: 5%;
+	top: 15%;
   /* top:-400px; */
 	/* bottom:1rem; */
 	/* bottom:30rem; */
