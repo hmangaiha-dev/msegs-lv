@@ -82,7 +82,7 @@ export default {
 .updateimage{
   /* width: 42vw; */
   /* height: auto; */
-  width:100%;
+  width:90%;
   // height:560px;
   height: auto;
 	position: relative;
