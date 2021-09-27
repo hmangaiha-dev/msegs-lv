@@ -230,7 +230,7 @@
         </div> -->
         <!-- <posts></posts> -->
         <postsarrays></postsarrays>
-
+        <div style="margin:6rem 0;"></div>
       </div>
     </div>
 
