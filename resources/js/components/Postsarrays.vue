@@ -56,7 +56,7 @@ export default {
 	data(){
 		return{
             title:'Thenzawl Golf Resort',
-            contents:'<p>The first and only golf course funded by the Ministry of Tourism, Government of India. </p><br><p>Bookings can be easily done using the Thenzawl Golf Course online booking application or official website.</p> <a href="https://thenzawlgolfresort.com/" style="color: #f23d46">Visit website</a>', 
+            contents:'<p>The first and only golf course funded by the Ministry of Tourism, Government of India. </p><br><p>Bookings can be easily done using the Thenzawl Golf Course online booking application or official website.</p> <a href="https://thenzawlgolfresort.com/" style="color: #f23d46" target=_blank>Visit website</a>', 
 
 		}
 	},
