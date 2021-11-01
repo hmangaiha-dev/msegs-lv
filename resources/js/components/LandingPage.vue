@@ -228,8 +228,9 @@
        
         <posts></posts>
         </div> -->
-        <posts></posts>
-
+        <!-- <posts></posts> -->
+        <postsarrays></postsarrays>
+        <div style="margin:6rem 0;"></div>
       </div>
     </div>
 
@@ -272,12 +273,14 @@
 
 <script>
 import Vue3autocounter from 'vue3-autocounter';
-import Posts from './Posts'
+// import Posts from './Posts'
+import Postsarrays from './Postsarrays'
 
 export default {
    components: {
     'vue3-autocounter': Vue3autocounter,
-    Posts
+    // Posts
+    Postsarrays
   },
   // data(){
 	// 	return{
