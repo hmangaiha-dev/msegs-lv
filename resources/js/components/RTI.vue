@@ -165,7 +165,7 @@ Regulations of the society. The hierarchical set up of the society can be seen i
 organization chart as below:
 </p>
 
-<img src="../assets/fromrti.png" alt="" srcset="" style="margin-left:auto;margin-right:auto;display:block">
+<!-- <img src="../assets/fromrti.png" alt="" srcset="" style="margin-left:auto;margin-right:auto;display:block"> -->
 <br>
 <b>III. The procedure followed in the decision making process, including channels of 
 supervision and accountability: </b>

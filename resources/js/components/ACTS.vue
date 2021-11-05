@@ -57,7 +57,7 @@ export default {
             resources: [
               {title:'Mizoram e-Governance RoadMap',path:'https://drive.google.com/file/d/1ZuZUBLVdZE2c-uc1azboFzkv7RsAbC79/view?usp=sharing'},
               {title:'IT Amendment Act, 2008',path:'https://drive.google.com/file/d/1ITypbL6B4XOtUspJ82hhQaDPPSp8Hjg9/view?usp=sharing'},
-              {title:'MOA ,Rules & Regulations',path:'https://drive.google.com/file/d/1-sRrqRwtN1FnxlLCZAnSrO_rkAExUFZV/view?usp=sharing'},
+              {title:'Memorandum of Association',path:'https://drive.google.com/file/d/1-sRrqRwtN1FnxlLCZAnSrO_rkAExUFZV/view?usp=sharing'},
 
 
 
