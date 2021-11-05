@@ -234,7 +234,7 @@ Secretary, DP&AR
 
     <div class="imageheroes">
 
-    <img src="../assets/imagehero.png" alt="" srcset="" class="heroimage" >
+    <img src="../assets/imagehero.jpg" alt="" srcset="" class="heroimage" >
 <div class="contactusing">
 <p class="heading" >Want to get in touch?</p>
 <a href="/contactus" class="imageheroesbutton">CONTACT US</a>

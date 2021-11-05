@@ -1,5 +1,7 @@
 <template>
   <div class="main" >
+ 
+
     <div class="landing1 containe" >
       <div class="texts">
         <div class="innertexts ">
@@ -10,13 +12,39 @@
           service delivery system with quick response time, reduce waiting time,
           minimizing travelling expenses, transparency and accountability.
         </p>
-          <a href="/aboutus" class="knowmorebutton" > KNOW MORE</a>
+          <!-- <a href="/aboutus" class="knowmorebutton" > KNOW MORE</a> -->
+              <span class="btn btn--primary mx-auto contents" style="display:flex;flex-direction:row;cursor: pointer;align-items:center" 
+              @click="$refs.modalName.openModal()">
+<img src="../assets/play.gif" style="width:40px;height:40px ;padding-right:12px;" />
+                <span class="onhoverred">Watch our video
+                  </span> 
+                </span>
+
+
+<EmbedModal ref="modalName">
+      <template v-slot:header>
+        <!-- <h1>Modal title</h1> -->
+      </template>
+
+      <template v-slot:body >
+        <iframe  class="embedproperties" src="https://www.youtube.com/embed/siGRuWtgx3o?autoplay=1&showinfo=0&controls=0&modestbranding=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </template>
+
+      <template v-slot:footer>
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- <button class="btn btn--secondary" @click="$refs.modalName.closeModal()">Cancel</button>
+          <button class="btn btn--primary" @click="$refs.modalName.closeModal()">Save</button> -->
+        </div>
+      </template>
+    </EmbedModal >
+
+
 </div>
       </div>
 
       <!-- <div class="images"> -->
         <img
-          src="../assets/banner.jpg"
+          src="../assets/banner2.jpg"
           class="landing1image"
 
         />
@@ -272,6 +300,7 @@
 </template>
 
 <script>
+import EmbedModal from "./EmbedModal.vue";
 import Vue3autocounter from 'vue3-autocounter';
 // import Posts from './Posts'
 import Postsarrays from './Postsarrays'
@@ -280,7 +309,8 @@ export default {
    components: {
     'vue3-autocounter': Vue3autocounter,
     // Posts
-    Postsarrays
+    Postsarrays,
+    EmbedModal
   },
   // data(){
 	// 	return{
@@ -340,6 +370,26 @@ border-color: #f23d46;
     background-color: white;
     color:#f23d46;
     border:1px solid #f23d46;
+}
+
+.onhoverred:hover{
+    // box-shadow: 1px 2px 10px rgba($color: #000000, $alpha: 0.5);
+    // opacity:95%;
+   
+    color:#f23d46;
+
+}
+
+
+.embedproperties {
+  width:78%;
+  height:78vh;
+
+  @media screen and (max-width: 992px) {
+    width:90%;
+    // height:50%
+
+  }
 }
 .texts {
   width: 50%;

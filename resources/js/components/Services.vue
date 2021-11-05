@@ -29,7 +29,7 @@
         </ul>
       </div>
       <div class="sdimage desktopservices">
-        <img src="../assets/sdbig.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/soft2.jpg" alt="" srcset="" class="sdimage" />
       </div>
     </div>
 
