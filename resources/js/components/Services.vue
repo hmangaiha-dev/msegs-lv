@@ -9,7 +9,7 @@
         <p class="headings sdheadings">Software Development</p>
         <div class="mobileservices">
 <div class="sdimage">
-        <img src="../assets/soft.jpg" alt="" srcset="" class="sdimage" />
+        <img src="../assets/soft2.jpg" alt="" srcset="" class="sdimage" />
       </div>
         </div>
         <p id="sdcontents">

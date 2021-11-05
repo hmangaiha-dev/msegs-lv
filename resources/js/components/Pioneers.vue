@@ -19,14 +19,14 @@
         <div class="directorscards">
           <div class="directorsrows">
             <img
-              src="../assets/cs.jpg"
+              src="../assets/RenuSharmaCS.jpg"
               alt=""
               class="directorsimage"
             />
 
             <div class="directorscontents">
               <!-- <p class="designation">Chief Secretary, GoM</p> -->
-              <p class="directorsname">Shri Lalnunmawia Chuaungo, IAS</p>
+              <p class="directorsname">Smt. Renu Sharma, IAS</p>
               <p class="directorsinfo">
                 <!-- Overlooks multiple Government projects in MSeGS -->
                  Chief Secretary
