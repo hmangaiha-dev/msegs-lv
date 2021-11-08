@@ -287,7 +287,9 @@ export default {
 @media screen and(max-width:800px){
 //archivemobile selection options
 
-
+.readingcontainer{
+  margin:0 0.5rem;
+}
 .mainrow{
   display: flex;
   flex-direction: column;

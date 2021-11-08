@@ -33,7 +33,7 @@
     <hr style="opacity:20%;margin:4rem 0 2rem 0;">
 
     <div class="container">
-      <span v-if="success" class="success">{{success}}</span>
+      <span v-if="success" class="success animated slideInDown">{{success}}</span>
       <!-- <span  class="success">Thank you for contacting us</span> -->
       
 
@@ -81,7 +81,8 @@ export default {
   data(){
     return {
       credentials:{},
-      success:''
+      success:'',
+      submitted:false,
     }
   },
   mounted(){
@@ -92,9 +93,15 @@ export default {
       this.axios.post(`/api/contactus`,this.credentials).then((res)=>{
         console.log('Submitted');
         this.success = res.data;
+        setTimeout(()=>{this.success = ''},5000)
+        this.credentials = ''
+
+        this.submitted = true;
         // this.credentials={};
       }).catch((err)=>{
         console.log('error')
+ 
+        
       })
 
     }
