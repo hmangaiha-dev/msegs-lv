@@ -13,6 +13,8 @@ use App\Http\Controllers\ContactUsController;
 
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\EventController;
+
 
 
 
@@ -67,6 +69,11 @@ Route::delete('resources/{id} ','App\Http\Controllers\ResourcesController@destro
 Route::get('files/index','App\Http\Controllers\FilesController@index');
 Route::post('files/store','App\Http\Controllers\FilesController@store');
 Route::delete('files/{id} ','App\Http\Controllers\FilesController@destroy');
+
+Route::group(['prefix' => 'event'], function () {
+    Route::get('all', [EventController::class, 'events']);
+});
+
 
 
 
