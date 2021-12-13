@@ -63,7 +63,7 @@ class EventController extends Controller
         ['eventTime'=>'2022-09-08 00:00:00','title'=>"Onam",'description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-09-30 00:00:00','title'=>"Chhat Puja",'description'=>'','type'=>'restricted'],
 
-        ['eventTime'=>'2022-10-02 00:00:00','title'=>"Gandhi's Birthday",'description'=>'','type'=>'holiday'],
+        ['eventTime'=>'2022-10-02 00:00:00','title'=>"Gandhi's Birthday",'description'=>'','type'=>'holid134.122.18.92ay'],
         ['eventTime'=>'2022-10-03 00:00:00','title'=>"Mahashtami",'description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-10-04 00:00:00','title'=>"Mahanavmi",'description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-10-05 00:00:00','title'=>"Dushera",'description'=>'','type'=>'holiday'],
@@ -74,12 +74,12 @@ class EventController extends Controller
         ['eventTime'=>'2022-10-26 00:00:00','title'=>"Bhai Duj",'description'=>'','type'=>'restricted'],
 
         ['eventTime'=>'2022-11-08 00:00:00','title'=>"Guru Nanak's Birthday",'description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-11-24 00:00:00','title'=>"Guru Nanak's Birthday",'description'=>'','type'=>'restricted'],
+        ['eventTime'=>'2022-11-24 00:00:00','title'=>"Guru Teg Bahadur's Martydom Day",'description'=>'','type'=>'restricted'],
 
-        ['eventTime'=>'2022-11-24 00:00:00','title'=>"Christmas Eve",'description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-11-25 00:00:00','title'=>"Christmas Day",'description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-11-26 00:00:00','title'=>"Christmas celebration",'description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-11-31 00:00:00','title'=>"New Year's Eve",'description'=>'','type'=>'holiday'],
+        ['eventTime'=>'2022-12-24 00:00:00','title'=>"Christmas Eve",'description'=>'','type'=>'holiday'],
+        ['eventTime'=>'2022-12-25 00:00:00','title'=>"Christmas Day",'description'=>'','type'=>'holiday'],
+        ['eventTime'=>'2022-12-26 00:00:00','title'=>"Christmas celebration",'description'=>'','type'=>'holiday'],
+        ['eventTime'=>'2022-12-31 00:00:00','title'=>"New Year's Eve",'description'=>'','type'=>'holiday'],
     ];
 
     public function events(Request $request)
