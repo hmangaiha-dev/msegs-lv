@@ -16,12 +16,6 @@ class EventController extends Controller
 
 
 
-        ['eventTime'=>'2022-01-01 12:00:00','title'=>'Event one','description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-01-12 12:00:00','title'=>'Event two','description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-01-13 12:00:00','title'=>'Event three','description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-01-02 12:00:00','title'=>'Event four','description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2022-01-03 12:00:00','title'=>'Event four','description'=>'','type'=>'restricted'],
-        ['eventTime'=>'2022-01-04 12:00:00','title'=>'Event four','description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-01-01 00:00:00','title'=>"New Year's Day",'description'=>'','type'=>'holiday'],
         ['eventTime'=>'2022-01-03 00:00:00','title'=>"New Year's Celebration",'description'=>'','type'=>'holiday'],
         ['eventTime'=>'2022-01-09 00:00:00','title'=>"Guru Gobind Singh's Birthday",'description'=>'','type'=>'holiday'],
