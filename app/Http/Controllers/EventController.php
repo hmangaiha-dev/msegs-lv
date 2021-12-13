@@ -11,7 +11,7 @@ class EventController extends Controller
         ['eventTime'=>'2021-12-24 12:00:00','title'=>'Christmas Eve','description'=>'','type'=>'holiday'],
         ['eventTime'=>'2021-12-25 12:00:00','title'=>'Christmas Day','description'=>'','type'=>'holiday'],
         ['eventTime'=>'2021-12-27 12:00:00','title'=>'Christmas Celebration','description'=>'','type'=>'holiday'],
-        ['eventTime'=>'2021-12-31 12:00:00','title'=>'New Year Eve','description'=>'','type'=>'holiday'],
+        ['eventTime'=>'2021-12-31 12:00:00','title'=>'New Year`s Eve','description'=>'','type'=>'holiday'],
 
 
 
