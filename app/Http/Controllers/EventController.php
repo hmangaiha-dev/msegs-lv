@@ -66,7 +66,7 @@ class EventController extends Controller
         ['eventTime'=>'2022-10-02 00:00:00','title'=>"Gandhi's Birthday",'description'=>'','type'=>'holid134.122.18.92ay'],
         ['eventTime'=>'2022-10-03 00:00:00','title'=>"Mahashtami",'description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-10-04 00:00:00','title'=>"Mahanavmi",'description'=>'','type'=>'restricted'],
-        ['eventTime'=>'2022-10-05 00:00:00','title'=>"Dushera",'description'=>'','type'=>'holiday'],
+        ['eventTime'=>'2022-10-05 00:00:00','title'=>"Dussehra",'description'=>'','type'=>'holiday'],
         ['eventTime'=>'2022-10-09 00:00:00','title'=>"Mohammed's Birthday",'description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-10-13 00:00:00','title'=>"Karaka Chaturthi",'description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-10-24 00:00:00','title'=>"Diwali",'description'=>'','type'=>'holiday'],
