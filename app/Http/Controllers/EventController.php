@@ -22,7 +22,7 @@ class EventController extends Controller
         ['eventTime'=>'2022-01-11 00:00:00','title'=>'Missionary Day','description'=>'','type'=>'holiday'],
         ['eventTime'=>'2022-01-13 00:00:00','title'=>'Lohri','description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-01-14 00:00:00','title'=>'Makar Sankranti /Magha Bihu/Pongal','description'=>'','type'=>'restricted'],
-        ['eventTime'=>'2022-01-26 00:00:00','title'=>'Republic Day','description'=>'','type'=>'restricted'],
+        ['eventTime'=>'2022-01-26 00:00:00','title'=>'Republic Day','description'=>'','type'=>'holiday'],
 
         ['eventTime'=>'2022-02-05 00:00:00','title'=>'Basant Panchami/Sri Panchami','description'=>'','type'=>'restricted'],
         ['eventTime'=>'2022-02-15 00:00:00','title'=>"Hazarat Ali's Birthday",'description'=>'','type'=>'restricted'],
