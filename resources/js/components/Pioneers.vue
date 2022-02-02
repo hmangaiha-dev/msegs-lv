@@ -165,7 +165,7 @@ Secretary, DP&AR
 
         <div class="thinkcards">
             <p class="thinkdesignation">Board Member & CEO</p>
-            <p class="thinknames">Dr. Lalthlamuna</p> 
+            <p class="thinknames">Dr. Lalthlamuana</p> 
             <p class="thinkdept">BE, MS, PhD</p>
 <!-- 
             <span class="thinkcontacts">
