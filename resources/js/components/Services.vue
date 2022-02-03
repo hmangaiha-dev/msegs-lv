@@ -184,7 +184,7 @@
       </div>
       <div class="sdtext" id="ct">
         <p class="headings sdheadings" id="blues">
-          Capacity Building & Trainning
+          Capacity Building & Training
         </p>
         <div class="mobileservices">
 <div class="sdimage">
@@ -192,7 +192,7 @@
       </div>
         </div>
         <p id="sdcontents">
-          We have our owned training centre with state-of-the-art facilities and
+          We have our own training centre with state-of-the-art facilities and
           has been tied-up with NISG, NeGD, IIPA, ATI for providing various
           e-governance training programme like change management, business
           model, e-governance life cycle, project management, e-procurement,
