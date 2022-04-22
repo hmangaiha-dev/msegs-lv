@@ -112,11 +112,32 @@ export default {
     },
     methods: {
         updateProject() {
+            const config = {
+                headers: {
+                    "content-type": "multipart/form-data",
+                },
+            };
+                        let data = new FormData();
+            data.append("title", this.project.title);
+            data.append("subtitle", this.project.subtitle);
+            data.append("contents", this.project.contents);
+            data.append("client", this.project.client);
+            data.append("hostedat", this.project.hostedat);
+            data.append("developedby", this.project.developedby);
+            data.append("goals", this.project.goals);
+            data.append("date", this.project.date);
+            data.append("_method",'patch')
+
+
+            data.append("file", this.project.file);
+            data.append("bannerfile", this.project.bannerfile);
+
             this.axios
-                .patch(`/api/projects/${this.$route.params.id}`, this.project)
+                .post(`/api/projects/${this.$route.params.id}`,data)
                 .then((res) => {
+                    return console.log('res',res.data)
                     // this.$router.push({ name: "home" });
-                });
+                })
         },
         onChange(e) {
             this.project.file = e.target.files[0];

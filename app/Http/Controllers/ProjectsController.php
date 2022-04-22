@@ -79,19 +79,23 @@ class ProjectsController extends Controller
 
     public function update(Request $request,Projects $project)
     {
+        
 
-        $file_name = time().'_'.$request->file('file')->getClientOriginalName();
-        $banner_name = time().'_'.$request->file('bannerfile')->getClientOriginalName();
+        foreach ($request->file()as $filename) {
+        $file_name = time().'_'.$filename->getClientOriginalName();
+        $banner_name = time().'_'.$filename->getClientOriginalName();
 
-        $file_path = $request->file('file')->storeAs('uploads', $file_name, 'public');
-        $banner_path = $request->file('bannerfile')->storeAs('uploads', $banner_name, 'public');
-
-        $project->update($request->only((new Projects())->getFillable()));
+        $file_path = $filename->storeAs('uploads', $file_name, 'public');
+        $banner_path = $filename->storeAs('uploads', $banner_name, 'public');
         $project->imagename = $file_name;
         $project->imagepath = '/storage/' . $file_path;
 
         $project->bannername = $banner_name;
         $project->bannerpath = '/storage/' . $banner_path;
+        }
+
+        $project->update($request->only((new Projects())->getFillable()));
+
         $project->save();
 
 
