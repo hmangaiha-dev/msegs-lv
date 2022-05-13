@@ -175,8 +175,8 @@ Secretary, DP&AR
 
          <div class="thinkcards">
             <p class="thinkdesignation">Administration & Estd.</p>
-            <p class="thinknames">Shri Vanlalruata</p> 
-            <p class="thinkdept">M Com</p>
+            <p class="thinknames">Smt. Lalbiakhluni</p> 
+            <p class="thinkdept"></p>
 
             <!-- <span class="thinkcontacts">
             <i class="fas fa-envelope iconshaperss"></i>

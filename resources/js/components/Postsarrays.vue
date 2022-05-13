@@ -8,7 +8,7 @@
 
 <div class="updatesrows " >
 	
-        <img src="../assets/thenzawlbanner.jpg" alt="" srcset="" class="updateimage" />
+        <img src="../assets/mysticalMizoram.jpg" alt="" srcset="" class="updateimage" />
         <!-- <div class="updatescontents">
           <div v-for="post in posts" :key="post.id">
             <h3>{{post.title}}</h3>
@@ -55,11 +55,12 @@ export default {
     },
 	data(){
 		return{
-            title:'Thenzawl Golf Resort',
-            contents:'<p>The first and only golf course funded by the Ministry of Tourism, Government of India. </p><br><p>Bookings can be easily done using the Thenzawl Golf Course online booking application or official website.</p> <a href="https://thenzawlgolfresort.com/" style="color: #f23d46" target=_blank>Visit website</a>', 
+            title:'Mizoram Tourism',
+            contents:'<p>Unveiling a new way to explore </p><p> Mizoram, journey into Mizoram using</p><p>the various features found on the</p><p>  official website.</p> <div style="margin:10px;"> </div><p> Download the official App to experience </p><p>Mystical Mizoram on the palm of your hands.</p> <br><a href="https://mizoramtourism.com/" style="color: #f23d46" target=_blank>Visit website</a>', 
 
 		}
 	},
+
 
   created(){
     //  this.axios.get("/api/posts/").then((response) => {
