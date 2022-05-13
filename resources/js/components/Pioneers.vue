@@ -29,7 +29,9 @@
               <p class="directorsname">Smt. Renu Sharma, IAS</p>
               <p class="directorsinfo">
                 <!-- Overlooks multiple Government projects in MSeGS -->
-                 Chief Secretary
+                 Chief Secretary,
+                <br>Secretary, ICT Department
+
                  <br> Government of Mizoram
               </p>
               <!-- <span class="directorscontacts">
@@ -119,7 +121,7 @@ Secretary, DP&AR
         </div>
 
 
-         <div class="directorscards">
+         <!-- <div class="directorscards">
           <div class="directorsrows">
             <img
               src="../assets/ictsecy.jpg"
@@ -128,21 +130,16 @@ Secretary, DP&AR
             />
 
             <div class="directorscontents">
-              <!-- <p class="designation">ICT Secretary, GoM</p> -->
               <p class="directorsname">Shri Lalramsanga Sailo, IRS</p>
               <p class="directorsinfo">
                 Secretary, ICT Department
                  <br> Government of Mizoram
 
 </p>
-              <!-- <span class="directorscontacts">
-                <i class="fas fa-envelope iconshapers"></i>
-                <i class="fas fa-phone iconshapers"></i>
-                <i class="fas fa-fax iconshapers"></i>
-              </span> -->
+  
             </div>
           </div>
-        </div>
+        </div> -->
 
        
 
