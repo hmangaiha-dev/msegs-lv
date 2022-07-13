@@ -114,12 +114,12 @@ const routes =[
             
 
         },
-        {
-            path:'/register',
-            name:'register',
-            component:Register
+        // {
+        //     path:'/register',
+        //     name:'register',
+        //     component:Register
 
-        },
+        // },
         {
             path:'/dashboard',
             name:'dashboard',
@@ -205,14 +205,14 @@ const routes =[
 
                 },
              
-            //     {
-            //         path:'/register',
-            //         name:'register',
+                {
+                    path:'/register',
+                    name:'register',
                     
-            // component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
+            component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
 
         
-            //     },
+                },
 
                 {
                     path:'/postslist',
