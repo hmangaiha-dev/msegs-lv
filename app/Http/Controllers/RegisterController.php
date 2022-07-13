@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Hash;
 class RegisterController extends Controller
 {
     //
-    public function register(Request $request){
+    public function register(Request $request)
+    {
         // $request->validate([
         //     'name'=>['required'],
         //     'email'=>['required','email','unique:users'],
@@ -18,9 +19,23 @@ class RegisterController extends Controller
         // ]);
 
         User::create([
-            'name'=>$request->name,
-            'email'=>$request->email,
-            'password'=>Hash::make($request->password)
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
+        ]);
+
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return response()->json([
+            'access_token' => $token,
+            'token_type' => 'Bearer',
         ]);
     }
 }

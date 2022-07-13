@@ -42,8 +42,8 @@ export default {
         return {
             form: {
             
-                email: "",
-                password: "",
+                email: "hmaa@mail.com",
+                password: "hmaa",
               
             },
             errors: [],
@@ -68,6 +68,7 @@ export default {
             await axios.get('/sanctum/csrf-cookie')
             await axios.post('/api/login',this.form)
             .then((response)=>{
+                console.log("LOGSSSS",response)
                 // console.log(response)
                 this.signIn()
             })

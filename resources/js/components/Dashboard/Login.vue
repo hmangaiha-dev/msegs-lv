@@ -5,28 +5,12 @@
             <hr />
 
             <label for="email"><b>Email</b></label>
-            <input
-                type="text"
-                placeholder="Enter Email"
-                v-model="form.email"
-                id="email"
-                required
-            />
+            <input type="text" placeholder="Enter Email" v-model="form.email" id="email" required />
 
             <label for="password"><b>Password</b></label>
-            <input
-                type="password"
-                placeholder="Enter Password"
-                v-model="form.password"
-                id="password"
-                required
-            />
+            <input type="password" placeholder="Enter Password" v-model="form.password" id="password" required />
 
-            <button
-                @click.prevent="loginUser"
-                type="submit"
-                class="registerbtn"
-            >
+            <button @click.prevent="loginUser" type="submit" class="registerbtn">
                 Login
             </button>
         </div>
@@ -36,35 +20,59 @@
 
 <script>
 import axios from "axios";
+import { authStore } from '../../store/auth'
+
 export default {
+    
+setup(){
+    const user = authStore();
+    return {
+        user
+    }
+
+},
+
+                // email: "hmaa@mail.com",
+                // password: "hmaa",
+
+
     data() {
         return {
             form: {
-            
+
+
                 email: "",
                 password: "",
-              
+
+
             },
             errors: [],
         };
     },
     methods: {
-        loginUser() {
-            this.axios
-                .post("/api/login", this.form,{
-  headers: {
-    "Content-Type": "application/json",
 
-  }
-})
-                .then((response) => {
-					console.log(response);
-                    this.$router.push({name:'dashboard'})
-                })
-                .catch((error) => {
-                    this.errors = error.response.data.errors;
-                    console.log(this.errors);
-                });
+
+       async loginUser() {
+            await this.user.loginAttempt(this.form);
+            if(this.user.loggedIn){
+                    this.$router.push({ name: 'dashboard' })
+
+            }
+            // this.axios
+            //     .post("/api/login", this.form, {
+            //         headers: {
+            //             "Content-Type": "application/json",
+
+            //         }
+            //     })
+            //     .then((response) => {
+            //         console.log(response);
+            //         this.user.loginAttempt();
+            //     })
+            //     .catch((error) => {
+            //         this.errors = error.response.data.errors;
+            //         console.log(this.errors);
+            //     });
         },
     },
 };
@@ -105,7 +113,7 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-    background-color:#0a2458;
+    background-color: #0a2458;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -113,7 +121,7 @@ hr {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-    font-weight:700;
+    font-weight: 700;
 }
 
 .registerbtn:hover {

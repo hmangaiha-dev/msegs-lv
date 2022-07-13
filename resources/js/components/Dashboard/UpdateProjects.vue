@@ -72,11 +72,16 @@
                     <vue-editor v-model="project.contents" />
 
 <!-- <h2>Preview</h2><span v-html="project.contents"></span> -->
+<p>CARD image</p>
+<p>{{project.imagename}}</p>
                     <input
                         type="file"
                         class="form-control"
                         v-on:change="onChange"
                     />
+
+                    <p>BANNER</p>
+                    <p>{{project.bannername}}</p>
   <input  type="file"
                                 class="form-control"
                                 v-on:change="onChange2"
@@ -135,7 +140,10 @@ export default {
             this.axios
                 .post(`/api/projects/${this.$route.params.id}`,data)
                 .then((res) => {
-                    return console.log('res',res.data)
+
+                    // console.log('res',res.data);
+                    this.$router.go(-1);
+
                     // this.$router.push({ name: "home" });
                 })
         },

@@ -50,6 +50,8 @@
                 <li class="items">
                     <router-link to="/projects" exact-active-class="activating">Projects</router-link>
                 </li>
+              
+
                 <!-- <li class="items">
                     <router-link to="/resources" exact-active-class="activating">Resources</router-link>
                 </li> -->

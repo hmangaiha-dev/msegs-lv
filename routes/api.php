@@ -31,14 +31,14 @@ use App\Http\Controllers\EventController;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
 
-Route::middleware('auth:sanctum')->get('/authenticated', function () {
-    return true;
-});
+// Route::middleware('auth:sanctum')->get('/authenticated', function () {
+//     return true;
+// });
 
 Route::middleware('api')->group(function () {
     Route::post('update-project/{project}', [ProjectsController::class,'update']);
@@ -60,6 +60,10 @@ Route::middleware('api')->group(function () {
 Route::post('register','App\Http\Controllers\RegisterController@register');
 Route::post('login','App\Http\Controllers\LoginController@login');
 Route::post('logout','App\Http\Controllers\LoginController@logout');
+Route::get('user','App\Http\Controllers\LoginController@user')->middleware('auth:sanctum');
+
+// Route::post('user', [LoginController::class, 'user'])->middleware('auth:sanctum');
+
 
 Route::get('resources/index','App\Http\Controllers\ResourcesController@index');
 Route::post('resources/store','App\Http\Controllers\ResourcesController@store');

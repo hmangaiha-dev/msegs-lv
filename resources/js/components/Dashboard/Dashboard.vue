@@ -70,7 +70,6 @@ MSeGS</span>
     
                     <span class="mx-3">Posts</span>
                </router-link>
-
                <a @click.prevent="logout" class="flex items-center mt-4 py-2 px-6 text-gray-500 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100 cursor-pointer"
    >
                     <!-- <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -207,7 +206,15 @@ MSeGS</span>
 </template>
 
 <script>
+import { authStore } from '../../store/auth';
 export default {
+    setup(){
+        const store = authStore();
+        return{
+            store
+        }
+
+    },
 	data(){
 		return{
 			user:null,
@@ -216,9 +223,14 @@ export default {
 	},
 	methods:{
 		logout(){
-			this.axios.post('/api/logout').then(()=>{
+            console.log("LOGGING OUT")
+            
+            this.store.logoutAttempt();
 				this.$router.push({path:'/'});
-			})
+
+			// this.axios.post('/api/logout').then(()=>{
+			// 	this.$router.push({path:'/'});
+			// })
 		}
 	},
      created() {

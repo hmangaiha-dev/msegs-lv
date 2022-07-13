@@ -3,53 +3,18 @@ import store from "./components/store/index";
 import LandingPage from './components/LandingPage'
 // import Navbar from './components/Navbar'
 
-// import Services from './components/Services'
-// import Projects from './components/Projects'
-// import Resources from './components/Resources'
-// import AboutUs from './components/AboutUs'
-// import ContactUs from './components/ContactUs'
+
 import Pioneers from './components/Pioneers'
 import Awards from './components/Awards'
 // import page404 from './components/page404'
-//  import Posts from './components/Posts'
 
-
-
-// import ProjectDetails from './components/Projects/ProjectDetails'
-// import ProjectsUpload from './components/Projects/ProjectsUpload'
-
-
-
-
-
-// import Login from './components/Dashboard/Login'
 import Register from './components/Dashboard/Register'
-// import Dashboard from './components/Dashboard/Dashboard'
-// import Projectlist from './components/Dashboard/Projectlist'
-// import Resourceslist from './components/Dashboard/Resourceslist'
-// import Fileslist from './components/Dashboard/Fileslist'
-
-// import Enquirylist from './components/Dashboard/Enquirylist'
-// import AddResources from './components/Dashboard/AddResources'
-// import AddFiles from './components/Dashboard/AddFiles'
-
-
-
-// import AddProjects from './components/Dashboard/AddProjects'
-// import UpdateProjects from './components/Dashboard/UpdateProjects'
-
-// import Postslist from './components/Dashboard/Postslist'
-
-// import AddPosts from './components/Dashboard/AddPosts'
-// import UpdatePosts from './components/Dashboard/UpdatePosts'
-
-
 
 
 
 import axios from "axios";
 
-
+import { authStore } from './store/auth'
 
 
 
@@ -165,11 +130,24 @@ const routes =[
                 hideNav: true
             },
             beforeEnter:(to,from,next)=>{
-                axios.get('/api/authenticated').then(()=>{
-                    next();
-                }).catch(()=>{
-                    return next({name:'login'})
-                })
+                const userStore = authStore();
+
+                // axios.get('/api/authenticated').then(()=>{
+                //     next();
+                // }).catch(()=>{
+                //     return next({name:'login'})
+                // })
+
+                // if(userStore.loggedIn){
+                //     next();
+                // }
+                // else{
+                //     next({name:'login'})
+                // }
+                if ( !userStore.loggedIn) return next({path:'/login'})
+                else return next()
+
+
             },
             children: [
                 {
@@ -227,14 +205,14 @@ const routes =[
 
                 },
              
-            //     {
-            //         path:'/register',
-            //         name:'register',
+                {
+                    path:'/register',
+                    name:'register',
                     
-            // component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
+            component:()=> import(/* webpackChunkName:"Register"*/"./components/Dashboard/Register")
 
         
-            //     },
+                },
 
                 {
                     path:'/postslist',
